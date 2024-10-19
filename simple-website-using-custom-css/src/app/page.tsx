@@ -41,11 +41,11 @@ export default function Home() {
         <h2>What Our Clients Say</h2>
         <div className="testimonial-container">
           <div className="testimonial-item">
-            <p>"The team was fantastic! They exceeded our expectations and delivered on time."</p>
+            <p>The team was fantastic! They exceeded our expectations and delivered on time.</p>
             <h4>- Jane Doe, CEO of Company A</h4>
           </div>
           <div className="testimonial-item">
-            <p>"Their attention to detail and commitment to quality made all the difference in our project."</p>
+            <p>Their attention to detail and commitment to quality made all the difference in our project.</p>
             <h4>- John Smith, Founder of Company B</h4>
           </div>
           
