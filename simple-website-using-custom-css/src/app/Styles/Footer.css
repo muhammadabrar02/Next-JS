@@ -1,0 +1,55 @@
+footer {
+    background-color: #2c3e50; /* Dark blue-gray background */
+    color: #ecf0f1; /* Light text color */
+    padding: 40px 20px; /* Padding for top/bottom and left/right */
+    text-align: left; /* Align text to the left */
+    margin-bottom: 0;
+}
+
+.footer-container {
+    display: flex; /* Flexbox layout for alignment */
+    justify-content: space-between; /* Space between left and right sections */
+    max-width: 1200px; /* Maximum width for the footer */
+    margin: 0 auto; /* Center the footer on the page */
+}
+
+.left {
+    flex: 1; /* Left section takes available space */
+    margin-right: 20px; /* Add margin to the right for space */
+}
+
+.left h1 {
+    font-size: 2rem; /* Larger font size for the heading */
+    margin-bottom: 10px; /* Margin below the heading */
+}
+
+.left p {
+    line-height: 1.6; /* Line height for better readability */
+}
+
+.right {
+    flex: 1; /* Right section takes available space */
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: flex-start; /* Align items to the start */
+}
+
+.right h3 {
+    margin-bottom: 10px; /* Margin below the heading */
+}
+
+.social-links {
+    display: flex; /* Flexbox layout for social links */
+    gap: 15px; /* Space between social icons */
+}
+
+.social-icon {
+    color: #ecf0f1; /* Light text color for icons */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Bold text for visibility */
+    transition: color 0.3s; /* Transition for hover effect */
+}
+
+.social-icon:hover {
+    color: #3498db; /* Change color on hover */
+}

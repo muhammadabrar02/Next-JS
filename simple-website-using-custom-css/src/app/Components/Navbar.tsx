@@ -1,6 +1,7 @@
 import React from 'react'
 import "../styles/Navbar.css";
-import Image from 'next/image';
+import Link from 'next/link';
+
 
 export default function page() {
   return (
@@ -12,16 +13,18 @@ export default function page() {
         </div>
         {/* navbar items */}
         <ul>
-          <li>Home</li>
-          <li>Services</li>
-          <li>About Us</li>
-          <li>Contact Us</li>
+          <li><Link href="/">Home</Link></li>
+          <li><Link href="/services">Services</Link></li>
+          <li><Link href="/about">About Us</Link></li>
+          <li><Link href="/contact">Contact Us</Link></li>
         </ul>
 
         {/* button */}
-        <button className="btn">
-          sign In
-        </button>
+        <Link href="/contact">
+          <button className="btn" >
+            Get in Touch
+          </button>
+        </Link>
 
 
       </nav>

@@ -1,0 +1,34 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4; /* Light background */
+}
+
+/* About Us Section Styles */
+.about-us {
+    background-color: #ffffff; /* White background for the section */
+    padding: 30px; /* Space inside the container */
+    max-width: 600px; /* Max width of the section */
+    margin: 40px auto; /* Center the section */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+    text-align: center; /* Center align text */
+}
+
+.about-us h1 {
+    font-size: 2rem; /* Font size for heading */
+    color: #333333; /* Dark color for contrast */
+    margin-bottom: 15px; /* Space below the heading */
+}
+
+.about-us p {
+    font-size: 1rem; /* Font size for paragraph */
+    color: #555555; /* Slightly lighter color for text */
+    line-height: 1.6; /* Line height for readability */
+}

@@ -1,0 +1,59 @@
+/* src/styles/ServiceBoxes.css */
+
+.service-boxes {
+    padding: 40px 20px; /* Vertical and horizontal padding */
+    background-color: #f4f4f4; /* Light background color */
+    text-align: center; /* Center align text */
+}
+
+.service-boxes h2 {
+    font-size: 2.5rem; /* Main title size */
+    color: #2e3641; /* Title color */
+    margin-bottom: 30px; /* Space below title */
+}
+
+.service-container {
+    display: flex; /* Flexbox layout */
+    justify-content: space-around; /* Space boxes evenly */
+    flex-wrap: wrap; /* Wrap boxes on smaller screens */
+}
+
+.service-box {
+    background-color: white; /* White background for each box */
+    border: 1px solid #e2e2e2; /* Light border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Inner padding */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    width: 300px; /* Fixed width for each box */
+    margin: 15px; /* Margin between boxes */
+}
+
+.service-box h3 {
+    font-size: 1.8rem; /* Box title size */
+    color: #2e3641; /* Title color */
+    margin-bottom: 10px; /* Space below title */
+}
+
+.service-box p {
+    font-size: 1rem; /* Description size */
+    color: #333; /* Description color */
+    margin-bottom: 15px; /* Space below paragraph */
+}
+
+.service-box h4 {
+    font-size: 1.2rem; /* Subtitle size */
+    color: #2e3641; /* Subtitle color */
+    margin-top: 20px; /* Space above subtitle */
+    margin-bottom: 10px; /* Space below subtitle */
+}
+
+.service-box ul {
+    list-style-type: disc; /* Bullet points */
+    padding-left: 20px; /* Indent the list */
+    color: #555; /* List item color */
+}
+
+.service-box ul li {
+    margin-bottom: 5px; /* Space between list items */
+    font-size: 0.9rem; /* Font size for list items */
+}
