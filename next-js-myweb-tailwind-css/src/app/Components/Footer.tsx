@@ -8,7 +8,7 @@ export default function footer() {
                     <div className="flex flex-col md:flex-row justify-between items-center">
 
                         <div className="mb-4 md:mb-0">
-                            <a href="/" className="text-2xl font-bold">My Awesome Blog</a>
+                            <a href="/" className="text-2xl font-bold">My Blog</a>
                         </div>
 
                         <div className="flex space-x-4 mb-4 md:mb-0">

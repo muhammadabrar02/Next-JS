@@ -15,7 +15,7 @@ export default function Navbar() {
                 {/* Logo */}
                 <div className="flex items-center">
                     <a className="text-2xl font-bold text-blue-600">
-                        My Website
+                        My Blog
                     </a>
                 </div>
 
@@ -36,12 +36,14 @@ export default function Navbar() {
                 </nav>
 
                 {/* Contact Button */}
+                <Link href="/contact">
                 <button className="hidden md:inline-flex items-center bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-800 transition">
                     Contact Us
                     <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24">
                         <path d="M5 12h14M12 5l7 7-7 7"></path>
                     </svg>
                 </button>
+                </Link>
 
                 {/* Mobile Menu Button */}
                 <button className="md:hidden text-gray-600 focus:outline-none" onClick={toggleMenu}>
@@ -67,12 +69,14 @@ export default function Navbar() {
                         <Link href="/about"
                             className="text-gray-600 hover:bg-blue-100 hover:text-blue-600 px-3 py-2 rounded transition">About
                         </Link>
-                        <button className="w-full bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-800 transition">
-                            Contact Us
-                            <svg className="w-4 h-4 ml-2 inline" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24">
-                                <path d="M5 12h14M12 5l7 7-7 7"></path>
-                            </svg>
-                        </button>
+                        <Link href="/contact">
+                            <button className="w-full bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-800 transition">
+                                Contact Us
+                                <svg className="w-4 h-4 ml-2 inline" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24">
+                                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                                </svg>
+                            </button>
+                        </Link>
                     </nav>
                 </div>
             )}
