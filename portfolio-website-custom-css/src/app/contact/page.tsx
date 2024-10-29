@@ -31,9 +31,8 @@ const Contact = () => {
                 <h2>Other Ways to Reach Me</h2>
                 <p>You can also connect with me on social media:</p>
                 <ul className="social-media-links">
-                    <li><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
-                    <li><a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a></li>
-                    <li><a href="https://twitter.com" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+                    <li><a href="https://www.linkedin.com/in/muhammadabrar009/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                    <li><a href="https://github.com/muhammadabrar02" target="_blank" rel="noopener noreferrer">GitHub</a></li>
                 </ul>
             </section>
         </div>

@@ -9,9 +9,8 @@ const Footer = () => {
             <div className="footer-content">
                 <p>&copy; {new Date().getFullYear()} Muhammad Abrar. All rights reserved.</p>
                 <div className="social-links">
-                    <a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub</a>
-                    <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-                    <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">Twitter</a>
+                    <a href="https://github.com/muhammadabrar02" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    <a href="https://www.linkedin.com/in/muhammadabrar009/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
                 </div>
             </div>
         </footer>
