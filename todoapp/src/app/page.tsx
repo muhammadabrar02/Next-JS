@@ -1,27 +1,74 @@
-// src/app/page.js
 "use client";
 import { useState } from "react";
-import TodoInput from "./components/TodoInput";
-import TodoList from "./components/TodoList";
 
-export default function Home() {
-  const [todos, setTodos] = useState([]);
+export default function TodoApp() {
+  const [tasks, setTasks] = useState([]);
+  const [newTask, setNewTask] = useState("");
 
-  const addTodo = (todo) => setTodos([...todos, todo]);
+  // Add a new task
+  const addTask = () => {
+    if (newTask.trim()) {
+      setTasks([...tasks, { text: newTask, completed: false }]);
+      setNewTask("");
+    }
+  };
 
-  const deleteTodo = (index) => {
-    setTodos(todos.filter((_, i) => i !== index));
+  // Toggle task completion
+  const toggleTask = (index) => {
+    const updatedTasks = tasks.map((task, i) =>
+      i === index ? { ...task, completed: !task.completed } : task
+    );
+    setTasks(updatedTasks);
+  };
+
+  // Delete a task
+  const deleteTask = (index) => {
+    const updatedTasks = tasks.filter((_, i) => i !== index);
+    setTasks(updatedTasks);
   };
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-50 p-6">
-      <div className="w-full max-w-md bg-white p-6 rounded-lg shadow-lg">
-        <h1 className="text-2xl font-semibold text-center text-gray-800 mb-6">
-          Todo App
-        </h1>
-        <TodoInput addTodo={addTodo} />
-        <TodoList todos={todos} deleteTodo={deleteTodo} />
-      </div>
+    <div style={{ padding: "20px", maxWidth: "400px", margin: "auto" }}>
+      <h2>Todo List</h2>
+      <input
+        type="text"
+        placeholder="Add a new task"
+        value={newTask}
+        onChange={(e) => setNewTask(e.target.value)}
+        style={{ padding: "8px", width: "100%", marginBottom: "10px" }}
+      />
+      <button onClick={addTask} style={{ padding: "8px", width: "100%" }}>
+        Add Task
+      </button>
+
+      <ul style={{ listStyleType: "none", padding: "0", marginTop: "20px" }}>
+        {tasks.map((task, index) => (
+          <li
+            key={index}
+            style={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "space-between",
+              padding: "8px 0",
+              borderBottom: "1px solid #ddd",
+            }}
+          >
+            <span
+              onClick={() => toggleTask(index)}
+              style={{
+                textDecoration: task.completed ? "line-through" : "none",
+                cursor: "pointer",
+                flexGrow: 1,
+              }}
+            >
+              {task.text}
+            </span>
+            <button onClick={() => deleteTask(index)} style={{ marginLeft: "10px" }}>
+              Delete
+            </button>
+          </li>
+        ))}
+      </ul>
     </div>
   );
 }
