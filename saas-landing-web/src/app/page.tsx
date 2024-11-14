@@ -72,7 +72,10 @@ export default function Home() {
       {/* WORK-MANAGEMENT */}
       <div className="w-full h-[1588px] top-[921px] left-[1px] p-[140px_220px_140px_220px] gap-[100px] opacity-0">
 
-       
+        <div className="w-full max-w-[1480px] min-h-[547px] gap-[60px] opacity-0">
+          
+        </div>
+
 
 
       </div>
