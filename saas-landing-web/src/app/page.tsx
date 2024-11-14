@@ -73,7 +73,15 @@ export default function Home() {
       <div className="w-full h-[1588px] top-[921px] left-[1px] p-[140px_220px_140px_220px] gap-[100px] opacity-0">
 
         <div className="w-full max-w-[1480px] min-h-[547px] gap-[60px] ">
-          <div className="w-full max-w-[672px] min-h-[411px] gap-[60px] opacity-0">
+          <div className="w-full max-w-[672px] min-h-[411px] gap-[60px]">
+            <div className="w-full max-w-[672px] min-h-[288px] gap-[24px]">
+
+            </div>
+            <button className="w-[201px] h-[63px] px-[40px] py-[20px] gap-[10px] rounded-tl-md opacity-0">
+
+            </button>
+
+
 
           </div>
 
