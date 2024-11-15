@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <div>
 
-      {/* NAVBAR  */}
+      {/* NAVBAR   */}
       <nav className="w-full h-[92px] left-[1px] px-[220px] py-[16px] gap-0 justify-between bg-[#043873] flex">
         {/* logo */}
         <div className="pt-3">
@@ -70,7 +70,7 @@ export default function Home() {
 
 
       {/* WORK-MANAGEMENT */}
-      <div className="w-full h-[1588px] top-[921px] left-[1px] p-[140px_220px_140px_220px] gap-[100px] flex ">
+      <div className="w-full h-[1588px] top-[921px] left-[1px] p-[140px_220px_140px_220px] gap-[100px] flex flex-col ">
 
         {/* content */}
         <div className="w-full max-w-[1480px] min-h-[547px] gap-[60px] flex ">
@@ -91,9 +91,6 @@ export default function Home() {
                 />
               </div>
             </button>
-
-
-
           </div>
 
 
@@ -103,7 +100,53 @@ export default function Home() {
 
         </div>
         {/* content */}
-        
+        <div className="w-full h-[661px] border-4 border-red-400 flex  justify-center">
+
+          <Image
+            src="/work.png" // Replace with your image path
+            alt="Description"
+            width={710}
+            height={661}
+            className="gap-0"
+          // style={{ backgroundColor: '#A7CEFC' }}
+          />
+
+          <div className="w-[670px] h-full gap-[60px] border-4 border-red-400 flex flex-col justify-center items-center ">
+            <div className="w-full h-[171px] gap-[24px]  flex flex-col justify-center items-center">
+              <h1 className="w-[670px] h-[87px] gap-0 font-inter text-[72px] font-bold leading-[87.14px] tracking-[-0.02em] text-left underline decoration-none ">
+                Work together
+              </h1>
+              <p className="w-[670px] h-[60px] gap-0 font-inter text-[18px] font-normal leading-[30px] tracking-[-0.02em] text-left underline decoration-none">
+                With whitepace, share your notes with your colleagues and collaborate on them.
+                You can also publish a note to the internet and share the URL with others.
+
+              </p>
+            </div>
+            <button className="w-[186px] h-[63px] p-[20px_40px_20px_40px] gap-[10px] rounded-[6px] bg-[#4F9CF9] flex">
+              <p className="w-full h-full font-[Inter] text-[18px] text-white font-medium leading-[23px] tracking-[-0.02em] text-left decoration-skip-none justify-center items-center flex">
+                Try it now
+              </p>
+              <div className="flex items-center">
+                <Image
+                  src="/arrow.svg"
+                  alt="Arrow"
+                  width={16}
+                  height={16}
+                  className="ml-2"
+                />
+              </div>
+            </button>
+
+
+
+          </div>
+
+
+
+
+        </div>
+
+
 
 
 
