@@ -140,6 +140,7 @@ export default function Home() {
 
 
 
+
         </div>
 
 
@@ -149,6 +150,19 @@ export default function Home() {
 
 
       </div>
+
+      {/* use as extension  */}
+      <div className="w-[1921px] h-[759px] top-[2509px] left-[1px] p-[140px_220px_140px_220px] gap-[98px] bg-[#043873]">
+        <div className="w-[697px] h-[294px] gap-[60px]">
+          <div className="w-[697px] h-[171px] gap-[24px]">
+            
+          </div>
+
+        </div>
+
+
+      </div>
+
 
 
 
