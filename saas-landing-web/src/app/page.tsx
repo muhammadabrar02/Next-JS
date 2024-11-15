@@ -3,8 +3,9 @@ import Image from "next/image";
 export default function Home() {
   return (
     <div>
-
-      {/* NAVBAR   */}
+      {/* 
+      -----------------------------Navbar-----------------------------------------
+      --------------------------------------------------------------------------- */}
       <nav className="w-full h-[92px] left-[1px] px-[220px] py-[16px] gap-0 justify-between bg-[#043873] flex">
         {/* logo */}
         <div className="pt-3">
@@ -37,7 +38,8 @@ export default function Home() {
       </nav>
 
 
-      {/* HERO-SECTION */}
+      {/* -------------------------------------HERO-SECTION--------------------------------
+      --------------------------------------------------------------------------------- */}
       <div className="w-full h-[829px] top-[92px] left-[1px] px-[220px] py-[140px] gap-0 bg-[#043873] flex">
         {/* Heading */}
         <div className="w-[656px] h-[361px] gap-[60px]">
@@ -68,8 +70,9 @@ export default function Home() {
         </div>
       </div>
 
-
-      {/* WORK-MANAGEMENT */}
+      {/* 
+      --------------------------------------------WORK MANAGEMENT---------------------------
+      -------------------------------------------------------------------------------------- */}
       <div className="w-full h-[1588px] top-[921px] left-[1px] p-[140px_220px_140px_220px] gap-[100px] flex flex-col ">
 
         {/* content */}
@@ -151,7 +154,8 @@ export default function Home() {
 
       </div>
 
-      {/* use as extension  */}
+      {/* -------------------------------------------------USE AS EXTENSION SECTION--------------------------------------------
+      ---------------------------------------------------------------------------------------------------------------------- */}
       <div className="w-full h-[750px] top-[2509px] left-[1px] p-[140px_220px_140px_220px] gap-[98px] bg-[#043873] overflow-x-hidden flex justify-center">
         <div className="w-[697px] h-[294px] gap-[60px] flex  items-center justify-center">
           <div className="w-[620px] h-[171px] gap-[24px] flex-col ">
@@ -186,7 +190,8 @@ export default function Home() {
       </div>
 
 
-      {/* Customize to your needs  */}
+      {/* ---------------------------------------------------CUSTOMIZE TO YOUR NEEDS---------------------------------------------
+      ------------------------------------------------------------------------------------------------------------------------ */}
       <div className="w-full h-[812.09px] top-[3268px] left-[1px] p-[140px_220px_140px_220px] gap-[98px] flex overflow-x-hidden">
         <div className="w-full h-[532.09px] gap-[4px] rounded bg-[#C4DEFD]">
 
@@ -208,8 +213,9 @@ export default function Home() {
 
       </div>
 
-
-      {/* Your work  */}
+      {/* 
+      -----------------------------------------------YOUR WORK---------------------------------------------------------------
+      ----------------------------------------------------------------------------------------------------------------------- */}
       <div className="w-full h-auto top-[4080px] left-[1px] p-[140px_220px_140px_220px] gap-0 bg-[#043873] overflow-hidden">
         <div className="w-full max-w-[1481px] h-auto gap-[60px]">
           <div className="w-full h-auto gap-[24px]">
@@ -223,8 +229,9 @@ export default function Home() {
         </div>
       </div>
 
-
-      {/* Our Sponsors  */}
+      {/* 
+      ------------------------------------------------OUR SPONSORS-------------------------------------------------
+      ------------------------------------------------------------------------------------------------------------- */}
       <div className="w-full max-w-screen-xl h-auto top-[4654px] p-[140px_220px_140px_220px] gap-[100px] mx-auto overflow-x-hidden">
         <h1 className="w-full h-[87px] gap-0 font-inter text-[72px] text-black font-bold leading-[87.14px] tracking-[-0.02em] text-center decoration-skip-ink-none">
           Our sponsors
@@ -261,8 +268,9 @@ export default function Home() {
           />
         </div>
       </div>
-
-      {/* Footer  */}
+      {/* 
+      -------------------------------------------------FOOTER-------------------------------------------------
+      -------------------------------------------------------------------------------------------------------- */}
       <footer className="w-full h-[461px] top-[5195px] left-[1px] p-[140px_220px_32px_220px] gap-[200px] bg-[#043873] overflow-hidden">
         <div className="w-full h-[289px] gap-[100px]">
           <div className="w-full h-[169px] gap-[100px] flex">
