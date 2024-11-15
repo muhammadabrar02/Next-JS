@@ -72,6 +72,7 @@ export default function Home() {
       {/* WORK-MANAGEMENT */}
       <div className="w-full h-[1588px] top-[921px] left-[1px] p-[140px_220px_140px_220px] gap-[100px] flex ">
 
+        {/* content */}
         <div className="w-full max-w-[1480px] min-h-[547px] gap-[60px] flex ">
           <div className="w-full max-w-[672px] min-h-[411px] gap-[60px]">
             <div className="w-full max-w-[672px] min-h-[288px] gap-[24px]">
@@ -99,6 +100,18 @@ export default function Home() {
           <div className="w-[824px] h-[449px] gap-[4px] bg-[#C4DEFD]">
 
           </div>
+
+        </div>
+        {/* content */}
+        <div className="w-[1480px] h-[661px] gap-[100px] ">
+          <Image
+            src="/Work Together Image.svg"
+            alt="Description"
+            width={710} // Specifies the width in pixels
+            height={661} // Specifies the height in pixels
+
+          />
+
 
         </div>
 
