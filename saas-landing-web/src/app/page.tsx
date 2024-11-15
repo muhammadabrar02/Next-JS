@@ -70,15 +70,25 @@ export default function Home() {
 
 
       {/* WORK-MANAGEMENT */}
-      <div className="w-full h-[1588px] top-[921px] left-[1px] p-[140px_220px_140px_220px] gap-[100px] opacity-0">
+      <div className="w-full h-[1588px] top-[921px] left-[1px] p-[140px_220px_140px_220px] gap-[100px] flex ">
 
-        <div className="w-full max-w-[1480px] min-h-[547px] gap-[60px] ">
+        <div className="w-full max-w-[1480px] min-h-[547px] gap-[60px] flex ">
           <div className="w-full max-w-[672px] min-h-[411px] gap-[60px]">
             <div className="w-full max-w-[672px] min-h-[288px] gap-[24px]">
-
+              <h1 className="w-[672px] h-[174px] gap-0 font-inter text-[72px] font-bold leading-[87.14px] tracking-[-0.02em] text-left underline-offset-auto decoration-slice">Project Management</h1>
+              <h2 className="w-[672px] h-[90px] gap-0 font-inter text-[18px] font-normal leading-[30px] tracking-[-0.02em] text-left underline-offset-auto decoration-slice">Images, videos, PDFs and audio files are supported. Create math expressions and <br /> diagrams directly from the app. Take photos with the mobile app and save them <br /> to a note.</h2>
             </div>
-            <button className="w-[201px] h-[63px] px-[40px] py-[20px] gap-[10px] rounded-tl-md opacity-0">
-
+            <button className="w-[219px] h-[63px] p-[20px_0px_0px_0px] justify-center gap-[10px] rounded-[8px] bg-[#4F9CF9] flex">
+              <p className="w-[159px] h-[23px] font-[Inter] text-[18px] text-white align-center font-medium leading-[23px] tracking-[-0.02em] text-left  decoration-skip-none">Try Whitepace free</p>
+              <div className="flex items-center align-center">
+                <Image
+                  src="/arrow.svg"
+                  alt="Arrow"
+                  width={16}
+                  height={16}
+                  className="ml-2"
+                />
+              </div>
             </button>
 
 
@@ -86,7 +96,13 @@ export default function Home() {
           </div>
 
 
+          <div className="w-[824px] h-[449px] gap-[4px] bg-[#C4DEFD]">
+
+          </div>
+
         </div>
+
+
 
 
 
