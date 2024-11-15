@@ -100,7 +100,7 @@ export default function Home() {
 
         </div>
         {/* content */}
-        <div className="w-full h-[661px] border-4 border-red-400 flex  justify-center">
+        <div className="w-full h-[661px]  flex  justify-center">
 
           <Image
             src="/work.png" // Replace with your image path
@@ -111,15 +111,13 @@ export default function Home() {
           // style={{ backgroundColor: '#A7CEFC' }}
           />
 
-          <div className="w-[670px] h-full gap-[60px] border-4 border-red-400 flex flex-col justify-center items-center ">
-            <div className="w-full h-[171px] gap-[24px]  flex flex-col justify-center items-center">
-              <h1 className="w-[670px] h-[87px] gap-0 font-inter text-[72px] font-bold leading-[87.14px] tracking-[-0.02em] text-left underline decoration-none ">
+          <div className="w-[670px] h-full gap-[60px]  flex flex-col p-4 justify-center items-start">
+            <div className="w-full h-[171px] gap-[24px] flex flex-col  justify-center items-center">
+              <h1 className="w-[670px] h-[87px] gap-0 font-inter text-[72px] font-bold leading-[87.14px] tracking-[-0.02em] text-left decoration-none">
                 Work together
               </h1>
-              <p className="w-[670px] h-[60px] gap-0 font-inter text-[18px] font-normal leading-[30px] tracking-[-0.02em] text-left underline decoration-none">
-                With whitepace, share your notes with your colleagues and collaborate on them.
-                You can also publish a note to the internet and share the URL with others.
-
+              <p className="w-[670px] h-[60px] gap-0 font-inter text-[18px] font-normal leading-[30px] tracking-[-0.02em] text-left  decoration-none">
+                With whitepace, share your notes with your colleagues and collaborate on them. You can also publish a note to the internet and share the URL with others.
               </p>
             </div>
             <button className="w-[186px] h-[63px] p-[20px_40px_20px_40px] gap-[10px] rounded-[6px] bg-[#4F9CF9] flex">
@@ -136,10 +134,8 @@ export default function Home() {
                 />
               </div>
             </button>
-
-
-
           </div>
+
 
 
 
