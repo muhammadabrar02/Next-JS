@@ -103,17 +103,7 @@ export default function Home() {
 
         </div>
         {/* content */}
-        <div className="w-[1480px] h-[661px] gap-[100px] ">
-          <Image
-            src="/Work Together Image.svg"
-            alt="Description"
-            width={710} // Specifies the width in pixels
-            height={661} // Specifies the height in pixels
-
-          />
-
-
-        </div>
+        
 
 
 
