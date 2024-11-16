@@ -13,7 +13,7 @@ export default function Home() {
             src="/logo.png"
             alt="Logo"
             width={191} // Fixed width for desktop
-            height={34} // Fixed height
+            height={34} // Fixed height//
             className="block"
           />
         </div>
