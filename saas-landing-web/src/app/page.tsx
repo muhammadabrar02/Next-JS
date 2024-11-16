@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <div>
       {/* 
-      -----------------------------Navbar-----------------------------------------
+      -----------------------------Navbar------------------------------------------
       --------------------------------------------------------------------------- */}
       <nav className="w-full h-[92px] px-4 lg:px-[220px] py-[16px] flex justify-between items-center bg-[#043873]">
         {/* Logo */}
@@ -13,7 +13,7 @@ export default function Home() {
             src="/logo.png"
             alt="Logo"
             width={191} // Fixed width for desktop
-            height={34} // Fixed height//
+            height={34} // Fixed height
             className="block"
           />
         </div>
