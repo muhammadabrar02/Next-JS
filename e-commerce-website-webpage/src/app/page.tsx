@@ -5,6 +5,8 @@ export default function Home() {
     <div>
       {/* NAVBAR */}
 
+      {/* second section  */}
+
     </div>
 
   );
