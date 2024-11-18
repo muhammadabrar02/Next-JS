@@ -10,6 +10,7 @@ export default {
     extend: {
       fontFamily: {
         'integral': ['Integral CF', 'Arial', 'Helvetica', 'sans-serif'],
+        satoshi: ['Satoshi', 'sans-serif'],
       },
       colors: {
         background: "var(--background)",

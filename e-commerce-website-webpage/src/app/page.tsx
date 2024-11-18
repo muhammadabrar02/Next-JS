@@ -178,14 +178,128 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Hero Section Mobile  */}
-      <div className="sm:w-full h-[853px] gap-0 bg-[#F2F0F1] border-2 border-red-400 md:hidden">
-        <p className="w-[315px] h-[93px] absolute top-[138px] left-[16px] gap-0 text-[36px] font-extrabold leading-[34px] text-left decoration-skip-ink">
+      {/* Hero Section Mobile */}
+      <div className="sm:w-full h-[890px] flex flex-col bg-[#F2F0F1] border-2 border-red-400 md:hidden p-4 gap-4  ">
+        {/* Heading */}
+        <p className="text-[36px] font-extrabold leading-[34px] text-left">
           FIND CLOTHES THAT MATCHES YOUR STYLE
         </p>
-       
+
+        {/* Description */}
+        <p className="font-satoshi text-sm font-normal leading-5 text-left">
+          Browse through our diverse range of meticulously crafted garments, designed to bring out your individuality and cater to your sense of style.
+        </p>
+
+        {/* Button */}
+        <button
+          className="w-full h-[52px] font-bold py-[16px] gap-[12px] rounded-[62px] bg-black text-white flex items-center justify-center"
+        >
+          Shop Now
+        </button>
+
+        {/* Figures container 1 */}
+        <div className="w-full h-[280px] flex justify-center items-center relative">
+          <div className="w-[310px] h-[52px] absolute top-[30px] flex justify-between">
+            {/* First Figure */}
+            <div className="w-[130px]  h-auto max-h-[48px] gap-0 flex flex-col">
+              <p className="w-[64px] h-[32px] gap-0 font-satoshi text-[24px] font-bold leading-[32.4px] text-left text-underline-position-from-font text-decoration-skip-ink-none">
+                200+
+              </p>
+              <p className="w-[140px] h-[22px] gap-0 font-satoshi text-[12px] font-normal leading-[22px] text-left text-underline-position-from-font text-decoration-skip-ink-none">
+                International Brands
+              </p>
+            </div>
+
+            {/* Separator Line */}
+            <div className="w-[55px] mt-6 h-0 gap-0 border-t border-black/10 rotate-[-90deg]"></div>
+
+            {/* Second Figure */}
+            <div className="w-[130px]  h-auto max-h-[48px] gap-0 flex flex-col">
+              <p className="w-[64px] h-[32px] gap-0 font-satoshi text-[24px] font-bold leading-[32.4px] text-left text-underline-position-from-font text-decoration-skip-ink-none">
+                2,000+
+              </p>
+              <p className="w-[140px] h-[22px] gap-0 font-satoshi text-[12px] font-normal leading-[22px] text-left text-underline-position-from-font text-decoration-skip-ink-none">
+                High-Quality Products
+              </p>
+            </div>
+          </div>
+          {/* 3rd container  */}
+          <div className="w-[130px] mt-[90px] ml-0 h-auto max-h-[48px] gap-0 flex justify-center items-center flex-col">
+            <p className="w-[64px] h-[32px] gap-0 font-satoshi text-[24px] font-bold leading-[32.4px] text-center text-underline-position-from-font text-decoration-skip-ink-none">
+              30,000+
+            </p>
+            <p className="w-[140px] h-[22px] gap-0 font-satoshi text-[12px] font-normal leading-[22px] text-center text-underline-position-from-font text-decoration-skip-ink-none">
+              Happy Customers
+            </p>
+          </div>
+
+
+        </div>
+
+        {/* image container */}
+        <div className="w-full max-w-[390px] h-auto max-h-[448px] border-2 border-red-400 mx-auto flex justify-center items-center relative">
+
+          {/* Vector 2 */}
+          <Image
+            src="/Vector2.svg"
+            alt="Search Icon"
+            width={44}
+            height={44}
+            style={{
+              // position: 'absolute',
+              top: '640px',
+              left: '27px',
+              width: '44px',
+              height: '44px',
+              gap: '0px',
+              opacity: '1',
+              objectFit: 'cover', // Ensures the image fits the area correctly
+            }}
+          />
+
+          <Image
+            src="/herosecimg.png"
+            alt="Search Icon"
+            width={360}
+            height={448}
+            style={{
+              objectFit: 'cover', // Ensure the image covers the container area without stretching
+              gap: '0px',
+              padding: '1.86px 1.87px 1.87px 1.86px',
+            }}
+          />
+
+          {/* Vector 1 */}
+          <Image
+            src="/Vector.svg"
+            alt="Vector Icon"
+            width={76}
+            height={76}
+            style={{
+              objectFit: 'cover', // Ensure the image covers the container area without stretching
+              gap: '0px',
+              padding: '1.86px 1.87px 1.87px 1.86px',
+            }}
+          />
+        </div>
+
+
+
+
+
+
+
+
+
 
       </div>
+
+     
+
+
+
+
+
 
 
 
