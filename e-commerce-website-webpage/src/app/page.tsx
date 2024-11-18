@@ -88,7 +88,7 @@ export default function Home() {
             SHOP.CO
           </h1>
           <div className="w-[321px] h-[22px] gap-[24px]">
-            <div className="w-[57px] h-[22px] gap-[4px] flex">
+            <div className="w-[57px] h-[22px] gap-[24px] flex">
               <p className="w-[37px] mt-2 h-[22px] gap-0 font-[Satoshi] text-[16px] font-normal leading-[21.6px] text-left decoration-skip-[ink] flex">
                 Shop
                 <Image
@@ -103,9 +103,10 @@ export default function Home() {
                 />
 
               </p>
-              <p className="font-[Satoshi] text-[16px] font-normal leading-[21.6px] text-left decoration-skip-[ink]">
-                On sale
+              <p className="font-[Satoshi] mt-2 h-[22px] border-2 border-red-500 text-[16px] font-normal leading-[21.6px] text-left decoration-skip-[ink]">
+                on Sale
               </p>
+
 
 
 
