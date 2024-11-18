@@ -83,10 +83,41 @@ export default function Home() {
 
       {/* Desktop Navbar (Visible only on medium screens and above) */}
       <div className="hidden md:flex h-[80px] justify-between items-center p-4 bg-blue-200 border-2 border-red-400">
-  <div className="w-[1240px] h-[48px] mx-auto relative top-[62px] left-[100px] gap-[40px] border-2 border-red-500">
-    
-  </div>
-</div>
+        <div className="w-[1240px] h-[48px] mx-auto relative  left-[100px] gap-[40px] border-2 border-red-500 flex">
+          <h1 className="w-[160px] h-[22px] gap-0 font-[Integral CF] text-[32px] font-extrabold leading-[38.4px] text-left decoration-skip-[ink]">
+            SHOP.CO
+          </h1>
+          <div className="w-[321px] h-[22px] gap-[24px]">
+            <div className="w-[57px] h-[22px] gap-[4px] flex">
+              <p className="w-[37px] mt-2 h-[22px] gap-0 font-[Satoshi] text-[16px] font-normal leading-[21.6px] text-left decoration-skip-[ink] flex">
+                Shop
+                <Image
+                  src="/dropdown.png"
+                  alt="User Icon"
+                  width={16}
+                  height={16}
+                  style={{
+                    padding: '1.86px 1.87px 1.87px 1.86px',
+                    gap: '0px',
+                  }}
+                />
+
+              </p>
+              <p className="font-[Satoshi] text-[16px] font-normal leading-[21.6px] text-left decoration-skip-[ink]">
+                On sale
+              </p>
+
+
+
+            </div>
+
+
+          </div>
+
+
+
+        </div>
+      </div>
 
 
 
