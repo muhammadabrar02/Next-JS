@@ -3,18 +3,22 @@ import Image from "next/image";
 export default function Home() {
   return (
     <div>
+
       {/* TopBar  */}
-      <div className="sm:w-full h-[34px] p-2 bg-black flex items-center justify-center overflow-x-hidden">
-        <p className="w-[301px] h-[16px] gap-0 text-white justify-center flex font-satoshi text-[12px] font-normal leading-[16.2px] text-left md:">
+      <div className="sm:w-full h-[34px] p-2 bg-black flex items-center justify-center overflow-x-hidden md:w-full">
+        <p className="w-full h-[16px] gap-0 text-white justify-center flex font-satoshi text-[12px] font-normal leading-[16.2px] text-left md:text-[16px]">
           Sign up and get 20% off to your first order.
-          <span className="font-satoshi text-[12px] font-medium leading-[16.2px] text-left underline decoration-solid custom-span text-white">
+          <span className="font-satoshi text-[12px] font-medium leading-[16.2px] text-left underline decoration-solid custom-span text-white md:text-[16px]">
             Sign up now
           </span>
         </p>
       </div>
 
+
+
+
       {/* Navbar */}
-      <div className="sm:w-full h-[70px] border-2 border-red-600 flex justify-center items-center relative md:hidden">
+      <div className="sm:w-full h-[70px] flex justify-center items-center relative md:hidden">
         {/* Hamburger Icon */}
         <div className="absolute left-4 flex items-center">
           <Image
@@ -82,8 +86,8 @@ export default function Home() {
       </div>
 
       {/* Desktop Navbar (Visible only on medium screens and above) */}
-      <div className="hidden md:flex h-[80px] justify-between items-center p-4 bg-blue-200 border-2 border-red-400">
-        <div className="w-[1240px] h-[48px] mx-auto relative  left-[100px] gap-[40px] border-2 border-red-500 flex ">
+      <div className="hidden md:flex w-full h-[80px] justify-between items-center p-4">
+        <div className="w-[1240px] h-[48px] mx-2 relative  left-[100px] gap-[55px] flex ">
           <h1 className="w-[160px] h-[22px] gap-0 font-[Integral CF] text-[32px] font-extrabold leading-[38.4px] text-left decoration-skip-[ink]">
             SHOP.CO
           </h1>
@@ -116,13 +120,67 @@ export default function Home() {
               </p>
             </div>
 
+          </div>
+
+          {/* Search Bar  */}
+          <div className="w-[577px] h-[48px] p-[12px_16px] gap-[12px] rounded-[62px_62px_62px_62px] bg-[#F0F0F0] flex">
+            {/* Search Icon */}
+            <Image
+              src="/search.png"
+              alt="Search Icon"
+              width={24}
+              height={24}
+              style={{
+                padding: '1.86px 1.87px 1.87px 1.86px',
+                gap: '0px',
+              }}
+            />
+            <p className="font-[Satoshi] text-[16px] font-normal leading-[21.6px] text-left decoration-skip-[ink] bg[#000000] text-opacity-40">
+              Search for products....
+            </p>
+
+          </div>
+
+          {/* Right icons box  */}
+          <div className="w-[62px] h-[24px] gap-[14px] flex justify-center my-2">
+            {/* Cart Icon */}
+            <Image
+              src="/cart.png"
+              alt="Cart Icon"
+              width={24}
+              height={24}
+              style={{
+                padding: '1.86px 1.87px 1.87px 1.86px',
+                gap: '0px',
+              }}
+            />
+            {/* User Icon */}
+            <Image
+              src="/user.png"
+              alt="User Icon"
+              width={24}
+              height={24}
+              style={{
+                padding: '1.86px 1.87px 1.87px 1.86px',
+                gap: '0px',
+              }}
+            />
 
 
           </div>
 
 
 
+
+
+
         </div>
+      </div>
+
+      {/* Hero Section Mobile  */}
+      <div className="sm:w-full h-[853px] gap-0 bg-[#F2F0F1] border-2 border-red-400 md:hidden">
+
+
       </div>
 
 
