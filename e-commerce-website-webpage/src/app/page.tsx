@@ -14,7 +14,7 @@ export default function Home() {
       </div>
 
       {/* Navbar */}
-      <div className="sm:w-full h-[70px] border-2 border-red-600 flex justify-center items-center relative">
+      <div className="sm:w-full h-[70px] border-2 border-red-600 flex justify-center items-center relative md:hidden">
         {/* Hamburger Icon */}
         <div className="absolute left-4 flex items-center">
           <Image
@@ -78,7 +78,16 @@ export default function Home() {
             }}
           />
         </div>
+
       </div>
+
+      {/* Desktop Navbar (Visible only on medium screens and above) */}
+      <div className="hidden md:flex h-[80px] justify-between items-center p-4 bg-blue-200 border-2 border-red-400">
+  <div className="w-[1240px] h-[48px] mx-auto relative top-[62px] left-[100px] gap-[40px] border-2 border-red-500">
+    
+  </div>
+</div>
+
 
 
 
