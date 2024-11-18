@@ -1,5 +1,6 @@
 import Image from "next/image";
 
+
 export default function Home() {
   return (
     <div>
@@ -179,9 +180,13 @@ export default function Home() {
 
       {/* Hero Section Mobile  */}
       <div className="sm:w-full h-[853px] gap-0 bg-[#F2F0F1] border-2 border-red-400 md:hidden">
-
+        <p className="w-[315px] h-[93px] absolute top-[138px] left-[16px] gap-0 text-[36px] font-extrabold leading-[34px] text-left decoration-skip-ink">
+          FIND CLOTHES THAT MATCHES YOUR STYLE
+        </p>
+       
 
       </div>
+
 
 
 
