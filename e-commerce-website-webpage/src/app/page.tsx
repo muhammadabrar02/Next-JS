@@ -384,79 +384,76 @@ export default function Home() {
 
       </div>
 
-      {/* Brands Container Mobile  */}
-      <div className="sm:w-full h-[146px] flex top-[951px] justify-between gap-[12px] border-2 p-4 border-red-500 bg-[#000000] md:hidden">
-        <Image
-          src="/versace.svg"
-          alt="Search Icon"
-          width={44}
-          height={44}
-          style={{
-            top: '991.4px',
-            left: '16px',
-            width: '116.74px',
-            height: '23.25px',
-            gap: '0px',
-            objectFit: 'cover', // Ensures the image fits the area correctly
-          }}
-          className="sm:block md:hidden"
-        />
+     {/* Brands Container Mobile */}
+<div className="sm:w-full h-[146px] flex flex-wrap justify-between gap-[12px] border-2 p-4 border-red-500 bg-[#000000] md:hidden">
+  <Image
+    src="/versace.svg"
+    alt="Search Icon"
+    width={44}
+    height={44}
+    style={{
+      width: '116.74px',
+      height: '23.25px',
+      objectFit: 'cover', // Ensures the image fits the area correctly
+    }}
+    className="sm:w-full sm:h-auto sm:mb-2"
+  />
 
-        <Image
-          src="/zara.svg"
-          alt="Search Icon"
-          width={44}
-          height={44}
-          style={{
-            top: '0.01px',
-            left: '16px',
-            width: '63.81px',
-            height: '26.63px',
-            gap: '0px',
-            objectFit: 'cover', // Ensures the image fits the area correctly
-          }}
-          className="sm:block md:hidden"
-        />
+  <Image
+    src="/zara.svg"
+    alt="Search Icon"
+    width={44}
+    height={44}
+    style={{
+      width: '63.81px',
+      height: '26.63px',
+      objectFit: 'cover', // Ensures the image fits the area correctly
+    }}
+    className="sm:w-full sm:h-auto sm:mb-2"
+  />
 
-        <Image
-          src="/gucci.svg"
-          alt="Search Icon"
-          width={44}
-          height={44}
-          style={{
-            top: '990.7px',
-            left: '264.55px',
-            width: '109.39px',
-            height: '25.24px',
-            padding: '1.3px 0px 1.3px 0px', // Adds padding to the image
-            gap: '0px', // Sets the gap to 0px
-            objectFit: 'cover', // Ensures the image fits the area correctly
-          }}
-          className="sm:block md:hidden"
-        />
-          <Image
-            src="/prada.svg"
-            alt="Search Icon"
-            width={44}
-            height={44}
-            style={{
-              top: '1037px',
-              left: '48px',
-              width: '127px',
-              height: '21px',
-              padding: '0.26px 0px 0.26px 0px', // Adds padding to the image
-              gap: '0px', // Sets the gap to 0px
-              objectFit: 'cover', // Ensures the image fits the area correctly
-            }}
-            className="sm:block md:hidden"
-          />
-        
+  <Image
+    src="/gucci.svg"
+    alt="Search Icon"
+    width={44}
+    height={44}
+    style={{
+      width: '109.39px',
+      height: '25.24px',
+      padding: '1.3px 0px 1.3px 0px', // Adds padding to the image
+      objectFit: 'cover', // Ensures the image fits the area correctly
+    }}
+    className="sm:w-full sm:h-auto sm:mb-2"
+  />
 
+  <Image
+    src="/prada.svg"
+    alt="Search Icon"
+    width={44}
+    height={44}
+    style={{
+      width: '127px',
+      height: '21px',
+      padding: '0.26px 0px 0.26px 0px', // Adds padding to the image
+      objectFit: 'cover', // Ensures the image fits the area correctly
+    }}
+    className="sm:w-full sm:h-auto sm:mb-2"
+  />
 
+  <Image
+    src="/calvinklien.svg"
+    alt="Search Icon"
+    width={44}
+    height={44}
+    style={{
+      width: '134.84px',
+      height: '21.75px',
+      objectFit: 'cover', // Ensures the image fits the area correctly
+    }}
+    className="sm:w-full sm:h-auto sm:mb-2"
+  />
+</div>
 
-
-
-      </div>
 
 
 
