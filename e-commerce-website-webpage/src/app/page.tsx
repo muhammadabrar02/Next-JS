@@ -385,7 +385,7 @@ export default function Home() {
       </div>
 
       {/* Brands Container Mobile  */}
-      <div className="sm:w-full h-[146px] top-[951px] gap-0 border-2 p-4 border-red-500 bg-[#000000] md:hidden">
+      <div className="sm:w-full h-[146px] flex top-[951px] justify-between gap-[12px] border-2 p-4 border-red-500 bg-[#000000] md:hidden">
         <Image
           src="/versace.svg"
           alt="Search Icon"
@@ -403,7 +403,7 @@ export default function Home() {
         />
 
         <Image
-          src="/Vector2.svg"
+          src="/zara.svg"
           alt="Search Icon"
           width={44}
           height={44}
@@ -417,6 +417,42 @@ export default function Home() {
           }}
           className="sm:block md:hidden"
         />
+
+        <Image
+          src="/gucci.svg"
+          alt="Search Icon"
+          width={44}
+          height={44}
+          style={{
+            top: '990.7px',
+            left: '264.55px',
+            width: '109.39px',
+            height: '25.24px',
+            padding: '1.3px 0px 1.3px 0px', // Adds padding to the image
+            gap: '0px', // Sets the gap to 0px
+            objectFit: 'cover', // Ensures the image fits the area correctly
+          }}
+          className="sm:block md:hidden"
+        />
+          <Image
+            src="/prada.svg"
+            alt="Search Icon"
+            width={44}
+            height={44}
+            style={{
+              top: '1037px',
+              left: '48px',
+              width: '127px',
+              height: '21px',
+              padding: '0.26px 0px 0.26px 0px', // Adds padding to the image
+              gap: '0px', // Sets the gap to 0px
+              objectFit: 'cover', // Ensures the image fits the area correctly
+            }}
+            className="sm:block md:hidden"
+          />
+        
+
+
 
 
 
