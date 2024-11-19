@@ -8,7 +8,7 @@ export default function Home() {
       <nav className="flex w-1322 h-91 border-pink-500">
         <div className=" h-58 mt-17 ml-136 w-187 p-custom gap-2.5  ">
           <h3 className="text-white font-montserrat text-24 font-bold leading-32 tracking-0.1 text-left">
-            BrandName
+            BrandName 
           </h3>
         </div>
 
