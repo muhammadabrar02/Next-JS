@@ -295,8 +295,15 @@ export default function Home() {
         <p className="text-[16px] font-[400] leading-[22px] text-left 
   md:w-[545px] md:h-[33px] md:top-[330px] md:left-[100px] md:gap-0 md:absolute 
   font-[Satoshi] text-[#00000099] text-underline-position-[from-font] decoration-skip-ink-none">
-  Browse through our diverse range of meticulously crafted garments, designed to bring out your individuality and cater to your sense of style.
-</p>
+          Browse through our diverse range of meticulously crafted garments, designed to bring out your individuality and cater to your sense of style.
+        </p>
+        <button className="w-[210px] h-[52px] absolute top-[395px] left-[100px] 
+  p-[16px_54px_16px_54px] gap-[12px] rounded-[62px_62px_62px_62px] 
+  bg-black text-white flex justify-center items-center">
+          Shop Now
+        </button>
+
+
 
 
 
