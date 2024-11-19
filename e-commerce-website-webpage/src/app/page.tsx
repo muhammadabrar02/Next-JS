@@ -285,9 +285,21 @@ export default function Home() {
 
       </div>
 
-      
+      {/* Hero Section Desktop  */}
+      <div className="hidden md:block md:w-full h-[663px] top-[134px] gap-0 border-2 border-red-400 absolute">
+        <p className="text-[64px] font-[Integral CF] font-[800] leading-[64px] text-left 
+  md:w-[577px] md:h-[173px] md:top-[120px] md:left-[100px] md:gap-0 md:absolute 
+  text-underline-position-[from-font] decoration-skip-ink-none">
+          FIND CLOTHES THAT MATCHES YOUR STYLE
+        </p>
 
-     
+
+      </div>
+
+
+
+
+
 
 
 
