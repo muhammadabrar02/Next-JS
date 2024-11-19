@@ -290,7 +290,7 @@ export default function Home() {
         <p className="text-[64px] font-[Integral CF] font-[800] leading-[64px] text-left md:w-[577px] md:h-[173px] md:top-[90px] md:left-[100px] md:gap-0 md:absolute text-underline-position-[from-font] decoration-skip-ink-none">
           FIND CLOTHES THAT MATCHES YOUR STYLE
         </p>
-        <p className="text-[16px] font-[400] leading-[22px] text-left md:w-[545px] md:h-[33px] md:top-[330px] md:left-[100px] md:gap-0 md:absolute font-[Satoshi] text-[#00000099] text-underline-position-[from-font] decoration-skip-ink-none">
+        <p className="text-[16px] font-[400] leading-[22px] text-left md:w-[545px] md:h-[33px] md:top-[310px] md:left-[100px] md:gap-0 md:absolute font-[Satoshi] text-[#00000099] text-underline-position-[from-font] decoration-skip-ink-none">
           Browse through our diverse range of meticulously crafted garments, designed to bring out your individuality and cater to your sense of style.
         </p>
         <button className="w-[210px] h-[52px] absolute top-[395px] left-[100px] p-[16px_54px_16px_54px] gap-[12px] rounded-[62px_62px_62px_62px] bg-black text-white flex justify-center items-center">
@@ -382,15 +382,46 @@ export default function Home() {
           </div>
         </div>
 
+      </div>
 
+      {/* Brands Container Mobile  */}
+      <div className="sm:w-full h-[146px] top-[951px] gap-0 border-2 p-4 border-red-500 bg-[#000000] md:hidden">
+        <Image
+          src="/versace.svg"
+          alt="Search Icon"
+          width={44}
+          height={44}
+          style={{
+            top: '991.4px',
+            left: '16px',
+            width: '116.74px',
+            height: '23.25px',
+            gap: '0px',
+            objectFit: 'cover', // Ensures the image fits the area correctly
+          }}
+          className="sm:block md:hidden"
+        />
 
-
-
-
+        <Image
+          src="/Vector2.svg"
+          alt="Search Icon"
+          width={44}
+          height={44}
+          style={{
+            top: '0.01px',
+            left: '16px',
+            width: '63.81px',
+            height: '26.63px',
+            gap: '0px',
+            objectFit: 'cover', // Ensures the image fits the area correctly
+          }}
+          className="sm:block md:hidden"
+        />
 
 
 
       </div>
+
 
 
 
