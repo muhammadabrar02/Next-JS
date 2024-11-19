@@ -286,7 +286,7 @@ export default function Home() {
       </div>
 
       {/* Hero Section Desktop  */}
-      <div className="hidden md:block md:w-full h-[763px] top-[100px] gap-0 border-2 border-red-400 absolute">
+      <div className="hidden md:block md:w-full h-[655px] top-[120px] gap-0 border-2 border-red-400 absolute bg-[#F2F0F1]">
         <p className="text-[64px] font-[Integral CF] font-[800] leading-[64px] text-left md:w-[577px] md:h-[173px] md:top-[90px] md:left-[100px] md:gap-0 md:absolute text-underline-position-[from-font] decoration-skip-ink-none">
           FIND CLOTHES THAT MATCHES YOUR STYLE
         </p>
@@ -337,50 +337,50 @@ export default function Home() {
 
         </div>
         {/* Image Outer Container */}
-<div className="border-2 border-red-500 h-[650px] w-[590px] absolute right-0">
-  {/* Image Container */}
-  <div className="w-[390px] h-[448px] border-2 border-red-400 mx-auto flex justify-center items-center relative">
+        <div className="border-2 border-red-500 h-[650px] w-[590px] absolute right-0">
+          {/* Image Container */}
+          <div className="w-[590px] h-[650px] border-2 border-red-400 mx-auto flex justify-center items-center relative">
 
-    {/* Vector 2 */}
-    <Image
-      src="/Vector2.svg"
-      alt="Search Icon"
-      width={44}
-      height={44}
-      style={{
-        top: '640px',
-        left: '27px',
-        width: '44px',
-        height: '44px',
-        opacity: '1',
-        objectFit: 'cover', // Ensures the image fits the area correctly
-      }}
-    />
+            {/* Vector 2 */}
+            <Image
+              src="/Vector2.svg"
+              alt="Search Icon"
+              width={44}
+              height={44}
+              style={{
+                top: '640px',
+                left: '27px',
+                width: '44px',
+                height: '44px',
+                opacity: '1',
+                objectFit: 'cover', // Ensures the image fits the area correctly
+              }}
+            />
 
-    <Image
-      src="/herosecimg.png"
-      alt="Hero Image"
-      width={360}
-      height={448}
-      style={{
-        objectFit: 'cover', // Ensures the image covers the container area without stretching
-        padding: '1.86px 1.87px 1.87px 1.86px',
-      }}
-    />
+            <Image
+              src="/herosecimg.png"
+              alt="Hero Image"
+              width={590}
+              height={650}
+              style={{
+                objectFit: 'cover', // Ensures the image covers the container area without stretching
+                padding: '1.86px 1.87px 1.87px 1.86px',
+              }}
+            />
 
-    {/* Vector 1 */}
-    <Image
-      src="/Vector.svg"
-      alt="Vector Icon"
-      width={76}
-      height={76}
-      style={{
-        objectFit: 'cover', // Ensures the image covers the container area without stretching
-        padding: '1.86px 1.87px 1.87px 1.86px',
-      }}
-    />
-  </div>
-</div>
+            {/* Vector 1 */}
+            <Image
+              src="/Vector.svg"
+              alt="Vector Icon"
+              width={76}
+              height={76}
+              style={{
+                objectFit: 'cover', // Ensures the image covers the container area without stretching
+                padding: '1.86px 1.87px 1.87px 1.86px',
+              }}
+            />
+          </div>
+        </div>
 
 
 
