@@ -292,6 +292,13 @@ export default function Home() {
   text-underline-position-[from-font] decoration-skip-ink-none">
           FIND CLOTHES THAT MATCHES YOUR STYLE
         </p>
+        <p className="text-[16px] font-[400] leading-[22px] text-left 
+  md:w-[545px] md:h-[33px] md:top-[330px] md:left-[100px] md:gap-0 md:absolute 
+  font-[Satoshi] text-[#00000099] text-underline-position-[from-font] decoration-skip-ink-none">
+  Browse through our diverse range of meticulously crafted garments, designed to bring out your individuality and cater to your sense of style.
+</p>
+
+
 
 
       </div>
