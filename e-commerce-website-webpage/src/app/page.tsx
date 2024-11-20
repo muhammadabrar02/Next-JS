@@ -384,75 +384,99 @@ export default function Home() {
 
       </div>
 
-     {/* Brands Container Mobile */}
-<div className="sm:w-full h-[146px] flex flex-wrap justify-between gap-[12px] border-2 p-4 border-red-500 bg-[#000000] md:hidden">
-  <Image
-    src="/versace.svg"
-    alt="Search Icon"
-    width={44}
-    height={44}
-    style={{
-      width: '116.74px',
-      height: '23.25px',
-      objectFit: 'cover', // Ensures the image fits the area correctly
-    }}
-    className="sm:w-full sm:h-auto sm:mb-2"
-  />
+      {/* Brands Container Mobile */}
+      <div className="sm:w-full h-[146px] flex flex-wrap justify-between gap-[12px] border-2 p-4 border-red-500 bg-[#000000] md:hidden">
+        <Image
+          src="/versace.svg"
+          alt="Search Icon"
+          width={44}
+          height={44}
+          style={{
+            width: '116.74px',
+            height: '23.25px',
+            objectFit: 'cover', // Ensures the image fits the area correctly
+          }}
+          className="sm:w-full sm:h-auto sm:mb-2"
+        />
 
-  <Image
-    src="/zara.svg"
-    alt="Search Icon"
-    width={44}
-    height={44}
-    style={{
-      width: '63.81px',
-      height: '26.63px',
-      objectFit: 'cover', // Ensures the image fits the area correctly
-    }}
-    className="sm:w-full sm:h-auto sm:mb-2"
-  />
+        <Image
+          src="/zara.svg"
+          alt="Search Icon"
+          width={44}
+          height={44}
+          style={{
+            width: '63.81px',
+            height: '26.63px',
+            objectFit: 'cover', // Ensures the image fits the area correctly
+          }}
+          className="sm:w-full sm:h-auto sm:mb-2"
+        />
 
-  <Image
-    src="/gucci.svg"
-    alt="Search Icon"
-    width={44}
-    height={44}
-    style={{
-      width: '109.39px',
-      height: '25.24px',
-      padding: '1.3px 0px 1.3px 0px', // Adds padding to the image
-      objectFit: 'cover', // Ensures the image fits the area correctly
-    }}
-    className="sm:w-full sm:h-auto sm:mb-2"
-  />
+        <Image
+          src="/gucci.svg"
+          alt="Search Icon"
+          width={44}
+          height={44}
+          style={{
+            width: '109.39px',
+            height: '25.24px',
+            padding: '1.3px 0px 1.3px 0px', // Adds padding to the image
+            objectFit: 'cover', // Ensures the image fits the area correctly
+          }}
+          className="sm:w-full sm:h-auto sm:mb-2"
+        />
 
-  <Image
-    src="/prada.svg"
-    alt="Search Icon"
-    width={44}
-    height={44}
-    style={{
-      width: '127px',
-      height: '21px',
-      padding: '0.26px 0px 0.26px 0px', // Adds padding to the image
-      objectFit: 'cover', // Ensures the image fits the area correctly
-    }}
-    className="sm:w-full sm:h-auto sm:mb-2"
-  />
+        <Image
+          src="/prada.svg"
+          alt="Search Icon"
+          width={44}
+          height={44}
+          style={{
+            width: '127px',
+            height: '21px',
+            padding: '0.26px 0px 0.26px 0px', // Adds padding to the image
+            objectFit: 'cover', // Ensures the image fits the area correctly
+          }}
+          className="sm:w-full sm:h-auto sm:mb-2"
+        />
 
-  <Image
-    src="/calvinklien.svg"
-    alt="Search Icon"
-    width={44}
-    height={44}
-    style={{
-      width: '134.84px',
-      height: '21.75px',
-      objectFit: 'cover', // Ensures the image fits the area correctly
-    }}
-    className="sm:w-full sm:h-auto sm:mb-2"
-  />
-</div>
+        <Image
+          src="/calvinklien.svg"
+          alt="Search Icon"
+          width={44}
+          height={44}
+          style={{
+            width: '134.84px',
+            height: '21.75px',
+            objectFit: 'cover', // Ensures the image fits the area correctly
+          }}
+          className="sm:w-full sm:h-auto sm:mb-2"
+        />
+      </div>
+
+      {/* Brands Container Desktop */}
+
+      <div className="hidden md:block w-full h-[122px] absolute top-[777px] gap-0 border-2 border-red-500 bg-black">
+        <Image
+          src="/versace.svg"
+          alt="Search Icon"
+          width={166.48} // Adjusted width
+          height={33.16} // Adjusted height
+          style={{
+            width: '166.48px', // Updated width
+            height: '33.16px', // Updated height
+            position: 'absolute', // Required to use top and left
+            top: '841px', // Vertical position
+            left: '100px', // Horizontal position
+            objectFit: 'cover', // Ensures the image fits the area correctly
+            gap: '0px', // Although gap has no direct effect on the image, it's included as requested
+          }}
+        />
+
+
+      </div>
+
+
 
 
 
