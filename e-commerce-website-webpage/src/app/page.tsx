@@ -456,7 +456,7 @@ export default function Home() {
 
       {/* Brands Container Desktop */}
 
-      <div className="hidden md:block w-full h-[122px] absolute top-[777px] gap-0 border-2 border-red-500 bg-black">
+      <div className="hidden md:block w-full h-[122px] relative top-[660px] gap-0 border-2 border-red-500 bg-black">
         <Image
           src="/versace.svg"
           alt="Search Icon"
@@ -465,15 +465,14 @@ export default function Home() {
           style={{
             width: '166.48px', // Updated width
             height: '33.16px', // Updated height
-            position: 'absolute', // Required to use top and left
-            top: '841px', // Vertical position
+            position: 'absolute', // Position within the parent container
+            top: '64px', // Adjusted relative to the parent
             left: '100px', // Horizontal position
             objectFit: 'cover', // Ensures the image fits the area correctly
-            gap: '0px', // Although gap has no direct effect on the image, it's included as requested
           }}
         />
 
-
+        
       </div>
 
 
