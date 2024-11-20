@@ -460,20 +460,54 @@ export default function Home() {
         <Image
           src="/versace.svg"
           alt="Search Icon"
-          width={166.48} // Adjusted width
-          height={33.16} // Adjusted height
+          width={166.48}
+          height={33.16}
           style={{
-            width: '166.48px', // Updated width
-            height: '33.16px', // Updated height
-            position: 'absolute', // Position within the parent container
+            width: '166.48px',
+            height: '33.16px',
+            position: 'absolute',
             top: '64px', // Adjusted relative to the parent
-            left: '100px', // Horizontal position
-            objectFit: 'cover', // Ensures the image fits the area correctly
+            left: '100px',
+            objectFit: 'cover',
           }}
         />
 
-        
+        <Image
+          src="/zara.svg"
+          alt="Search Icon"
+          width={91}
+          height={38}
+          style={{
+            width: '91px',
+            height: '38px',
+            position: 'absolute',
+            top: '64px', // Adjusted to fit within the parent container
+            left: '372.48px',
+            padding: '0.01px 0px 0.01px 0px',
+            gap: '0px',
+            objectFit: 'cover',
+          }}
+        />
+        <Image
+          src="/gucci.svg"
+          alt="Search Icon"
+          width={156} // New width
+          height={36} // New height
+          style={{
+            width: '156px', // Updated width
+            height: '36px', // Updated height
+            position: 'absolute', // To use 'top' and 'left' positioning
+            top: '840px', // Vertical position
+            left: '569.48px', // Horizontal position
+            padding: '1.86px 0px 1.86px 0px', // Updated padding
+            gap: '0px', // No gap
+            objectFit: 'cover', // Ensures the image scales correctly
+          }}
+
+        />
+
       </div>
+
 
 
 

@@ -50,7 +50,7 @@ export default function Home() {
 
       </nav>
 
-      {/* contaent container */}
+      {/* content container */}
       <div className=" w-1046 h-1028 mt-104 ml-197 p-cust gap-80 flex justify-center">
         <div className=" w-699 h-496 pt-104 pb-40 gap-40">
           <h5 className="text-customBlue font-montserrat text-[16px] font-bold leading-24 mb-5 tracking-[0.1px] text-left flex justify-center">Welcome</h5>
