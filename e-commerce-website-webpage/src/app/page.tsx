@@ -515,7 +515,7 @@ export default function Home() {
       </div>
 
       {/* New Arrivals Container Mobile */}
-      <div className="w-full h-[550px] border-2 border-red-500 sm:block md:hidden">
+      <div className="sm:w-full h-[550px] border-2 border-red-500  md:hidden">
         <p className="font-integral text-32px mt-[24px] font-extrabold leading-[38.4px] text-center underline-from-font decoration-none sm:text-2xl sm:leading-[2.5rem] sm:mt-6 md:text-3xl md:leading-[2.75rem] lg:text-4xl lg:leading-[3rem]">
           NEW ARRIVALS
         </p>
@@ -609,10 +609,17 @@ export default function Home() {
         </div>
       </div>
 
-      {/* New Arrivals Container Desktop */}
-      <div className="h-[400px] w-full border-2 border-red-500">
+      {/* New Arrivals Container Desktop  */}
+      <div className="hidden md:flex w-full h-full border-2 border-red-400">
 
       </div>
+
+      
+
+
+
+
+
 
 
 
