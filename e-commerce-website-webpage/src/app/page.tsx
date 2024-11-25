@@ -611,6 +611,7 @@ export default function Home() {
 
       {/* New Arrivals Container Desktop  */}
       <div className="hidden md:flex w-full h-full border-2 border-red-400 sm:hidden">
+        <div></div>
 
       </div>
 
