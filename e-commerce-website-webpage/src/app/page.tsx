@@ -610,13 +610,57 @@ export default function Home() {
       </div>
 
       {/* New Arrivals Container Desktop  */}
-      <div className="hidden md:flex w-full h-full border-2 border-red-400 sm:hidden">
-        <div></div>
-        <div></div>
+      <div className="hidden md:flex flex-col w-full h-[650px] relative top-[660px] gap-[50px] items-center justify-center border-2 border-red-500">
+        <p className="font-[IntegralCF]  text-[48px] font-[700] leading-[57.6px] text-center underline-from-font decoration-none hidden md:block">
+          NEW ARRIVALS
+        </p>
+        {/* first container */}
+        <div className="relative w-[300px] h-[200px]">
+            {/* Image Section */}
+            <Image
+              src="/shirt1.png" // Replace with your image path
+              alt="Description of Image" // Add a description for accessibility
+              layout="fill" // Makes the image fill the container
+              objectFit="cover" // Ensures the image covers the entire space without distortion
+              className="rounded-tl-[13.42px]" // Optional for rounding corners
+            />
+
+            {/* Title Text */}
+            <div className="absolute left-[10px] top-[220px] font-bold w-[200px] h-[22px] text-left">
+              T-shirt with Tape Details
+            </div>
+
+            {/* Stars & Rating */}
+            <div className="absolute left-[10px] top-[260px] flex items-center">
+              <div className="flex text-yellow-400">
+                {[...Array(5)].map((_, index) => (
+                  <svg
+                    key={index}
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="w-5 h-5"
+                    fill={index < 4 ? 'currentColor' : 'none'}
+                    stroke="currentColor"
+                    viewBox="0 0 20 20"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M9.049 2.927a1 1 0 011.902 0l2.1 4.26 4.704.686a1 1 0 01.554 1.707l-3.4 3.314.802 4.654a1 1 0 01-1.45 1.054L10 15.348l-4.181 2.198a1 1 0 01-1.45-1.054l.802-4.654-3.4-3.314a1 1 0 01.554-1.707l4.704-.686 2.1-4.26z"
+                    />
+                  </svg>
+                ))}
+              </div>
+              <div className="ml-2 text-gray-600">4.5/5</div>
+            </div>
+
+            {/* Price */}
+            <p className="absolute left-[10px] top-[300px] font-bold text-black">$120</p>
+          </div>
+        
+
 
       </div>
 
-      
+
 
 
 
