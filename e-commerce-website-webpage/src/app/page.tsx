@@ -456,57 +456,173 @@ export default function Home() {
 
       {/* Brands Container Desktop */}
 
-      <div className="hidden md:block w-full h-[122px] relative top-[660px] gap-0 border-2 border-red-500 bg-black">
+      <div className="hidden md:flex w-full h-[122px] relative top-[660px] gap-[80px] items-center justify-center border-2 border-red-500 bg-black">
         <Image
           src="/versace.svg"
-          alt="Search Icon"
+          alt="Versace Icon"
           width={166.48}
           height={33.16}
           style={{
             width: '166.48px',
             height: '33.16px',
-            position: 'absolute',
-            top: '64px', // Adjusted relative to the parent
-            left: '100px',
-            objectFit: 'cover',
+            objectFit: 'contain',
           }}
         />
-
         <Image
           src="/zara.svg"
-          alt="Search Icon"
+          alt="Zara Icon"
           width={91}
           height={38}
           style={{
             width: '91px',
             height: '38px',
-            position: 'absolute',
-            top: '64px', // Adjusted to fit within the parent container
-            left: '372.48px',
-            padding: '0.01px 0px 0.01px 0px',
-            gap: '0px',
-            objectFit: 'cover',
+            objectFit: 'contain',
           }}
         />
         <Image
           src="/gucci.svg"
-          alt="Search Icon"
-          width={156} // New width
-          height={36} // New height
+          alt="Gucci Icon"
+          width={156}
+          height={36}
           style={{
-            width: '156px', // Updated width
-            height: '36px', // Updated height
-            position: 'absolute', // To use 'top' and 'left' positioning
-            top: '840px', // Vertical position
-            left: '569.48px', // Horizontal position
-            padding: '1.86px 0px 1.86px 0px', // Updated padding
-            gap: '0px', // No gap
-            objectFit: 'cover', // Ensures the image scales correctly
+            width: '156px',
+            height: '36px',
+            objectFit: 'contain',
           }}
-
         />
+        <Image
+          src="/prada.svg"
+          alt="Prada Icon"
+          width={194}
+          height={31.2}
+          style={{
+            width: '194px',
+            height: '31.2px',
+            objectFit: 'contain',
+          }}
+        />
+        <Image
+          src="/calvinklien.svg"
+          alt="Calvin Klein Icon"
+          width={194}
+          height={31.2}
+          style={{
+            width: '194px',
+            height: '31.2px',
+            objectFit: 'contain',
+          }}
+        />
+      </div>
+
+      {/* New Arrivals Container Mobile */}
+      <div className="w-full h-[550px] border-2 border-red-500 sm:block md:hidden">
+        <p className="font-integral text-32px mt-[24px] font-extrabold leading-[38.4px] text-center underline-from-font decoration-none sm:text-2xl sm:leading-[2.5rem] sm:mt-6 md:text-3xl md:leading-[2.75rem] lg:text-4xl lg:leading-[3rem]">
+          NEW ARRIVALS
+        </p>
+
+        <div className="w-full h-[215px] border-2 border-red-500 absolute top-[1217px] gap-[20px] flex justify-center">
+          {/* first container */}
+          <div className="relative w-full h-full">
+            {/* Image Section */}
+            <Image
+              src="/shirt1.png" // Replace with your image path
+              alt="Description of Image" // Add a description for accessibility
+              layout="fill" // Makes the image fill the container
+              objectFit="cover" // Ensures the image covers the entire space without distortion
+              className="rounded-tl-[13.42px]" // Optional for rounding corners
+            />
+
+            {/* Title Text */}
+            <div className="absolute left-[10px] top-[220px] font-bold w-[200px] h-[22px] text-left">
+              T-shirt with Tape Details
+            </div>
+
+            {/* Stars & Rating */}
+            <div className="absolute left-[10px] top-[260px] flex items-center">
+              <div className="flex text-yellow-400">
+                {[...Array(5)].map((_, index) => (
+                  <svg
+                    key={index}
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="w-5 h-5"
+                    fill={index < 4 ? 'currentColor' : 'none'}
+                    stroke="currentColor"
+                    viewBox="0 0 20 20"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M9.049 2.927a1 1 0 011.902 0l2.1 4.26 4.704.686a1 1 0 01.554 1.707l-3.4 3.314.802 4.654a1 1 0 01-1.45 1.054L10 15.348l-4.181 2.198a1 1 0 01-1.45-1.054l.802-4.654-3.4-3.314a1 1 0 01.554-1.707l4.704-.686 2.1-4.26z"
+                    />
+                  </svg>
+                ))}
+              </div>
+              <div className="ml-2 text-gray-600">4.5/5</div>
+            </div>
+
+            {/* Price */}
+            <p className="absolute left-[10px] top-[300px] font-bold text-black">$120</p>
+          </div>
+          {/* second container */}
+          <div className="relative w-full h-full">
+            {/* Image Section */}
+            <Image
+              src="/shirt1.png" // Replace with your image path
+              alt="Description of Image" // Add a description for accessibility
+              layout="fill" // Makes the image fill the container
+              objectFit="cover" // Ensures the image covers the entire space without distortion
+              className="rounded-tl-[13.42px]" // Optional for rounding corners
+            />
+
+            {/* Title Text */}
+            <div className="absolute left-[10px] top-[220px] font-bold w-[200px] h-[22px] text-left">
+              T-shirt with Tape Details
+            </div>
+
+            {/* Stars & Rating */}
+            <div className="absolute left-[10px] top-[260px] flex items-center">
+              <div className="flex text-yellow-400">
+                {[...Array(5)].map((_, index) => (
+                  <svg
+                    key={index}
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="w-5 h-5"
+                    fill={index < 4 ? 'currentColor' : 'none'}
+                    stroke="currentColor"
+                    viewBox="0 0 20 20"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M9.049 2.927a1 1 0 011.902 0l2.1 4.26 4.704.686a1 1 0 01.554 1.707l-3.4 3.314.802 4.654a1 1 0 01-1.45 1.054L10 15.348l-4.181 2.198a1 1 0 01-1.45-1.054l.802-4.654-3.4-3.314a1 1 0 01.554-1.707l4.704-.686 2.1-4.26z"
+                    />
+                  </svg>
+                ))}
+              </div>
+              <div className="ml-2 text-gray-600">4.5/5</div>
+            </div>
+
+            {/* Price */}
+            <p className="absolute left-[10px] top-[300px] font-bold text-black">$120</p>
+          </div>
+          <button className="w-full h-[60px] absolute top-[350px]  gap-0 text-black font-bold rounded-[16px] border-2 border-gray-300">
+            View All
+          </button>
+        </div>
+      </div>
+
+      {/* New Arrivals Container Desktop */}
+      <div className="h-[400px] w-full border-2 border-red-500">
 
       </div>
+
+
+
+
+
+
+
+
+
+
 
 
 
