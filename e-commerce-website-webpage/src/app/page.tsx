@@ -566,7 +566,7 @@ export default function Home() {
           <div className="relative w-full h-full">
             {/* Image Section */}
             <Image
-              src="/shirt1.png" // Replace with your image path
+              src="/jeans.png" // Replace with your image path
               alt="Description of Image" // Add a description for accessibility
               layout="fill" // Makes the image fill the container
               objectFit="cover" // Ensures the image covers the entire space without distortion
@@ -576,6 +576,292 @@ export default function Home() {
             {/* Title Text */}
             <div className="absolute left-[10px] top-[220px] font-bold w-[200px] h-[22px] text-left">
               T-shirt with Tape Details
+            </div>
+
+            {/* Stars & Rating */}
+            <div className="absolute left-[10px] top-[260px] flex items-center">
+              <div className="flex text-yellow-400">
+                {[...Array(5)].map((_, index) => (
+                  <svg
+                    key={index}
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="w-5 h-5"
+                    fill={index < 4 ? 'currentColor' : 'none'}
+                    stroke="currentColor"
+                    viewBox="0 0 20 20"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M9.049 2.927a1 1 0 011.902 0l2.1 4.26 4.704.686a1 1 0 01.554 1.707l-3.4 3.314.802 4.654a1 1 0 01-1.45 1.054L10 15.348l-4.181 2.198a1 1 0 01-1.45-1.054l.802-4.654-3.4-3.314a1 1 0 01.554-1.707l4.704-.686 2.1-4.26z"
+                    />
+                  </svg>
+                ))}
+              </div>
+              <div className="ml-2 text-gray-600">4.5/5</div>
+            </div>
+
+            {/* Price */}
+            <p className="absolute left-[10px] top-[300px] font-bold text-black">$240</p>
+            <p className="absolute left-[55px] top-[300px] font-bold text-gray-500 line-through">$260</p>
+            {/* Discount Box */}
+            <div className="absolute w-[60px] h-[30px] flex items-center justify-center bg-red-200 left-[95px] top-[300px] text-red-400 text-xs font-bold rounded-[24px]">
+              -20%
+            </div>
+          </div>
+          <button className="w-full h-[60px] absolute top-[350px]  gap-0 text-black font-bold rounded-[16px] border-2 border-gray-300">
+            View All
+          </button>
+        </div>
+      </div>
+
+      {/* New Arrivals Container Desktop */}
+      <div className="hidden md:flex flex-col w-full h-[780px] relative top-[660px] items-center justify-center border-2 border-red-500">
+        <p className="font-[IntegralCF] text-[48px] mb-5 font-[700] leading-[57.6px] text-center underline-from-font decoration-none hidden md:block">
+          NEW ARRIVALS
+        </p>
+        <div className="flex flex-row gap-[50px]">
+          {/* Third container */}
+          <div className="relative w-[300px] h-[300px]">
+            {/* Image Section */}
+            <Image
+              src="/shirt1.png" // Replace with your image path
+              alt="Description of Image" // Add a description for accessibility
+              layout="fill" // Makes the image fill the container
+              objectFit="cover" // Ensures the image covers the entire space without distortion
+              className="rounded-tl-[13.42px]" // Optional for rounding corners
+            />
+            {/* Title Text */}
+            <div className="absolute left-[10px] top-[315px] font-bold w-[200px] h-[22px] text-left">
+              T-shirt with Tape Details
+            </div>
+            {/* Stars & Rating */}
+            <div className="absolute left-[10px] top-[335px] flex items-center">
+              <div className="flex text-yellow-400">
+                {[...Array(5)].map((_, index) => (
+                  <svg
+                    key={index}
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="w-5 h-5"
+                    fill={index < 4 ? 'currentColor' : 'none'}
+                    stroke="currentColor"
+                    viewBox="0 0 20 20"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M9.049 2.927a1 1 0 011.902 0l2.1 4.26 4.704.686a1 1 0 01.554 1.707l-3.4 3.314.802 4.654a1 1 0 01-1.45 1.054L10 15.348l-4.181 2.198a1 1 0 01-1.45-1.054l.802-4.654-3.4-3.314a1 1 0 01.554-1.707l4.704-.686 2.1-4.26z"
+                    />
+                  </svg>
+                ))}
+              </div>
+              <div className="ml-2 text-gray-600">4.5/5</div>
+            </div>
+            {/* Price */}
+            {/* Price */}
+            <p className="absolute left-[10px] top-[365px] font-bold text-black">$120</p>
+
+          </div>
+          {/* second container */}
+          <div className="relative w-[300px] h-[300px]">
+            {/* Image Section */}
+            <Image
+              src="/jeans.png" // Replace with your image path
+              alt="Description of Image" // Add a description for accessibility
+              layout="fill" // Makes the image fill the container
+              objectFit="cover" // Ensures the image covers the entire space without distortion
+              className="rounded-tl-[13.42px]" // Optional for rounding corners
+            />
+            {/* Title Text */}
+            <div className="absolute left-[10px] top-[315px] font-bold w-[200px] h-[22px] text-left">
+              Skinny Fit Jeans
+            </div>
+            {/* Stars & Rating */}
+            <div className="absolute left-[10px] top-[335px] flex items-center">
+              <div className="flex text-yellow-400">
+                {[...Array(5)].map((_, index) => (
+                  <svg
+                    key={index}
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="w-5 h-5"
+                    fill={index < 4 ? 'currentColor' : 'none'}
+                    stroke="currentColor"
+                    viewBox="0 0 20 20"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M9.049 2.927a1 1 0 011.902 0l2.1 4.26 4.704.686a1 1 0 01.554 1.707l-3.4 3.314.802 4.654a1 1 0 01-1.45 1.054L10 15.348l-4.181 2.198a1 1 0 01-1.45-1.054l.802-4.654-3.4-3.314a1 1 0 01.554-1.707l4.704-.686 2.1-4.26z"
+                    />
+                  </svg>
+                ))}
+              </div>
+              <div className="ml-2 text-gray-600">4.5/5</div>
+            </div>
+            {/* Price */}
+            <p className="absolute left-[10px] top-[365px] font-bold text-black">$240</p>
+            <p className="absolute left-[55px] top-[365px] font-bold text-gray-500 line-through">$260</p>
+            {/* Discount Box */}
+            <div className="absolute w-[60px] h-[30px] flex items-center justify-center bg-red-200 left-[95px] top-[365px] text-red-400 text-xs font-bold rounded-[24px]">
+              -20%
+            </div>
+          </div>
+          {/* Third container */}
+          <div className="relative w-[300px] h-[300px]">
+            {/* Image Section */}
+            <Image
+              src="/checkshirt.png" // Replace with your image path
+              alt="Description of Image" // Add a description for accessibility
+              layout="fill" // Makes the image fill the container
+              objectFit="cover" // Ensures the image covers the entire space without distortion
+              className="rounded-tl-[13.42px]" // Optional for rounding corners
+            />
+            {/* Title Text */}
+            <div className="absolute left-[10px] top-[315px] font-bold w-[200px] h-[22px] text-left">
+              CHECKERED SHIRT
+            </div>
+            {/* Stars & Rating */}
+            <div className="absolute left-[10px] top-[335px] flex items-center">
+              <div className="flex text-yellow-400">
+                {[...Array(5)].map((_, index) => (
+                  <svg
+                    key={index}
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="w-5 h-5"
+                    fill={index < 4 ? 'currentColor' : 'none'}
+                    stroke="currentColor"
+                    viewBox="0 0 20 20"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M9.049 2.927a1 1 0 011.902 0l2.1 4.26 4.704.686a1 1 0 01.554 1.707l-3.4 3.314.802 4.654a1 1 0 01-1.45 1.054L10 15.348l-4.181 2.198a1 1 0 01-1.45-1.054l.802-4.654-3.4-3.314a1 1 0 01.554-1.707l4.704-.686 2.1-4.26z"
+                    />
+                  </svg>
+                ))}
+              </div>
+              <div className="ml-2 text-gray-600">4.5/5</div>
+            </div>
+            {/* Price */}
+            {/* Price */}
+            <p className="absolute left-[10px] top-[365px] font-bold text-black">$180</p>
+
+          </div>
+          {/* fourth container */}
+          <div className="relative w-[300px] h-[300px]">
+            {/* Image Section */}
+            <Image
+              src="/sleeveshirt.png" // Replace with your image path
+              alt="Description of Image" // Add a description for accessibility
+              layout="fill" // Makes the image fill the container
+              objectFit="cover" // Ensures the image covers the entire space without distortion
+              className="rounded-tl-[13.42px]" // Optional for rounding corners
+            />
+            {/* Title Text */}
+            <div className="absolute left-[10px] top-[315px] font-bold w-[200px] h-[22px] text-left">
+              SLEEVE STRIPED T-SHIRT
+            </div>
+            {/* Stars & Rating */}
+            <div className="absolute left-[10px] top-[335px] flex items-center">
+              <div className="flex text-yellow-400">
+                {[...Array(5)].map((_, index) => (
+                  <svg
+                    key={index}
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="w-5 h-5"
+                    fill={index < 4 ? 'currentColor' : 'none'}
+                    stroke="currentColor"
+                    viewBox="0 0 20 20"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M9.049 2.927a1 1 0 011.902 0l2.1 4.26 4.704.686a1 1 0 01.554 1.707l-3.4 3.314.802 4.654a1 1 0 01-1.45 1.054L10 15.348l-4.181 2.198a1 1 0 01-1.45-1.054l.802-4.654-3.4-3.314a1 1 0 01.554-1.707l4.704-.686 2.1-4.26z"
+                    />
+                  </svg>
+                ))}
+              </div>
+              <div className="ml-2 text-gray-600">4.5/5</div>
+            </div>
+            {/* Price */}
+            {/* Price */}
+            <p className="absolute left-[10px] top-[365px] font-bold text-black">$130</p>
+            <p className="absolute left-[55px] top-[365px] font-bold text-gray-500 line-through">$160</p>
+            {/* Discount Box */}
+            <div className="absolute w-[60px] h-[30px] flex items-center justify-center bg-red-200 left-[95px] top-[365px] text-red-400 text-xs font-bold rounded-[24px]">
+              -30%
+            </div>
+          </div>
+        </div>
+        <button className="w-[218px] h-[52px] absolute top-[700px]  gap-0 text-black font-bold rounded-[30px] border-2 border-gray-300">
+          View All
+        </button>
+
+
+      </div>
+
+      {/* Top Selling Container Mobile */}
+      <div className="sm:w-full h-[550px] border-2 border-red-500  md:hidden">
+        <p className="font-integral text-32px mt-[24px] font-extrabold leading-[38.4px] text-center underline-from-font decoration-none sm:text-2xl sm:leading-[2.5rem] sm:mt-6 md:text-3xl md:leading-[2.75rem] lg:text-4xl lg:leading-[3rem]">
+          TOP SELLING
+        </p>
+
+        <div className="w-full h-[215px] border-2 border-red-500 absolute top-[1800px] gap-[20px] flex justify-center">
+          {/* first container */}
+          <div className="relative w-full h-full">
+            {/* Image Section */}
+            <Image
+              src="/vstripshirt.png" // Replace with your image path
+              alt="Description of Image" // Add a description for accessibility
+              layout="fill" // Makes the image fill the container
+              objectFit="cover" // Ensures the image covers the entire space without distortion
+              className="rounded-tl-[13.42px]" // Optional for rounding corners
+            />
+
+            {/* Title Text */}
+            <div className="absolute left-[10px] top-[220px] font-bold w-[200px] h-[22px] text-left">
+              Vertical Striped shirt
+            </div>
+
+            {/* Stars & Rating */}
+            <div className="absolute left-[10px] top-[260px] flex items-center">
+              <div className="flex text-yellow-400">
+                {[...Array(5)].map((_, index) => (
+                  <svg
+                    key={index}
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="w-5 h-5"
+                    fill={index < 4 ? 'currentColor' : 'none'}
+                    stroke="currentColor"
+                    viewBox="0 0 20 20"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M9.049 2.927a1 1 0 011.902 0l2.1 4.26 4.704.686a1 1 0 01.554 1.707l-3.4 3.314.802 4.654a1 1 0 01-1.45 1.054L10 15.348l-4.181 2.198a1 1 0 01-1.45-1.054l.802-4.654-3.4-3.314a1 1 0 01.554-1.707l4.704-.686 2.1-4.26z"
+                    />
+                  </svg>
+                ))}
+              </div>
+              <div className="ml-2 text-gray-600">4.5/5</div>
+            </div>
+
+            {/* Price */}
+            <p className="absolute left-[10px] top-[300px] font-bold text-black">$212</p>
+            <p className="absolute left-[55px] top-[300px] font-bold text-gray-500 line-through">$235</p>
+            {/* Discount Box */}
+            <div className="absolute w-[60px] h-[30px] flex items-center justify-center bg-red-200 left-[95px] top-[300px] text-red-400 text-xs font-bold rounded-[24px]">
+              -20%
+            </div>
+          </div>
+          {/* second container */}
+          <div className="relative w-full h-full">
+            {/* Image Section */}
+            <Image
+              src="/orangeshirt.png" // Replace with your image path
+              alt="Description of Image" // Add a description for accessibility
+              layout="fill" // Makes the image fill the container
+              objectFit="cover" // Ensures the image covers the entire space without distortion
+              className="rounded-tl-[13.42px]" // Optional for rounding corners
+            />
+
+            {/* Title Text */}
+            <div className="absolute left-[10px] top-[220px] font-bold w-[200px] h-[22px] text-left">
+              Courage Graphic T-shirt
             </div>
 
             {/* Stars & Rating */}
@@ -609,29 +895,72 @@ export default function Home() {
         </div>
       </div>
 
-      {/* New Arrivals Container Desktop  */}
-      <div className="hidden md:flex flex-col w-full h-[650px] relative top-[660px] gap-[50px] items-center justify-center border-2 border-red-500">
-        <p className="font-[IntegralCF]  text-[48px] font-[700] leading-[57.6px] text-center underline-from-font decoration-none hidden md:block">
-          NEW ARRIVALS
+      {/* Top Selling Container Desktop */}
+      <div className="hidden md:flex flex-col w-full h-[780px] relative top-[660px] items-center justify-center border-2 border-red-500">
+        <p className="font-[IntegralCF] text-[48px] mb-5 font-[700] leading-[57.6px] text-center underline-from-font decoration-none hidden md:block">
+          TOP SELLING
         </p>
-        {/* first container */}
-        <div className="relative w-[300px] h-[200px]">
+        <div className="flex flex-row gap-[50px]">
+          {/* Third container */}
+          <div className="relative w-[300px] h-[300px]">
             {/* Image Section */}
             <Image
-              src="/shirt1.png" // Replace with your image path
+              src="/vstripshirt.png" // Replace with your image path
               alt="Description of Image" // Add a description for accessibility
               layout="fill" // Makes the image fill the container
               objectFit="cover" // Ensures the image covers the entire space without distortion
               className="rounded-tl-[13.42px]" // Optional for rounding corners
             />
-
             {/* Title Text */}
-            <div className="absolute left-[10px] top-[220px] font-bold w-[200px] h-[22px] text-left">
-              T-shirt with Tape Details
+            <div className="absolute left-[10px] top-[315px] font-bold w-[200px] h-[22px] text-left">
+              Vertical Striped Shirt 
+            </div>
+            {/* Stars & Rating */}
+            <div className="absolute left-[10px] top-[335px] flex items-center">
+              <div className="flex text-yellow-400">
+                {[...Array(5)].map((_, index) => (
+                  <svg
+                    key={index}
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="w-5 h-5"
+                    fill={index < 4 ? 'currentColor' : 'none'}
+                    stroke="currentColor"
+                    viewBox="0 0 20 20"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M9.049 2.927a1 1 0 011.902 0l2.1 4.26 4.704.686a1 1 0 01.554 1.707l-3.4 3.314.802 4.654a1 1 0 01-1.45 1.054L10 15.348l-4.181 2.198a1 1 0 01-1.45-1.054l.802-4.654-3.4-3.314a1 1 0 01.554-1.707l4.704-.686 2.1-4.26z"
+                    />
+                  </svg>
+                ))}
+              </div>
+              <div className="ml-2 text-gray-600">5.0/5</div>
+            </div>
+            {/* Price */}
+            <p className="absolute left-[10px] top-[365px] font-bold text-black">$212</p>
+            <p className="absolute left-[55px] top-[365px] font-bold text-gray-500 line-through">$232</p>
+            {/* Discount Box */}
+            <div className="absolute w-[60px] h-[30px] flex items-center justify-center bg-red-200 left-[95px] top-[365px] text-red-400 text-xs font-bold rounded-[24px]">
+              -20%
             </div>
 
+          </div>
+          {/* second container */}
+          <div className="relative w-[300px] h-[300px]">
+            {/* Image Section */}
+            <Image
+              src="/orangeshirt.png" // Replace with your image path
+              alt="Description of Image" // Add a description for accessibility
+              layout="fill" // Makes the image fill the container
+              objectFit="cover" // Ensures the image covers the entire space without distortion
+              className="rounded-tl-[13.42px]" // Optional for rounding corners
+            />
+            {/* Title Text */}
+            <div className="absolute left-[10px] top-[315px] font-bold w-[200px] h-[22px] text-left">
+              Skinny Fit Jeans
+            </div>
             {/* Stars & Rating */}
-            <div className="absolute left-[10px] top-[260px] flex items-center">
+            <div className="absolute left-[10px] top-[335px] flex items-center">
               <div className="flex text-yellow-400">
                 {[...Array(5)].map((_, index) => (
                   <svg
@@ -651,14 +980,106 @@ export default function Home() {
               </div>
               <div className="ml-2 text-gray-600">4.5/5</div>
             </div>
-
             {/* Price */}
-            <p className="absolute left-[10px] top-[300px] font-bold text-black">$120</p>
+            <p className="absolute left-[10px] top-[365px] font-bold text-black">$240</p>
+            <p className="absolute left-[55px] top-[365px] font-bold text-gray-500 line-through">$260</p>
+            {/* Discount Box */}
+            <div className="absolute w-[60px] h-[30px] flex items-center justify-center bg-red-200 left-[95px] top-[365px] text-red-400 text-xs font-bold rounded-[24px]">
+              -20%
+            </div>
           </div>
-        
+          {/* Third container */}
+          <div className="relative w-[300px] h-[300px]">
+            {/* Image Section */}
+            <Image
+              src="/checkshirt.png" // Replace with your image path
+              alt="Description of Image" // Add a description for accessibility
+              layout="fill" // Makes the image fill the container
+              objectFit="cover" // Ensures the image covers the entire space without distortion
+              className="rounded-tl-[13.42px]" // Optional for rounding corners
+            />
+            {/* Title Text */}
+            <div className="absolute left-[10px] top-[315px] font-bold w-[200px] h-[22px] text-left">
+              CHECKERED SHIRT
+            </div>
+            {/* Stars & Rating */}
+            <div className="absolute left-[10px] top-[335px] flex items-center">
+              <div className="flex text-yellow-400">
+                {[...Array(5)].map((_, index) => (
+                  <svg
+                    key={index}
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="w-5 h-5"
+                    fill={index < 4 ? 'currentColor' : 'none'}
+                    stroke="currentColor"
+                    viewBox="0 0 20 20"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M9.049 2.927a1 1 0 011.902 0l2.1 4.26 4.704.686a1 1 0 01.554 1.707l-3.4 3.314.802 4.654a1 1 0 01-1.45 1.054L10 15.348l-4.181 2.198a1 1 0 01-1.45-1.054l.802-4.654-3.4-3.314a1 1 0 01.554-1.707l4.704-.686 2.1-4.26z"
+                    />
+                  </svg>
+                ))}
+              </div>
+              <div className="ml-2 text-gray-600">4.5/5</div>
+            </div>
+            {/* Price */}
+            {/* Price */}
+            <p className="absolute left-[10px] top-[365px] font-bold text-black">$180</p>
+
+          </div>
+          {/* fourth container */}
+          <div className="relative w-[300px] h-[300px]">
+            {/* Image Section */}
+            <Image
+              src="/sleeveshirt.png" // Replace with your image path
+              alt="Description of Image" // Add a description for accessibility
+              layout="fill" // Makes the image fill the container
+              objectFit="cover" // Ensures the image covers the entire space without distortion
+              className="rounded-tl-[13.42px]" // Optional for rounding corners
+            />
+            {/* Title Text */}
+            <div className="absolute left-[10px] top-[315px] font-bold w-[200px] h-[22px] text-left">
+              SLEEVE STRIPED T-SHIRT
+            </div>
+            {/* Stars & Rating */}
+            <div className="absolute left-[10px] top-[335px] flex items-center">
+              <div className="flex text-yellow-400">
+                {[...Array(5)].map((_, index) => (
+                  <svg
+                    key={index}
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="w-5 h-5"
+                    fill={index < 4 ? 'currentColor' : 'none'}
+                    stroke="currentColor"
+                    viewBox="0 0 20 20"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M9.049 2.927a1 1 0 011.902 0l2.1 4.26 4.704.686a1 1 0 01.554 1.707l-3.4 3.314.802 4.654a1 1 0 01-1.45 1.054L10 15.348l-4.181 2.198a1 1 0 01-1.45-1.054l.802-4.654-3.4-3.314a1 1 0 01.554-1.707l4.704-.686 2.1-4.26z"
+                    />
+                  </svg>
+                ))}
+              </div>
+              <div className="ml-2 text-gray-600">4.5/5</div>
+            </div>
+            {/* Price */}
+            {/* Price */}
+            <p className="absolute left-[10px] top-[365px] font-bold text-black">$130</p>
+            <p className="absolute left-[55px] top-[365px] font-bold text-gray-500 line-through">$160</p>
+            {/* Discount Box */}
+            <div className="absolute w-[60px] h-[30px] flex items-center justify-center bg-red-200 left-[95px] top-[365px] text-red-400 text-xs font-bold rounded-[24px]">
+              -30%
+            </div>
+          </div>
+        </div>
+        <button className="w-[218px] h-[52px] absolute top-[700px]  gap-0 text-black font-bold rounded-[30px] border-2 border-gray-300">
+          View All
+        </button>
 
 
       </div>
+
 
 
 
