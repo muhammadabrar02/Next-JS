@@ -1035,7 +1035,7 @@ export default function Home() {
             />
             {/* Title Text */}
             <div className="absolute left-[10px] top-[315px] font-bold w-[200px] h-[22px] text-left">
-              SLEEVE STRIPED T-SHIRT
+              Faded Skinny Jeans
             </div>
             {/* Stars & Rating */}
             <div className="absolute left-[10px] top-[335px] flex items-center">
@@ -1059,13 +1059,8 @@ export default function Home() {
               <div className="ml-2 text-gray-600">4.5/5</div>
             </div>
             {/* Price */}
-            {/* Price */}
-            <p className="absolute left-[10px] top-[365px] font-bold text-black">$130</p>
-            <p className="absolute left-[55px] top-[365px] font-bold text-gray-500 line-through">$160</p>
-            {/* Discount Box */}
-            <div className="absolute w-[60px] h-[30px] flex items-center justify-center bg-red-200 left-[95px] top-[365px] text-red-400 text-xs font-bold rounded-[24px]">
-              -30%
-            </div>
+            <p className="absolute left-[10px] top-[365px] font-bold text-black">$210</p>
+            
           </div>
         </div>
         <button className="w-[218px] h-[52px] absolute top-[700px]  gap-0 text-black font-bold rounded-[30px] border-2 border-gray-300">
