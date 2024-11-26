@@ -957,7 +957,7 @@ export default function Home() {
             />
             {/* Title Text */}
             <div className="absolute left-[10px] top-[315px] font-bold w-[200px] h-[22px] text-left">
-              Skinny Fit Jeans
+              Courage Graphic T-shirt
             </div>
             {/* Stars & Rating */}
             <div className="absolute left-[10px] top-[335px] flex items-center">
