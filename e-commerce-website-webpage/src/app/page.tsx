@@ -794,6 +794,7 @@ export default function Home() {
 
 
       </div>
+      
 
       {/* Top Selling Container Mobile */}
       <div className="sm:w-full h-[550px] border-2 border-red-500  md:hidden">
@@ -897,6 +898,7 @@ export default function Home() {
 
       {/* Top Selling Container Desktop */}
       <div className="hidden md:flex flex-col w-full h-[780px] relative top-[660px] items-center justify-center border-2 border-red-500">
+       
         <p className="font-[IntegralCF] text-[48px] mb-5 font-[700] leading-[57.6px] text-center underline-from-font decoration-none hidden md:block">
           TOP SELLING
         </p>
@@ -913,7 +915,7 @@ export default function Home() {
             />
             {/* Title Text */}
             <div className="absolute left-[10px] top-[315px] font-bold w-[200px] h-[22px] text-left">
-              Vertical Striped Shirt 
+              Vertical Striped Shirt
             </div>
             {/* Stars & Rating */}
             <div className="absolute left-[10px] top-[335px] flex items-center">
@@ -982,7 +984,7 @@ export default function Home() {
             </div>
             {/* Price */}
             <p className="absolute left-[10px] top-[365px] font-bold text-black">$145</p>
-          
+
           </div>
           {/* Third container */}
           <div className="relative w-[300px] h-[300px]">
@@ -996,7 +998,7 @@ export default function Home() {
             />
             {/* Title Text */}
             <div className="absolute left-[10px] top-[315px] font-bold w-[200px] h-[22px] text-left">
-             Loose Fit Bermuda shorts
+              Loose Fit Bermuda shorts
             </div>
             {/* Stars & Rating */}
             <div className="absolute left-[10px] top-[335px] flex items-center">
@@ -1027,7 +1029,7 @@ export default function Home() {
           <div className="relative w-[300px] h-[300px]">
             {/* Image Section */}
             <Image
-              src="/sleeveshirt.png" // Replace with your image path
+              src="/skinnyjeans.png" // Replace with your image path
               alt="Description of Image" // Add a description for accessibility
               layout="fill" // Makes the image fill the container
               objectFit="cover" // Ensures the image covers the entire space without distortion
@@ -1060,7 +1062,7 @@ export default function Home() {
             </div>
             {/* Price */}
             <p className="absolute left-[10px] top-[365px] font-bold text-black">$210</p>
-            
+
           </div>
         </div>
         <button className="w-[218px] h-[52px] absolute top-[700px]  gap-0 text-black font-bold rounded-[30px] border-2 border-gray-300">
