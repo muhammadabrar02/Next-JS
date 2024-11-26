@@ -978,21 +978,17 @@ export default function Home() {
                   </svg>
                 ))}
               </div>
-              <div className="ml-2 text-gray-600">4.5/5</div>
+              <div className="ml-2 text-gray-600">4.0/5</div>
             </div>
             {/* Price */}
-            <p className="absolute left-[10px] top-[365px] font-bold text-black">$240</p>
-            <p className="absolute left-[55px] top-[365px] font-bold text-gray-500 line-through">$260</p>
-            {/* Discount Box */}
-            <div className="absolute w-[60px] h-[30px] flex items-center justify-center bg-red-200 left-[95px] top-[365px] text-red-400 text-xs font-bold rounded-[24px]">
-              -20%
-            </div>
+            <p className="absolute left-[10px] top-[365px] font-bold text-black">$145</p>
+          
           </div>
           {/* Third container */}
           <div className="relative w-[300px] h-[300px]">
             {/* Image Section */}
             <Image
-              src="/checkshirt.png" // Replace with your image path
+              src="/looseshort.png" // Replace with your image path
               alt="Description of Image" // Add a description for accessibility
               layout="fill" // Makes the image fill the container
               objectFit="cover" // Ensures the image covers the entire space without distortion
@@ -1000,7 +996,7 @@ export default function Home() {
             />
             {/* Title Text */}
             <div className="absolute left-[10px] top-[315px] font-bold w-[200px] h-[22px] text-left">
-              CHECKERED SHIRT
+             Loose Fit Bermuda shorts
             </div>
             {/* Stars & Rating */}
             <div className="absolute left-[10px] top-[335px] flex items-center">
@@ -1021,11 +1017,10 @@ export default function Home() {
                   </svg>
                 ))}
               </div>
-              <div className="ml-2 text-gray-600">4.5/5</div>
+              <div className="ml-2 text-gray-600">3.0/5</div>
             </div>
             {/* Price */}
-            {/* Price */}
-            <p className="absolute left-[10px] top-[365px] font-bold text-black">$180</p>
+            <p className="absolute left-[10px] top-[365px] font-bold text-black">$80</p>
 
           </div>
           {/* fourth container */}
