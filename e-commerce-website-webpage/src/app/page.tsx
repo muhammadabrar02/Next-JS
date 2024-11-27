@@ -1074,8 +1074,7 @@ export default function Home() {
 
       <div className="w-full">
         <div>
-          <div>hello</div>
-         
+          
         </div>
       </div>
 
