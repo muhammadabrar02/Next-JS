@@ -794,7 +794,7 @@ export default function Home() {
 
 
       </div>
-      
+
 
       {/* Top Selling Container Mobile */}
       <div className="sm:w-full h-[550px] border-2 border-red-500  md:hidden">
@@ -898,7 +898,7 @@ export default function Home() {
 
       {/* Top Selling Container Desktop */}
       <div className="hidden md:flex flex-col w-full h-[780px] relative top-[660px] items-center justify-center border-2 border-red-500">
-       
+
         <p className="font-[IntegralCF] text-[48px] mb-5 font-[700] leading-[57.6px] text-center underline-from-font decoration-none hidden md:block">
           TOP SELLING
         </p>
@@ -1072,11 +1072,135 @@ export default function Home() {
 
       </div>
 
-      <div className="w-full">
-        <div>
-          
+      {/* Browse by Dress style Mobile  */}
+      <div className="sm:w-full h-[1000px] border-2 border-red-500 md:hidden">
+        <div className="w-[358px] h-[975px] absolute top-[2250px] left-[16px] gap-0 rounded-[20px] bg-[#F0F0F0]">
+          <h1 className="font-integral text-[32px] p-4 font-extrabold top-[40px] leading-[36px] text-center decoration-skip-ink-none">BROWSE BY <br /> DRESS STYLE</h1>
+          {/* Casual container  */}
+          <div className="w-[310px] h-[190px] relative top-[50px] left-[24px] gap-0 rounded-[20px] border-2 border-red-500">
+            <p className="text-[24px] font-bold leading-[32.4px] text-left left-2 decoration-skip-ink-none z-10 relative">
+              Casual
+            </p>
+
+            <Image
+              src="/casual.png"
+              alt="Example Image"
+              fill
+              className="object-cover rounded-[20px] absolute z-0"
+            />
+          </div>
+          {/* Formal container  */}
+          <div className="w-[310px] h-[190px] relative top-[55px] left-[24px] gap-0 rounded-[20px] border-2 border-red-500">
+            <p className="text-[24px] font-bold leading-[32.4px] text-left left-2 decoration-skip-ink-none z-10 relative">
+              Formal
+            </p>
+
+            <Image
+              src="/Formal.png"
+              alt="Example Image"
+              fill
+              className="object-cover rounded-[20px] absolute z-0"
+            />
+          </div>
+          {/* Party container  */}
+          <div className="w-[310px] h-[190px] relative top-[60px] left-[24px] gap-0 rounded-[20px] border-2 border-red-500">
+            <p className="text-[24px] font-bold leading-[32.4px] text-left left-2 decoration-skip-ink-none z-10 relative">
+              Party
+            </p>
+
+            <Image
+              src="/party.png"
+              alt="Example Image"
+              fill
+              className="object-cover rounded-[20px] absolute z-0"
+            />
+          </div>
+          {/* Gym container  */}
+          <div className="w-[310px] h-[190px] relative top-[65px] left-[24px] gap-0 rounded-[20px] border-2 border-red-500">
+            <p className="text-[24px] font-bold leading-[32.4px] text-left left-2 decoration-skip-ink-none z-10 relative">
+              Gym
+            </p>
+
+            <Image
+              src="/gym.png"
+              alt="Example Image"
+              fill
+              className="object-cover rounded-[20px] absolute z-0"
+            />
+          </div>
+
+
+
+        </div>
+
+
+      </div>
+
+      {/* Browse by Dress style Desktop */}
+      <div className="hidden md:block w-[1239px] h-[866px] absolute top-[2500px] left-[100px] gap-0 rounded-[40px] bg-[#F0F0F0]">
+        <h1 className="font-integral text-[32px] p-4 font-extrabold top-[80px] mt-[25px] leading-[36px] text-center decoration-skip-ink-none">BROWSE BY DRESS STYLE</h1>
+        {/* First Row  */}
+        <div className="flex flex-row justify-center gap-[25px]">
+          {/* Casual container  */}
+          <div className="w-[355px] h-[230px] relative top-[50px] left-[24px] gap-0 rounded-[20px] border-2 border-red-500">
+            <p className="text-[24px] font-bold leading-[32.4px] text-left left-2 decoration-skip-ink-none z-10 relative">
+              Casual
+            </p>
+
+            <Image
+              src="/casual.png"
+              alt="Example Image"
+              fill
+              className="object-cover rounded-[20px] absolute z-0"
+            />
+          </div>
+          {/* Formal container  */}
+          <div className="w-[455px] h-[230px] relative top-[55px] left-[24px] gap-0 rounded-[20px] border-2 border-red-500">
+            <p className="text-[24px] font-bold leading-[32.4px] text-left left-2 decoration-skip-ink-none z-10 relative">
+              Formal
+            </p>
+
+            <Image
+              src="/Formal.png"
+              alt="Example Image"
+              fill
+              className="object-cover rounded-[20px] absolute z-0"
+            />
+          </div>
+        </div>
+        {/* Second Row  */}
+        <div className="flex flex-row justify-center gap-[25px] mt-2">
+          {/* Party container  */}
+          <div className="w-[455px] h-[230px] relative top-[55px] left-[24px] gap-0 rounded-[20px] border-2 border-red-500">
+            <p className="text-[24px] font-bold leading-[32.4px] text-left left-2 decoration-skip-ink-none z-10 relative">
+              Formal
+            </p>
+
+            <Image
+              src="/Formal.png"
+              alt="Example Image"
+              fill
+              className="object-cover rounded-[20px] absolute z-0"
+            />
+          </div>
+          {/* Gym container  */}
+          <div className="w-[355px] h-[230px] relative top-[55px] left-[24px] gap-0 rounded-[20px] border-2 border-red-500">
+            <p className="text-[24px] font-bold leading-[32.4px] text-left left-2 decoration-skip-ink-none z-10 relative">
+              Casual
+            </p>
+
+            <Image
+              src="/casual.png"
+              alt="Example Image"
+              fill
+              className="object-cover rounded-[20px] absolute z-0"
+            />
+          </div>
+
         </div>
       </div>
+
+
 
 
 
