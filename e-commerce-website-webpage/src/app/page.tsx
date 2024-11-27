@@ -1072,13 +1072,9 @@ export default function Home() {
 
       </div>
 
-      <div>
+      <div className="w-full">
         <div>
-          <div>
-            <div>
-              
-            </div>
-          </div>
+         
         </div>
       </div>
 
