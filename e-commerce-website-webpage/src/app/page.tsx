@@ -1137,7 +1137,7 @@ export default function Home() {
       </div>
 
       {/* Browse by Dress style Desktop */}
-      <div className="hidden md:block w-[1239px] h-[866px] absolute top-[2500px] left-[100px] gap-0 rounded-[40px] bg-[#F0F0F0]">
+      <div className="hidden md:block w-[1239px] h-[650px] absolute top-[2500px] left-[100px] gap-0 rounded-[40px] bg-[#F0F0F0]">
         <h1 className="font-integral text-[32px] p-4 font-extrabold top-[80px] mt-[25px] leading-[36px] text-center decoration-skip-ink-none">BROWSE BY DRESS STYLE</h1>
         {/* First Row  */}
         <div className="flex flex-row justify-center gap-[25px]">
@@ -1177,7 +1177,7 @@ export default function Home() {
             </p>
 
             <Image
-              src="/Formal.png"
+              src="/party.png"
               alt="Example Image"
               fill
               className="object-cover rounded-[20px] absolute z-0"
@@ -1190,7 +1190,7 @@ export default function Home() {
             </p>
 
             <Image
-              src="/casual.png"
+              src="/gym.png"
               alt="Example Image"
               fill
               className="object-cover rounded-[20px] absolute z-0"
@@ -1199,6 +1199,209 @@ export default function Home() {
 
         </div>
       </div>
+
+      {/* Our Happy Customers Mobile  */}
+      <div className="sm:w-full h-[450px] border-2 border-red-400 md:hidden">
+        <div className="font-integral text-[32px] mt-10 ml-5 font-extrabold leading-[36px] text-left decoration-skip-ink-none">
+          Our Happy <br />Customers
+        </div>
+
+        <div className="flex flex-col items-start mt-3 ml-4 space-y-2 p-4 border border-gray-200 rounded-lg shadow-md w-[380px]">
+
+          <div className="flex space-x-1 text-yellow-500">
+            <span>★</span>
+            <span>★</span>
+            <span>★</span>
+            <span>★</span>
+            <span>★</span>
+          </div>
+
+
+          <div className="flex items-center space-x-2">
+            <span className="font-bold text-gray-800">Sarah M.</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-5 w-5 text-green-500"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                fillRule="evenodd"
+                d="M10 18a8 8 0 100-16 8 8 0 000 16zm4.707-10.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l5-5z"
+                clipRule="evenodd"
+              />
+            </svg>
+          </div>
+
+
+          <p className="text-gray-600">
+            "I'm blown away by the quality and style of the clothes I received from
+            Shop.co. From casual wear to elegant dresses, every piece I've bought has
+            exceeded my expectations.”
+          </p>
+        </div>
+
+
+
+
+
+      </div>
+
+      {/* Our Happy Customers Desktop  */}
+      <div className="hidden md:block w-full h-[550px] absolute top-[3200px] border-2 border-red-500">
+        <div className="text-[48px] font-extrabold leading-9 mt-10 ml-[95px] mb-10 text-left  decoration-skip-ink-none">
+          Our Happy Customers
+        </div>
+
+        <div className="flex flex-row justify-start space-x-10 mt-3 ml-[78px]">
+          {/* container box  */}
+          <div className="flex flex-col items-start mt-3 ml-4 space-y-2 p-4 border border-gray-200 rounded-lg shadow-md w-[380px]">
+
+            <div className="flex space-x-1 text-yellow-500">
+              <span>★</span>
+              <span>★</span>
+              <span>★</span>
+              <span>★</span>
+              <span>★</span>
+            </div>
+
+
+            <div className="flex items-center space-x-2">
+              <span className="font-bold text-gray-800">Sarah M.</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-5 w-5 text-green-500"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm4.707-10.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l5-5z"
+                  clipRule="evenodd"
+                />
+              </svg>
+            </div>
+
+
+            <p className="text-gray-600">
+              "I'm blown away by the quality and style of the clothes I received from
+              Shop.co. From casual wear to elegant dresses, every piece I've bought has
+              exceeded my expectations.”
+            </p>
+          </div>
+          {/* container box 2  */}
+          <div className="flex flex-col items-start mt-3 ml-4 space-y-2 p-4 border border-gray-200 rounded-lg shadow-md w-[380px]">
+
+            <div className="flex space-x-1 text-yellow-500">
+              <span>★</span>
+              <span>★</span>
+              <span>★</span>
+              <span>★</span>
+              <span>★</span>
+            </div>
+
+
+            <div className="flex items-center space-x-2">
+              <span className="font-bold text-gray-800">Sarah M.</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-5 w-5 text-green-500"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm4.707-10.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l5-5z"
+                  clipRule="evenodd"
+                />
+              </svg>
+            </div>
+
+
+            <p className="text-gray-600">
+              "I'm blown away by the quality and style of the clothes I received from
+              Shop.co. From casual wear to elegant dresses, every piece I've bought has
+              exceeded my expectations.”
+            </p>
+          </div>
+          {/* container box 3  */}
+          <div className="flex flex-col items-start mt-3 ml-4 space-y-2 p-4 border border-gray-200 rounded-lg shadow-md w-[380px]">
+
+            <div className="flex space-x-1 text-yellow-500">
+              <span>★</span>
+              <span>★</span>
+              <span>★</span>
+              <span>★</span>
+              <span>★</span>
+            </div>
+
+
+            <div className="flex items-center space-x-2">
+              <span className="font-bold text-gray-800">Sarah M.</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-5 w-5 text-green-500"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm4.707-10.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l5-5z"
+                  clipRule="evenodd"
+                />
+              </svg>
+            </div>
+
+
+            <p className="text-gray-600">
+              "I'm blown away by the quality and style of the clothes I received from
+              Shop.co. From casual wear to elegant dresses, every piece I've bought has
+              exceeded my expectations.”
+            </p>
+          </div>
+        </div>
+
+
+
+      </div>
+
+      {/* Start upto date Mobile  */}
+      <div className="sm:w-[450px] rounded-[24px] h-[400px] border-2 border-red-400 bg-black md:hidden">
+        <div className="text-left text-white font-integral mt-10 ml-5 text-[32px] font-extrabold leading-[35px] decoration-skip-ink-none">
+          STAY UPTO DATE ABOUT OUR <br />LATEST OFFERS
+        </div>
+        <input
+          type="email"
+          placeholder="Enter your email address"
+          className="w-[350px] h-[50px] absolute top-[3900px] left-[24px] px-[16px] py-[12px] gap-[12px] rounded-full bg-white border-none"
+        />
+        <button className="w-[350px] h-[50px] absolute font-bold top-[3980px] left-[24px] bg-white rounded-full py-[12px]">Subscribe to Newsletter</button>
+      </div>
+
+      {/* Start upto date Desktop  */}
+      <div className="hidden md:flex w-[1300px] h-[200px] rounded-[24px] absolute top-[3700px] border-2 bg-black border-red-500 mx-[100px]">
+        {/* Left Side: Heading */}
+        <div className="text-left text-white font-integral text-[32px] font-extrabold leading-[35px] decoration-skip-ink-none w-[50%] p-5">
+          STAY UPTO DATE ABOUT<br /> OUR LATEST OFFERS
+        </div>
+
+        {/* Right Side: Input and Button */}
+        <div className="flex flex-col w-[50%] p-5 space-y-3">
+          <div className="relative">
+            <input
+              type="email"
+              placeholder="Enter your email address"
+              className="w-full h-[50px] rounded-full bg-white px-[16px] py-[12px] border-none"
+            />
+          </div>
+          <div className="relative">
+            <button className="w-full h-[50px] bg-white rounded-full py-[12px] font-bold">
+              Subscribe to Newsletter
+            </button>
+          </div>
+        </div>
+      </div>
+
 
 
 
