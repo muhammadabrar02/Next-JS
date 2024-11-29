@@ -179,7 +179,7 @@ export default function Home() {
       </div>
 
       {/* Hero Section Mobile */}
-      <div className="sm:w-full h-[890px] flex flex-col bg-[#F2F0F1] border-2 border-red-400 md:hidden p-4 gap-4  ">
+      <div className="sm:w-full h-[890px] flex flex-col bg-[#F2F0F1] md:hidden p-4 gap-4  ">
         {/* Heading */}
         <p className="text-[36px] font-extrabold leading-[34px] text-left">
           FIND CLOTHES THAT MATCHES YOUR STYLE
@@ -237,7 +237,7 @@ export default function Home() {
         </div>
 
         {/* image container */}
-        <div className="w-full max-w-[390px] h-auto max-h-[448px] border-2 border-red-400 mx-auto flex justify-center items-center relative">
+        <div className="w-full max-w-[390px] h-auto max-h-[448px]  mx-auto flex justify-center items-center relative">
 
           {/* Vector 2 */}
           <Image
@@ -286,7 +286,7 @@ export default function Home() {
       </div>
 
       {/* Hero Section Desktop  */}
-      <div className="hidden md:block md:w-full h-[655px] top-[120px] gap-0 border-2 border-red-400 absolute bg-[#F2F0F1]">
+      <div className="hidden md:block md:w-full h-[655px] top-[120px] gap-0  absolute bg-[#F2F0F1]">
         <p className="text-[64px] font-[Integral CF] font-[800] leading-[64px] text-left md:w-[577px] md:h-[173px] md:top-[90px] md:left-[100px] md:gap-0 md:absolute text-underline-position-[from-font] decoration-skip-ink-none">
           FIND CLOTHES THAT MATCHES YOUR STYLE
         </p>
@@ -337,9 +337,9 @@ export default function Home() {
 
         </div>
         {/* Image Outer Container */}
-        <div className="border-2 border-red-500 h-[650px] w-[590px] absolute right-0">
+        <div className=" h-[650px] w-[590px] absolute right-0">
           {/* Image Container */}
-          <div className="w-[590px] h-[650px] border-2 border-red-400 mx-auto flex justify-center items-center relative">
+          <div className="w-[590px] h-[650px] mx-auto flex justify-center items-center relative">
 
             {/* Vector 2 */}
             <Image
@@ -385,7 +385,7 @@ export default function Home() {
       </div>
 
       {/* Brands Container Mobile */}
-      <div className="sm:w-full h-[146px] flex flex-wrap justify-between gap-[12px] border-2 p-4 border-red-500 bg-[#000000] md:hidden">
+      <div className="sm:w-full h-[146px] flex flex-wrap justify-between gap-[12px] border-2 p-4  bg-[#000000] md:hidden">
         <Image
           src="/versace.svg"
           alt="Search Icon"
@@ -456,7 +456,7 @@ export default function Home() {
 
       {/* Brands Container Desktop */}
 
-      <div className="hidden md:flex w-full h-[122px] relative top-[660px] gap-[80px] items-center justify-center border-2 border-red-500 bg-black">
+      <div className="hidden md:flex w-full h-[122px] relative top-[660px] gap-[80px] items-center justify-center bg-black">
         <Image
           src="/versace.svg"
           alt="Versace Icon"
@@ -515,12 +515,12 @@ export default function Home() {
       </div>
 
       {/* New Arrivals Container Mobile */}
-      <div className="sm:w-full h-[550px] border-2 border-red-500  md:hidden">
+      <div className="sm:w-full h-[550px]   md:hidden">
         <p className="font-integral text-32px mt-[24px] font-extrabold leading-[38.4px] text-center underline-from-font decoration-none sm:text-2xl sm:leading-[2.5rem] sm:mt-6 md:text-3xl md:leading-[2.75rem] lg:text-4xl lg:leading-[3rem]">
           NEW ARRIVALS
         </p>
 
-        <div className="w-full h-[215px] border-2 border-red-500 absolute top-[1217px] gap-[20px] flex justify-center">
+        <div className="w-full h-[215px]  absolute top-[1217px] gap-[20px] flex justify-center">
           {/* first container */}
           <div className="relative w-full h-full">
             {/* Image Section */}
@@ -615,7 +615,7 @@ export default function Home() {
       </div>
 
       {/* New Arrivals Container Desktop */}
-      <div className="hidden md:flex flex-col w-full h-[780px] relative top-[660px] items-center justify-center border-2 border-red-500">
+      <div className="hidden md:flex flex-col w-full h-[780px] relative top-[660px] items-center justify-center">
         <p className="font-[IntegralCF] text-[48px] mb-5 font-[700] leading-[57.6px] text-center underline-from-font decoration-none hidden md:block">
           NEW ARRIVALS
         </p>
@@ -797,12 +797,12 @@ export default function Home() {
 
 
       {/* Top Selling Container Mobile */}
-      <div className="sm:w-full h-[550px] border-2 border-red-500  md:hidden">
+      <div className="sm:w-full h-[550px] md:hidden">
         <p className="font-integral text-32px mt-[24px] font-extrabold leading-[38.4px] text-center underline-from-font decoration-none sm:text-2xl sm:leading-[2.5rem] sm:mt-6 md:text-3xl md:leading-[2.75rem] lg:text-4xl lg:leading-[3rem]">
           TOP SELLING
         </p>
 
-        <div className="w-full h-[215px] border-2 border-red-500 absolute top-[1800px] gap-[20px] flex justify-center">
+        <div className="w-full h-[215px] absolute top-[1800px] gap-[20px] flex justify-center">
           {/* first container */}
           <div className="relative w-full h-full">
             {/* Image Section */}
@@ -897,7 +897,7 @@ export default function Home() {
       </div>
 
       {/* Top Selling Container Desktop */}
-      <div className="hidden md:flex flex-col w-full h-[780px] relative top-[660px] items-center justify-center border-2 border-red-500">
+      <div className="hidden md:flex flex-col w-full h-[780px] relative top-[660px] items-center justify-center">
 
         <p className="font-[IntegralCF] text-[48px] mb-5 font-[700] leading-[57.6px] text-center underline-from-font decoration-none hidden md:block">
           TOP SELLING
@@ -1073,11 +1073,11 @@ export default function Home() {
       </div>
 
       {/* Browse by Dress style Mobile  */}
-      <div className="sm:w-full h-[1000px] border-2 border-red-500 md:hidden">
+      <div className="sm:w-full h-[1000px]  md:hidden">
         <div className="w-[358px] h-[975px] absolute top-[2250px] left-[16px] gap-0 rounded-[20px] bg-[#F0F0F0]">
           <h1 className="font-integral text-[32px] p-4 font-extrabold top-[40px] leading-[36px] text-center decoration-skip-ink-none">BROWSE BY <br /> DRESS STYLE</h1>
           {/* Casual container  */}
-          <div className="w-[310px] h-[190px] relative top-[50px] left-[24px] gap-0 rounded-[20px] border-2 border-red-500">
+          <div className="w-[310px] h-[190px] relative top-[50px] left-[24px] gap-0 rounded-[20px]">
             <p className="text-[24px] font-bold leading-[32.4px] text-left left-2 decoration-skip-ink-none z-10 relative">
               Casual
             </p>
@@ -1090,7 +1090,7 @@ export default function Home() {
             />
           </div>
           {/* Formal container  */}
-          <div className="w-[310px] h-[190px] relative top-[55px] left-[24px] gap-0 rounded-[20px] border-2 border-red-500">
+          <div className="w-[310px] h-[190px] relative top-[55px] left-[24px] gap-0 rounded-[20px]">
             <p className="text-[24px] font-bold leading-[32.4px] text-left left-2 decoration-skip-ink-none z-10 relative">
               Formal
             </p>
@@ -1103,7 +1103,7 @@ export default function Home() {
             />
           </div>
           {/* Party container  */}
-          <div className="w-[310px] h-[190px] relative top-[60px] left-[24px] gap-0 rounded-[20px] border-2 border-red-500">
+          <div className="w-[310px] h-[190px] relative top-[60px] left-[24px] gap-0 rounded-[20px]">
             <p className="text-[24px] font-bold leading-[32.4px] text-left left-2 decoration-skip-ink-none z-10 relative">
               Party
             </p>
@@ -1116,7 +1116,7 @@ export default function Home() {
             />
           </div>
           {/* Gym container  */}
-          <div className="w-[310px] h-[190px] relative top-[65px] left-[24px] gap-0 rounded-[20px] border-2 border-red-500">
+          <div className="w-[310px] h-[190px] relative top-[65px] left-[24px] gap-0 rounded-[20px]">
             <p className="text-[24px] font-bold leading-[32.4px] text-left left-2 decoration-skip-ink-none z-10 relative">
               Gym
             </p>
@@ -1142,7 +1142,7 @@ export default function Home() {
         {/* First Row  */}
         <div className="flex flex-row justify-center gap-[25px]">
           {/* Casual container  */}
-          <div className="w-[355px] h-[230px] relative top-[50px] left-[24px] gap-0 rounded-[20px] border-2 border-red-500">
+          <div className="w-[355px] h-[230px] relative top-[50px] left-[24px] gap-0 rounded-[20px]">
             <p className="text-[24px] font-bold leading-[32.4px] text-left left-2 decoration-skip-ink-none z-10 relative">
               Casual
             </p>
@@ -1155,7 +1155,7 @@ export default function Home() {
             />
           </div>
           {/* Formal container  */}
-          <div className="w-[455px] h-[230px] relative top-[55px] left-[24px] gap-0 rounded-[20px] border-2 border-red-500">
+          <div className="w-[455px] h-[230px] relative top-[55px] left-[24px] gap-0 rounded-[20px] ">
             <p className="text-[24px] font-bold leading-[32.4px] text-left left-2 decoration-skip-ink-none z-10 relative">
               Formal
             </p>
@@ -1171,7 +1171,7 @@ export default function Home() {
         {/* Second Row  */}
         <div className="flex flex-row justify-center gap-[25px] mt-2">
           {/* Party container  */}
-          <div className="w-[455px] h-[230px] relative top-[55px] left-[24px] gap-0 rounded-[20px] border-2 border-red-500">
+          <div className="w-[455px] h-[230px] relative top-[55px] left-[24px] gap-0 rounded-[20px]">
             <p className="text-[24px] font-bold leading-[32.4px] text-left left-2 decoration-skip-ink-none z-10 relative">
               Formal
             </p>
@@ -1184,7 +1184,7 @@ export default function Home() {
             />
           </div>
           {/* Gym container  */}
-          <div className="w-[355px] h-[230px] relative top-[55px] left-[24px] gap-0 rounded-[20px] border-2 border-red-500">
+          <div className="w-[355px] h-[230px] relative top-[55px] left-[24px] gap-0 rounded-[20px]">
             <p className="text-[24px] font-bold leading-[32.4px] text-left left-2 decoration-skip-ink-none z-10 relative">
               Casual
             </p>
@@ -1201,7 +1201,7 @@ export default function Home() {
       </div>
 
       {/* Our Happy Customers Mobile  */}
-      <div className="sm:w-full h-[450px] border-2 border-red-400 md:hidden">
+      <div className="sm:w-full h-[400px]   md:hidden">
         <div className="font-integral text-[32px] mt-10 ml-5 font-extrabold leading-[36px] text-left decoration-skip-ink-none">
           Our Happy <br />Customers
         </div>
@@ -1248,7 +1248,7 @@ export default function Home() {
       </div>
 
       {/* Our Happy Customers Desktop  */}
-      <div className="hidden md:block w-full h-[550px] absolute top-[3200px] border-2 border-red-500">
+      <div className="hidden md:block w-full h-[550px] absolute top-[3200px] ">
         <div className="text-[48px] font-extrabold leading-9 mt-10 ml-[95px] mb-10 text-left  decoration-skip-ink-none">
           Our Happy Customers
         </div>
@@ -1366,20 +1366,20 @@ export default function Home() {
       </div>
 
       {/* Start upto date Mobile  */}
-      <div className="sm:w-[450px] rounded-[24px] h-[400px] border-2 border-red-400 bg-black md:hidden">
-        <div className="text-left text-white font-integral mt-10 ml-5 text-[32px] font-extrabold leading-[35px] decoration-skip-ink-none">
+      <div className="sm:w-[450px] rounded-[24px] h-[400px] bg-black md:hidden">
+        <div className="text-left text-white font-integral mt-[12px] ml-5 text-[32px] font-extrabold leading-[55px] decoration-skip-ink-none">
           STAY UPTO DATE ABOUT OUR <br />LATEST OFFERS
         </div>
         <input
           type="email"
           placeholder="Enter your email address"
-          className="w-[350px] h-[50px] absolute top-[3900px] left-[24px] px-[16px] py-[12px] gap-[12px] rounded-full bg-white border-none"
+          className="w-[350px] h-[50px] absolute top-[3910px] left-[24px] px-[16px] py-[12px] gap-[12px] rounded-full bg-white border-none"
         />
-        <button className="w-[350px] h-[50px] absolute font-bold top-[3980px] left-[24px] bg-white rounded-full py-[12px]">Subscribe to Newsletter</button>
+        <button className="w-[350px] h-[50px] absolute font-bold top-[4000px] left-[24px] bg-white rounded-full py-[12px]">Subscribe to Newsletter</button>
       </div>
 
       {/* Start upto date Desktop  */}
-      <div className="hidden md:flex w-[1300px] h-[200px] rounded-[24px] absolute top-[3700px] border-2 bg-black border-red-500 mx-[100px]">
+      <div className="hidden md:flex w-[1300px] h-[200px] rounded-[24px] absolute top-[3700px] bg-black mx-[100px]">
         {/* Left Side: Heading */}
         <div className="text-left text-white font-integral text-[32px] font-extrabold leading-[35px] decoration-skip-ink-none w-[50%] p-5">
           STAY UPTO DATE ABOUT<br /> OUR LATEST OFFERS
@@ -1403,7 +1403,7 @@ export default function Home() {
       </div>
 
       {/* footer Mobile  */}
-      <footer className="sm:w-[392px] h-[1200px] top-[3120px] left-[-1px] gap-0 bg-[#F0F0F0] md:hidden">
+      <footer className="sm:w-[392px] h-[1000px] top-[3120px] left-[-1px] gap-0 bg-[#F0F0F0] md:hidden">
         <p
           className="font-integral text-[28.85px] font-extrabold pt-8 pl-4 leading-[34.62px] text-left decoration-skip-ink-none"
           style={{ textUnderlinePosition: 'from-font' }}
@@ -1414,7 +1414,7 @@ export default function Home() {
           We have clothes that suits your style and which you’re <br />proud to wear. From women to men.
         </p>
         {/* Icons box  */}
-        <div className="w-[300px] h-[28px] absolute top-[4225px] left-[16px] flex gap-4 items-center border-t">
+        <div className="w-[300px] h-[28px] absolute top-[4280px] left-[16px] flex gap-4 items-center border-t">
           <Image
             src="/twitter.png"
             alt="Twitter Icon"
@@ -1441,7 +1441,7 @@ export default function Home() {
           />
         </div>
         {/* First Container  */}
-        <div className="w-[200px] h-[300px] border-2 border-red-500 absolute top-[4300px] left-[-1px] gap-0 border-t p-4">
+        <div className="w-[200px] h-[300px]  absolute top-[4300px] left-[-1px] gap-0 border-t p-4">
           {/* Main Company Heading */}
           <h2 className="text-2xl font-bold text-black">Company</h2>
 
@@ -1454,7 +1454,7 @@ export default function Home() {
           </div>
         </div>
         {/* Second Container  */}
-        <div className="w-[200px] h-[300px] border-2 border-red-500 absolute top-[4300px] left-[200px] gap-0 border-t p-4">
+        <div className="w-[200px] h-[300px]  absolute top-[4300px] left-[200px] gap-0 border-t p-4">
           {/* Main Company Heading */}
           <h2 className="text-2xl font-bold text-black">Help</h2>
 
@@ -1467,7 +1467,7 @@ export default function Home() {
           </div>
         </div>
         {/* Third Container  */}
-        <div className="w-[200px] h-[300px] border-2 border-red-500 absolute top-[4600px] left-[-1px] gap-0 border-t p-4">
+        <div className="w-[200px] h-[300px] absolute top-[4600px] left-[-1px] gap-0 border-t p-4">
           {/* Main Company Heading */}
           <h2 className="text-2xl font-bold text-black">FAQ</h2>
 
@@ -1480,7 +1480,7 @@ export default function Home() {
           </div>
         </div>
         {/* Fourth Container  */}
-        <div className="w-[200px] h-[300px] border-2 border-red-500 absolute top-[4600px] left-[200px] gap-0 border-t p-4">
+        <div className="w-[200px] h-[300px] absolute top-[4600px] left-[200px] gap-0 border-t p-4">
           {/* Main Company Heading */}
           <h2 className="text-2xl font-bold text-black">Resources</h2>
 
@@ -1493,10 +1493,10 @@ export default function Home() {
           </div>
         </div>
         <hr />
-        <p className="w-full font-satoshi text-[14px] border-2 mt-[700px]  border-red-400 font-normal leading-[50px] text-center underline-offset-[from-font] decoration-skip-ink-none">
+        <p className="w-full font-satoshi text-[14px] mt-[700px] font-normal leading-[50px] text-center underline-offset-[from-font] decoration-skip-ink-none">
           Shop.co © 2000-2023, All Rights Reserved
         </p>
-        <div className="w-[300px] h-[28px] absolute mt-[630px] border-2 border-e-red-500  justify-center top-[4358px] left-[16px] flex gap-4 items-center border-t">
+        <div className="w-[300px] h-[28px] absolute mt-[630px] border-2 justify-center top-[4358px] left-[25px] flex gap-4 items-center">
           <Image
             src="/visa.png"
             alt="Twitter Icon"
@@ -1534,6 +1534,142 @@ export default function Home() {
 
 
       </footer>
+
+      {/* footer Desktop  */}
+      <footer className="hidden md:flex w-full h-[400px]  absolute top-[3900px] left-[-1px] gap-0 bg-[#F0F0F0] sm:hidden">
+        <div className="w-full h-full flex gap-8 justify-between items-start px-[100px] py-[100px]">
+          {/* First Container */}
+          <div className="w-[200px] h-full gap-[35px]">
+            <div className="w-auto h-[90px] gap-[25px]">
+              <p className="text-[33.45px] font-extrabold leading-[40.15px] text-left decoration-skip-ink-none">
+                SHOP.CO
+              </p>
+              <p className="text-[14px] font-normal leading-[22px] text-left text-gray-500 decoration-skip-ink-none">
+                We have clothes that suit your style and which you’re proud to wear. From women to men.
+              </p>
+              <div className="w-[300px] h-[28px] flex gap-4 items-center border-t mt-[20px]">
+                <Image
+                  src="/twitter.png"
+                  alt="Twitter Icon"
+                  width={28}
+                  height={28}
+                />
+                <Image
+                  src="/facebook.png"
+                  alt="Facebook Icon"
+                  width={28}
+                  height={28}
+                />
+                <Image
+                  src="/instagram.png"
+                  alt="Instagram Icon"
+                  width={28}
+                  height={28}
+                />
+                <Image
+                  src="/github.png"
+                  alt="GitHub Icon"
+                  width={28}
+                  height={28}
+                />
+              </div>
+            </div>
+          </div>
+
+          {/* Second Container */}
+          <div className="w-[200px] h-full">
+            {/* Main Company Heading */}
+            <h2 className="text-2xl font-bold text-black">Company</h2>
+
+            {/* Subheadings with light text */}
+            <div className="mt-4 space-y-2">
+              <h3 className="text-lg text-gray-500">About</h3>
+              <h3 className="text-lg text-gray-500">Features</h3>
+              <h3 className="text-lg text-gray-500">Works</h3>
+              <h3 className="text-lg text-gray-500">Career</h3>
+            </div>
+          </div>
+          {/* Second Container */}
+          <div className="w-[200px] h-full">
+            {/* Main Company Heading */}
+            <h2 className="text-2xl font-bold text-black">Help</h2>
+
+            {/* Subheadings with light text */}
+            <div className="mt-4 space-y-2">
+              <h3 className="text-lg text-gray-500">Customer Support</h3>
+              <h3 className="text-lg text-gray-500">Delivery Details</h3>
+              <h3 className="text-lg text-gray-500">Terms and Conditions</h3>
+              <h3 className="text-lg text-gray-500">Privacy Policy</h3>
+            </div>
+          </div>
+          {/* Second Container */}
+          <div className="w-[200px] h-full">
+            {/* Main Company Heading */}
+            <h2 className="text-2xl font-bold text-black">FAQ</h2>
+
+            {/* Subheadings with light text */}
+            <div className="mt-4 space-y-2">
+              <h3 className="text-lg text-gray-500">Account</h3>
+              <h3 className="text-lg text-gray-500">Manage Deliveries</h3>
+              <h3 className="text-lg text-gray-500">Orders</h3>
+              <h3 className="text-lg text-gray-500">Payments</h3>
+            </div>
+          </div>
+          {/* Second Container */}
+          <div className="w-[200px] h-full">
+            {/* Main Company Heading */}
+            <h2 className="text-2xl font-bold text-black">Resources</h2>
+
+            {/* Subheadings with light text */}
+            <div className="mt-4 space-y-2">
+              <h3 className="text-lg text-gray-500">Free eBooks</h3>
+              <h3 className="text-lg text-gray-500">Development Tutorial</h3>
+              <h3 className="text-lg text-gray-500">How to-Blog</h3>
+              <h3 className="text-lg text-gray-500">Youtube Playlist</h3>
+            </div>
+          </div>
+        </div>
+        <hr />
+
+
+
+
+      </footer>
+      <div className="hidden md:flex w-full mt-[2500px] h-[80px] justify-between items-center px-[16px]">
+
+        <div className="text-gray-500 text-[14px] ml-11  font-[400] leading-[18.9px] text-left">
+          Shop.co © 2000-2023, All Rights Reserved
+        </div>
+
+
+        <div className="w-[300px] h-[28px] flex gap-4 items-center border-t mt-[20px]">
+          <Image
+            src="/twitter.png"
+            alt="Twitter Icon"
+            width={28}
+            height={28}
+          />
+          <Image
+            src="/facebook.png"
+            alt="Facebook Icon"
+            width={28}
+            height={28}
+          />
+          <Image
+            src="/instagram.png"
+            alt="Instagram Icon"
+            width={28}
+            height={28}
+          />
+          <Image
+            src="/github.png"
+            alt="GitHub Icon"
+            width={28}
+            height={28}
+          />
+        </div>
+      </div>
+
 
 
 
