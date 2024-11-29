@@ -1403,7 +1403,7 @@ export default function Home() {
       </div>
 
       {/* footer Mobile  */}
-      <footer className="sm:w-[392px] h-[846px] top-[3120px] left-[-1px] gap-0 bg-[#F0F0F0] md:hidden">
+      <footer className="sm:w-[392px] h-[1200px] top-[3120px] left-[-1px] gap-0 bg-[#F0F0F0] md:hidden">
         <p
           className="font-integral text-[28.85px] font-extrabold pt-8 pl-4 leading-[34.62px] text-left decoration-skip-ink-none"
           style={{ textUnderlinePosition: 'from-font' }}
@@ -1414,16 +1414,123 @@ export default function Home() {
           We have clothes that suits your style and which you’re <br />proud to wear. From women to men.
         </p>
         {/* Icons box  */}
-        <div
-          className="w-[148px] h-[28px] absolute top-[3898.58px] left-[16px] gap-0 border-t border-opacity-0 opacity-0">
+        <div className="w-[300px] h-[28px] absolute top-[4225px] left-[16px] flex gap-4 items-center border-t">
           <Image
             src="/twitter.png"
-            alt="Example Image"
+            alt="Twitter Icon"
             width={28}
             height={28}
-            className="absolute top-0 left-0"
+          />
+          <Image
+            src="/facebook.png"
+            alt="Facebook Icon"
+            width={28}
+            height={28}
+          />
+          <Image
+            src="/instagram.png"
+            alt="Facebook Icon"
+            width={28}
+            height={28}
+          />
+          <Image
+            src="/github.png"
+            alt="Facebook Icon"
+            width={28}
+            height={28}
           />
         </div>
+        {/* First Container  */}
+        <div className="w-[200px] h-[300px] border-2 border-red-500 absolute top-[4300px] left-[-1px] gap-0 border-t p-4">
+          {/* Main Company Heading */}
+          <h2 className="text-2xl font-bold text-black">Company</h2>
+
+          {/* Subheadings with light text */}
+          <div className="mt-4 space-y-2">
+            <h3 className="text-lg text-gray-500">About</h3>
+            <h3 className="text-lg text-gray-500">Features</h3>
+            <h3 className="text-lg text-gray-500">Works</h3>
+            <h3 className="text-lg text-gray-500">Career</h3>
+          </div>
+        </div>
+        {/* Second Container  */}
+        <div className="w-[200px] h-[300px] border-2 border-red-500 absolute top-[4300px] left-[200px] gap-0 border-t p-4">
+          {/* Main Company Heading */}
+          <h2 className="text-2xl font-bold text-black">Help</h2>
+
+          {/* Subheadings with light text */}
+          <div className="mt-4 space-y-2">
+            <h3 className="text-lg text-gray-500">Customer Support</h3>
+            <h3 className="text-lg text-gray-500">Delivery Details</h3>
+            <h3 className="text-lg text-gray-500">Terms and Conditions</h3>
+            <h3 className="text-lg text-gray-500">Privacy Policy</h3>
+          </div>
+        </div>
+        {/* Third Container  */}
+        <div className="w-[200px] h-[300px] border-2 border-red-500 absolute top-[4600px] left-[-1px] gap-0 border-t p-4">
+          {/* Main Company Heading */}
+          <h2 className="text-2xl font-bold text-black">FAQ</h2>
+
+          {/* Subheadings with light text */}
+          <div className="mt-4 space-y-2">
+            <h3 className="text-lg text-gray-500">Account</h3>
+            <h3 className="text-lg text-gray-500">Manage Deliveries</h3>
+            <h3 className="text-lg text-gray-500">Orders</h3>
+            <h3 className="text-lg text-gray-500">Payment</h3>
+          </div>
+        </div>
+        {/* Fourth Container  */}
+        <div className="w-[200px] h-[300px] border-2 border-red-500 absolute top-[4600px] left-[200px] gap-0 border-t p-4">
+          {/* Main Company Heading */}
+          <h2 className="text-2xl font-bold text-black">Resources</h2>
+
+          {/* Subheadings with light text */}
+          <div className="mt-4 space-y-2">
+            <h3 className="text-lg text-gray-500">Free eBook</h3>
+            <h3 className="text-lg text-gray-500">Development Tutorial</h3>
+            <h3 className="text-lg text-gray-500">How to-Blog</h3>
+            <h3 className="text-lg text-gray-500">Youtube Playlist</h3>
+          </div>
+        </div>
+        <hr />
+        <p className="w-full font-satoshi text-[14px] border-2 mt-[700px]  border-red-400 font-normal leading-[50px] text-center underline-offset-[from-font] decoration-skip-ink-none">
+          Shop.co © 2000-2023, All Rights Reserved
+        </p>
+        <div className="w-[300px] h-[28px] absolute mt-[630px] border-2 border-e-red-500  justify-center top-[4358px] left-[16px] flex gap-4 items-center border-t">
+          <Image
+            src="/twitter.png"
+            alt="Twitter Icon"
+            width={28}
+            height={28}
+          />
+          <Image
+            src="/facebook.png"
+            alt="Facebook Icon"
+            width={28}
+            height={28}
+          />
+          <Image
+            src="/instagram.png"
+            alt="Facebook Icon"
+            width={28}
+            height={28}
+          />
+          <Image
+            src="/github.png"
+            alt="Facebook Icon"
+            width={28}
+            height={28}
+          />
+          <Image
+            src="/github.png"
+            alt="Facebook Icon"
+            width={28}
+            height={28}
+          />
+        </div>
+
+
+
 
 
       </footer>
