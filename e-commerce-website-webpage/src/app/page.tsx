@@ -1402,6 +1402,21 @@ export default function Home() {
         </div>
       </div>
 
+      {/* footer Mobile  */}
+      <footer className="sm:w-[392px] h-[846px] top-[3120px] left-[-1px] gap-0 bg-[#F0F0F0] md:hidden">
+        <p
+          className="font-integral text-[28.85px] font-extrabold pt-8 pl-4 leading-[34.62px] text-left decoration-skip-ink-none"
+          style={{ textUnderlinePosition: 'from-font' }}
+        >
+          SHOP.CO
+        </p>
+        <p className="font-satoshi text-[14px] font-normal pt-2 pl-4 leading-[20px] text-left text-gray-400 decoration-skip-ink-none" style={{ textUnderlinePosition: 'from-font' }}>
+          We have clothes that suits your style and which you’re <br />proud to wear. From women to men.
+        </p>
+
+
+      </footer>
+
 
 
 
