@@ -1522,7 +1522,7 @@ export default function Home() {
             height={28}
           />
           <Image
-            src="/github.png"
+            src="/gpay.png"
             alt="Facebook Icon"
             width={28}
             height={28}
