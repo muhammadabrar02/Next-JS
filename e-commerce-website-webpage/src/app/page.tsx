@@ -1413,6 +1413,17 @@ export default function Home() {
         <p className="font-satoshi text-[14px] font-normal pt-2 pl-4 leading-[20px] text-left text-gray-400 decoration-skip-ink-none" style={{ textUnderlinePosition: 'from-font' }}>
           We have clothes that suits your style and which you’re <br />proud to wear. From women to men.
         </p>
+        {/* Icons box  */}
+        <div
+          className="w-[148px] h-[28px] absolute top-[3898.58px] left-[16px] gap-0 border-t border-opacity-0 opacity-0">
+          <Image
+            src="/twitter.png"
+            alt="Example Image"
+            width={28}
+            height={28}
+            className="absolute top-0 left-0"
+          />
+        </div>
 
 
       </footer>
