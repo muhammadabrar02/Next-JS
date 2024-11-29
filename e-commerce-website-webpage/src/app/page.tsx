@@ -1498,19 +1498,19 @@ export default function Home() {
         </p>
         <div className="w-[300px] h-[28px] absolute mt-[630px] border-2 border-e-red-500  justify-center top-[4358px] left-[16px] flex gap-4 items-center border-t">
           <Image
-            src="/twitter.png"
+            src="/visa.png"
             alt="Twitter Icon"
             width={28}
             height={28}
           />
           <Image
-            src="/facebook.png"
+            src="/mastercard.png"
             alt="Facebook Icon"
             width={28}
             height={28}
           />
           <Image
-            src="/instagram.png"
+            src="/paypal.png"
             alt="Facebook Icon"
             width={28}
             height={28}
