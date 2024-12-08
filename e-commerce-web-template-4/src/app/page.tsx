@@ -286,6 +286,83 @@ export default function Home() {
                 </h3>
               </div>
             </div>
+
+            {/* Latest Products container  */}
+            <div className="py-8 px-4 border-2 border-green-400  h-auto">
+              {/* <!-- Latest Products Heading --> */}
+              <h2 className="text-3xl font-bold text-[#1A0B5B] font-josefin text-center text-gray-900 mb-8">
+                Latest Products
+              </h2>
+
+              {/* <!-- Product Container with Image and Info --> */}
+              <div className="flex border-2 border-red-400 flex-col justify-center gap-8 mb-8">
+                {/* <!-- Product Image Container --> */}
+                <div
+                  className="w-[365px] h-[306px] bg-[#F7F7F7] flex justify-center items-center relative"
+                  style={{ gap: "0px" }}
+                >
+                  {/* <!-- Image --> */}
+                  <img
+                    src="comforthandy.png"
+                    alt="Product Image"
+                    className="object-contain w-full h-full"
+                  />
+
+
+                </div>
+
+                {/* <!-- Product Information (Heading, Price) --> */}
+                <div className="flex flex-row justify-between items-center w-[250px]">
+                  {/* <!-- Product Heading --> */}
+                  <h3 className="text-xl font-semibold text-[#151875] font-josefin mb-2">
+                    Product Title
+                  </h3>
+
+                  {/* <!-- Price Section --> */}
+                  <div className="flex flex-col items-end">
+                    <div className="flex items-center mb-2">
+                      <p className="text-lg font-bold text-[#151875] mr-2">$42.00</p>
+                      <p className="text-lg font-semibold text-red-500 line-through">$65.00</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              {/* <!-- Product Container with Image and Info --> */}
+              <div className="flex border-2 border-red-400 flex-col justify-center gap-8 mb-8">
+                {/* <!-- Product Image Container --> */}
+                <div
+                  className="w-[365px] h-[306px] bg-[#F7F7F7] flex justify-center items-center relative"
+                  style={{ gap: "0px" }}
+                >
+                  {/* <!-- Image --> */}
+                  <img
+                    src="comforthandy.png"
+                    alt="Product Image"
+                    className="object-contain w-full h-full"
+                  />
+
+
+                </div>
+
+                {/* <!-- Product Information (Heading, Price) --> */}
+                <div className="flex flex-row justify-between items-center w-[250px]">
+                  {/* <!-- Product Heading --> */}
+                  <h3 className="text-xl font-semibold text-[#151875] font-josefin mb-2">
+                    Product Title
+                  </h3>
+
+                  {/* <!-- Price Section --> */}
+                  <div className="flex flex-col items-end">
+                    <div className="flex items-center mb-2">
+                      <p className="text-lg font-bold text-[#151875] mr-2">$42.00</p>
+                      <p className="text-lg font-semibold text-red-500 line-through">$65.00</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
           </div>
 
         </div>
