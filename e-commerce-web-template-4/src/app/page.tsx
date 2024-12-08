@@ -66,10 +66,11 @@ export default function Home() {
 
       </section>
       {/* Features Section */}
-      <section className="border-2 border-red-400 w-full h-[1000px] mt-2 flex justify-center items-center">
-        <div className="border-2 border-red-500 h-[700px] w-[1020px]">
-          <div className="py-8 px-4 border-2 border-red-400 h-[650px]">
-            <h2 className="text-3xl font-bold text-[#1A0B5B]font-josefin text-center text-gray-900 mb-8">
+      <section className="border-2 border-red-400 w-full h-auto mt-2 flex justify-center items-center">
+        <div className="border-2 border-green-500 h-auto w-full max-w-[1020px]">
+          {/* Featured Products */}
+          <div className="py-8 px-4 border-2 border-red-400 h-auto">
+            <h2 className="text-3xl font-bold text-[#1A0B5B] font-josefin text-center text-gray-900 mb-8">
               Featured Products
             </h2>
 
@@ -78,33 +79,26 @@ export default function Home() {
               <div className="bg-white w-full border border-gray-200 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
                 <div className="relative h-56 bg-[#F6F7FB]">
                   <img
-                    src="/product1.png" // Replace with actual image path
+                    src="/product1.png"
                     alt="Product 1"
                     className="object-cover w-full h-full"
                   />
                 </div>
-                <div className="bg-white border border-gray-200 p-8 rounded-lg shadow-md max-w-lg w-full">
-                  {/* Heading */}
-                  <h2 className="text-3xl font-lato font-semibold text-pink-500 text-center mb-6">
+                <div className="bg-white border border-gray-200 p-6 rounded-lg shadow-md h-full w-full">
+                  <h2 className="text-xl md:text-2xl font-lato font-semibold text-pink-500 text-center mb-4">
                     Cantilever Chair
                   </h2>
-
-                  {/* Colored Rectangles */}
-                  <div className="flex justify-between gap-3 mb-6">
-                    <div className="w-16 h-3 bg-[#05E6B7] rounded-md"></div>
-                    <div className="w-16 h-3 bg-[#F701A8] rounded-md"></div>
-                    <div className="w-16 h-3 bg-[#00009D] rounded-md"></div>
+                  <div className="flex justify-between gap-3 mb-4">
+                    <div className="w-12 md:w-16 h-3 bg-[#05E6B7] rounded-md"></div>
+                    <div className="w-12 md:w-16 h-3 bg-[#F701A8] rounded-md"></div>
+                    <div className="w-12 md:w-16 h-3 bg-[#00009D] rounded-md"></div>
                   </div>
-
-                  {/* Product Code */}
-                  <p className="text-xl text-[#151875] text-center mb-4">Code - Y523201</p>
-
-                  {/* Price */}
-                  <p className="text-2xl font-semibold text-[#151875] text-center">$42.00</p>
+                  <p className="text-sm md:text-lg text-[#151875] text-center mb-2">Code - Y523201</p>
+                  <p className="text-lg md:text-xl font-semibold text-[#151875] text-center">$42.00</p>
                 </div>
               </div>
-              {/* Product Card 2*/}
 
+              {/* Product Card 2 */}
               <div className="bg-white border w-full border-gray-200 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
                 {/* Image Container */}
                 <div className="relative h-56 bg-[#F6F7FB]">
@@ -180,71 +174,123 @@ export default function Home() {
                   <p className="text-2xl font-semibold text-white text-center">$42.00</p>
                 </div>
               </div>
-
-
               {/* Product Card 3 */}
               <div className="bg-white w-full border border-gray-200 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
                 <div className="relative h-56 bg-[#F6F7FB]">
                   <img
-                    src="/product3.png" // Replace with actual image path
+                    src="/product3.png"
                     alt="Product 1"
                     className="object-cover w-full h-full"
                   />
                 </div>
-                <div className="bg-white border border-gray-200 p-8 rounded-lg shadow-md max-w-lg w-full">
-                  {/* Heading */}
-                  <h2 className="text-3xl font-lato font-semibold text-pink-500 text-center mb-6">
+                <div className="bg-white border border-gray-200 p-6 rounded-lg shadow-md h-full w-full">
+                  <h2 className="text-xl md:text-2xl font-lato font-semibold text-pink-500 text-center mb-4">
                     Cantilever Chair
                   </h2>
-
-                  {/* Colored Rectangles */}
-                  <div className="flex justify-between gap-3 mb-6">
-                    <div className="w-16 h-3 bg-[#05E6B7] rounded-md"></div>
-                    <div className="w-16 h-3 bg-[#F701A8] rounded-md"></div>
-                    <div className="w-16 h-3 bg-[#00009D] rounded-md"></div>
+                  <div className="flex justify-between gap-3 mb-4">
+                    <div className="w-12 md:w-16 h-3 bg-[#05E6B7] rounded-md"></div>
+                    <div className="w-12 md:w-16 h-3 bg-[#F701A8] rounded-md"></div>
+                    <div className="w-12 md:w-16 h-3 bg-[#00009D] rounded-md"></div>
                   </div>
-
-                  {/* Product Code */}
-                  <p className="text-xl text-[#151875] text-center mb-4">Code - Y523201</p>
-
-                  {/* Price */}
-                  <p className="text-2xl font-semibold text-[#151875] text-center">$42.00</p>
+                  <p className="text-sm md:text-lg text-[#151875] text-center mb-2">Code - Y523201</p>
+                  <p className="text-lg md:text-xl font-semibold text-[#151875] text-center">$42.00</p>
                 </div>
               </div>
               {/* Product Card 4 */}
               <div className="bg-white w-full border border-gray-200 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
                 <div className="relative h-56 bg-[#F6F7FB]">
                   <img
-                    src="/product4.png" // Replace with actual image path
+                    src="/product4.png"
                     alt="Product 1"
                     className="object-cover w-full h-full"
                   />
                 </div>
-                <div className="bg-white border border-gray-200 p-8 rounded-lg shadow-md max-w-lg w-full">
-                  {/* Heading */}
-                  <h2 className="text-3xl font-lato font-semibold text-pink-500 text-center mb-6">
+                <div className="bg-white border border-gray-200 p-6 rounded-lg shadow-md h-full w-full">
+                  <h2 className="text-xl md:text-2xl font-lato font-semibold text-pink-500 text-center mb-4">
                     Cantilever Chair
                   </h2>
-
-                  {/* Colored Rectangles */}
-                  <div className="flex justify-between gap-3 mb-6">
-                    <div className="w-16 h-3 bg-[#05E6B7] rounded-md"></div>
-                    <div className="w-16 h-3 bg-[#F701A8] rounded-md"></div>
-                    <div className="w-16 h-3 bg-[#00009D] rounded-md"></div>
+                  <div className="flex justify-between gap-3 mb-4">
+                    <div className="w-12 md:w-16 h-3 bg-[#05E6B7] rounded-md"></div>
+                    <div className="w-12 md:w-16 h-3 bg-[#F701A8] rounded-md"></div>
+                    <div className="w-12 md:w-16 h-3 bg-[#00009D] rounded-md"></div>
                   </div>
-
-                  {/* Product Code */}
-                  <p className="text-xl text-[#151875] text-center mb-4">Code - Y523201</p>
-
-                  {/* Price */}
-                  <p className="text-2xl font-semibold text-[#151875] text-center">$42.00</p>
+                  <p className="text-sm md:text-lg text-[#151875] text-center mb-2">Code - Y523201</p>
+                  <p className="text-lg md:text-xl font-semibold text-[#151875] text-center">$42.00</p>
                 </div>
               </div>
 
+
+
+
             </div>
           </div>
+          {/* Progress Indicators  */}
+          <div className="flex border-2 ml-auto border-red-400 justify-center items-center gap-2 mt-8">
+            {/* Progress 1 */}
+            <div
+              className="w-24 h-2 rounded-full"
+              style={{ backgroundColor: "#FB2E86" }}
+            ></div>
+
+            {/* Progress 2 */}
+            <div
+              className="w-16 h-2 rounded-full"
+              style={{ backgroundColor: "#FEBAD7" }}
+            ></div>
+
+            {/* Progress 3 */}
+            <div
+              className="w-16 h-2 rounded-full"
+              style={{ backgroundColor: "#FEBAD7" }}
+            ></div>
+
+            {/* Progress 4 */}
+            <div
+              className="w-16 h-2 rounded-full"
+              style={{ backgroundColor: "#FEBAD7" }}
+            ></div>
+          </div>
+          {/* Latest Products */}
+          <div className="py-8 px-4 border-2 border-red-400 h-auto">
+            <h2 className="text-3xl font-bold text-[#1A0B5B] font-josefin text-center text-gray-900 mb-8">
+              Latest Products
+            </h2>
+
+            {/* <!-- Options Container --> */}
+            <div className="flex justify-center gap-8 mb-8">
+              {/* <!-- New Arrival Option --> */}
+              <div className="text-center">
+                <h3 className="text-xl font-semibold" style={{ color: "#FB4997" }}>
+                  New Arrival
+                </h3>
+              </div>
+
+              {/* <!-- Best Seller Option --> */}
+              <div className="text-center">
+                <h3 className="text-xl font-semibold" style={{ color: "#151875" }}>
+                  Best Seller
+                </h3>
+              </div>
+
+              {/* <!-- Featured Option --> */}
+              <div className="text-center">
+                <h3 className="text-xl font-semibold" style={{ color: "#151875" }}>
+                  Featured
+                </h3>
+              </div>
+
+              {/* <!-- Special Offer Option --> */}
+              <div className="text-center">
+                <h3 className="text-xl font-semibold" style={{ color: "#151875" }}>
+                  Special Offer
+                </h3>
+              </div>
+            </div>
+          </div>
+
         </div>
       </section>
+
 
 
 
