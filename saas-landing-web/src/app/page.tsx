@@ -102,69 +102,69 @@ export default function Home() {
       --------------------------------------------WORK MANAGEMENT---------------------------
       -------------------------------------------------------------------------------------- */}
       <div className="w-full h-auto p-6 sm:p-10 lg:p-[140px_220px_140px_220px] gap-8 flex flex-col">
-  {/* Content */}
-  <div className="w-full max-w-[1480px] min-h-[547px] gap-8 flex flex-col lg:flex-row">
-    
-    {/* Left Section */}
-    <div className="w-full max-w-[672px] min-h-[411px] gap-8">
-      <div className="w-full max-w-[672px] min-h-[288px] gap-6">
-        <h1 className="text-4xl sm:text-4xl lg:text-[72px] font-inter font-bold leading-tight text-left underline-offset-auto decoration-slice">
-          <span className="mb-4 block">Project</span>
-          Management
-        </h1>
+        {/* Content */}
+        <div className="w-full max-w-[1480px] min-h-[547px] gap-8 flex flex-col lg:flex-row">
 
-        <h2 className="text-base sm:text-lg mt-8 lg:text-[18px] font-inter font-normal leading-relaxed text-left underline-offset-auto decoration-slice">
-          Images, videos, PDFs, and audio files are supported. Create math expressions and <br /> diagrams directly from the app. Take photos with the mobile app and save them <br /> to a note.
-        </h2>
+          {/* Left Section */}
+          <div className="w-full max-w-[672px] min-h-[411px] gap-8">
+            <div className="w-full max-w-[672px] min-h-[288px] gap-6">
+              <h1 className="text-4xl sm:text-4xl lg:text-[72px] font-inter font-bold leading-tight text-left underline-offset-auto decoration-slice">
+                <span className="mb-4 block">Project</span>
+                Management
+              </h1>
+
+              <h2 className="text-base sm:text-lg mt-8 lg:text-[18px] font-inter font-normal leading-relaxed text-left underline-offset-auto decoration-slice">
+                Images, videos, PDFs, and audio files are supported. Create math expressions and <br /> diagrams directly from the app. Take photos with the mobile app and save them <br /> to a note.
+              </h2>
+            </div>
+
+            {/* Button */}
+            <button className="w-[219px] h-[63px] p-[20px_0px_0px_0px] justify-center gap-2 rounded-[8px] bg-[#4F9CF9] flex mx-auto sm:mx-0">
+              <p className="w-[159px] h-[23px] font-[Inter] text-[18px] text-white align-center font-medium leading-[23px] tracking-[-0.02em] text-left decoration-skip-none">
+                Try Whitepace free
+              </p>
+              <div className="flex items-center align-center">
+                <Image src="/arrow.svg" alt="Arrow" width={16} height={16} className="ml-2" />
+              </div>
+            </button>
+          </div>
+
+          {/* Right Image Box */}
+          <div className="w-full lg:w-[824px] h-[300px] sm:h-[400px] bg-[#C4DEFD] mt-4 lg:mt-0">
+            {/* Image or content for right section */}
+          </div>
+        </div>
+
+        {/* Second Content Block */}
+        <div className="w-full h-auto flex flex-col lg:flex-row justify-center items-center gap-8 lg:gap-16">
+          <Image
+            src="/work.png"
+            alt="Description"
+            width={710}
+            height={661}
+            className="w-full lg:w-[710px] h-auto"
+          />
+
+          <div className="w-full lg:w-[670px] h-auto gap-8 flex flex-col p-4 justify-center items-center lg:items-start">
+            <h1 className="text-3xl sm:text-4xl lg:text-[72px] font-inter font-extrabold leading-snug text-left decoration-none">
+              Work <br /> together
+            </h1>
+            <p className="text-base sm:text-lg lg:text-[18px] font-inter font-normal leading-relaxed text-left decoration-none">
+              With Whitepace, share your notes with your colleagues and collaborate on them. You can also publish a note to the internet and share the URL with others.
+            </p>
+
+            {/* Button */}
+            <button className="w-[186px] h-[63px] p-[20px_40px] gap-2 rounded-[6px] bg-[#4F9CF9] flex justify-center lg:justify-start">
+              <p className="w-full h-full font-[Inter] text-[18px] text-white font-medium leading-[23px] tracking-[-0.02em] text-left decoration-skip-none justify-center items-center flex">
+                Try it now
+              </p>
+              <div className="flex items-center">
+                <Image src="/arrow.svg" alt="Arrow" width={16} height={16} className="ml-2" />
+              </div>
+            </button>
+          </div>
+        </div>
       </div>
-
-      {/* Button */}
-      <button className="w-[219px] h-[63px] p-[20px_0px_0px_0px] justify-center gap-2 rounded-[8px] bg-[#4F9CF9] flex mx-auto sm:mx-0">
-        <p className="w-[159px] h-[23px] font-[Inter] text-[18px] text-white align-center font-medium leading-[23px] tracking-[-0.02em] text-left decoration-skip-none">
-          Try Whitepace free
-        </p>
-        <div className="flex items-center align-center">
-          <Image src="/arrow.svg" alt="Arrow" width={16} height={16} className="ml-2" />
-        </div>
-      </button>
-    </div>
-
-    {/* Right Image Box */}
-    <div className="w-full lg:w-[824px] h-[300px] sm:h-[400px] bg-[#C4DEFD] mt-4 lg:mt-0">
-      {/* Image or content for right section */}
-    </div>
-  </div>
-
-  {/* Second Content Block */}
-  <div className="w-full h-auto flex flex-col lg:flex-row justify-center items-center gap-8 lg:gap-16">
-    <Image
-      src="/work.png"
-      alt="Description"
-      width={710}
-      height={661}
-      className="w-full lg:w-[710px] h-auto"
-    />
-
-    <div className="w-full lg:w-[670px] h-auto gap-8 flex flex-col p-4 justify-center items-center lg:items-start">
-      <h1 className="text-3xl sm:text-4xl lg:text-[72px] font-inter font-extrabold leading-snug text-left decoration-none">
-        Work <br /> together
-      </h1>
-      <p className="text-base sm:text-lg lg:text-[18px] font-inter font-normal leading-relaxed text-left decoration-none">
-        With Whitepace, share your notes with your colleagues and collaborate on them. You can also publish a note to the internet and share the URL with others.
-      </p>
-
-      {/* Button */}
-      <button className="w-[186px] h-[63px] p-[20px_40px] gap-2 rounded-[6px] bg-[#4F9CF9] flex justify-center lg:justify-start">
-        <p className="w-full h-full font-[Inter] text-[18px] text-white font-medium leading-[23px] tracking-[-0.02em] text-left decoration-skip-none justify-center items-center flex">
-          Try it now
-        </p>
-        <div className="flex items-center">
-          <Image src="/arrow.svg" alt="Arrow" width={16} height={16} className="ml-2" />
-        </div>
-      </button>
-    </div>
-  </div>
-</div>
 
 
 
