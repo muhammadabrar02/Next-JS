@@ -312,7 +312,7 @@ export default function Home() {
                   <div className="flex flex-row justify-between items-center w-full">
                     {/* <!-- Product Heading --> */}
                     <h3 className="text-sm font-semibold text-[#151875] font-josefin mb-2">
-                     Comfort Handy Craft
+                      Comfort Handy Craft
                     </h3>
 
                     {/* <!-- Price Section --> */}
@@ -401,7 +401,7 @@ export default function Home() {
                   <div className="flex flex-row justify-between items-center w-full">
                     {/* <!-- Product Heading --> */}
                     <h3 className="text-sm font-semibold text-[#151875] font-josefin mb-2">
-                     Comfort Handy Craft
+                      Comfort Handy Craft
                     </h3>
 
                     {/* <!-- Price Section --> */}
@@ -472,9 +472,99 @@ export default function Home() {
                   </div>
                 </div>
               </div>
+              {/* What Shopex Offer Container */}
               <h2 className="text-3xl font-bold text-[#1A0B5B] font-josefin text-center text-gray-900 mb-8">
                 What Shopex Offer!
               </h2>
+
+              {/* Card Container with Flex */}
+              <div className="flex justify-center space-x-4 mb-8">
+                {/* First Card */}
+                <div className="relative w-[270px] h-[320px] border-2  rounded-lg shadow-lg p-4">
+                  {/* Image Container */}
+                  <div className="flex justify-center items-center mb-4">
+                    <img
+                      src="deliverybus.png"
+                      alt="Image"
+                      className="object-contain w-[200px] h-[150px]"
+                    />
+                  </div>
+                  {/* Card Content */}
+                  <div className="text-center">
+                    <h3 className="text-2xl font-semibold text-[#151875] mb-2">
+                      24/7 Support
+                    </h3>
+                    <p className="text-gray-500">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                  </div>
+                </div>
+
+                {/* Second Card */}
+                <div className="relative w-[270px] h-[320px] border-2  rounded-lg shadow-lg p-4">
+                  {/* Image Container */}
+                  <div className="flex justify-center items-center mb-4">
+                    <img
+                      src="cashback.png"
+                      alt="Image"
+                      className="object-contain w-[200px] h-[150px]"
+                    />
+                  </div>
+                  {/* Card Content */}
+                  <div className="text-center">
+                    <h3 className="text-2xl font-semibold text-[#151875] mb-2">
+                      24/7 Support
+                    </h3>
+                    <p className="text-gray-500">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                  </div>
+                </div>
+
+                {/* Third Card */}
+                <div className="relative w-[270px] h-[320px] border-2  rounded-lg shadow-lg p-4">
+                  {/* Image Container */}
+                  <div className="flex justify-center items-center mb-4">
+                    <img
+                      src="premium-quality.png"
+                      alt="Image"
+                      className="object-contain w-[200px] h-[150px]"
+                    />
+                  </div>
+                  {/* Card Content */}
+                  <div className="text-center">
+                    <h3 className="text-2xl font-semibold text-[#151875] mb-2">
+                      24/7 Support
+                    </h3>
+                    <p className="text-gray-500">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                  </div>
+                </div>
+
+                {/* Fourth Card */}
+                <div className="relative w-[270px] h-[320px] border-2  rounded-lg shadow-lg p-4">
+                  {/* Image Container */}
+                  <div className="flex justify-center items-center mb-4">
+                    <img
+                      src="hourssupport.png"
+                      alt="Image"
+                      className="object-contain w-[200px] h-[150px]"
+                    />
+                  </div>
+                  {/* Card Content */}
+                  <div className="text-center">
+                    <h3 className="text-2xl font-semibold text-[#151875] mb-2">
+                      24/7 Support
+                    </h3>
+                    <p className="text-gray-500">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+
             </div>
 
 
