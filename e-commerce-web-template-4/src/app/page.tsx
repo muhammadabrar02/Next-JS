@@ -863,22 +863,80 @@ export default function Home() {
         </section>
       </section>
       {/* Discount Item section  */}
-      <section className="flex flex-col h-[900px] border-2 border-red-400 w-full items-center space-y-4">
+      <section className="flex flex-col h-[880px] mt-6 border-2 border-red-400 w-full items-center space-y-6 px-4 sm:px-6 lg:px-8">
         {/* Section Heading */}
-        <h2 className="text-3xl font-bold text-[#1A0B5B] font-josefin text-center text-gray-900 mb-8">
+        <h2 className="text-2xl sm:text-3xl font-bold text-[#1A0B5B] font-josefin text-center text-gray-900 mb-8">
           Discount Item
         </h2>
 
-        <div className="border-2 border-red-400 h-[500px] w-[900px]">
-          <div className="flex justify-center space-x-6">
-            <span className="text-[#FB4997] underline">Wood Chair</span>
-            <span className="text-[#151875]">Plastic Chair</span>
-            <span className="text-[#151875]">Sofa Collection</span>
+        <div className="border-2  border-red-400 w-full max-w-[1280px] h-[750px] p-4 sm:p-6 lg:p-8">
+          {/* Options Container */}
+          <div className="flex flex-wrap justify-center space-x-4 sm:space-x-6 mb-6">
+            <span className="text-[#FB4997] underline cursor-pointer">Wood Chair</span>
+            <span className="text-[#151875] cursor-pointer">Plastic Chair</span>
+            <span className="text-[#151875] cursor-pointer">Sofa Collection</span>
           </div>
 
+          {/* Main Content Container */}
+          <div className="flex flex-col lg:flex-row items-center justify-between space-y-8 lg:space-y-0 lg:space-x-8">
+            {/* Content Container */}
+            <div className="max-w-lg space-y-4 text-center lg:text-left">
+              {/* Heading */}
+              <h1 className="text-2xl sm:text-3xl font-bold text-[#151875]">
+                20% Discount Of All Products
+              </h1>
+              {/* Subheading */}
+              <p className="text-lg sm:text-xl text-[#FB2E86] font-semibold">
+                Eams Sofa Compact
+              </p>
+              {/* Description */}
+              <p className="text-gray-500">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu eget feugiat habitasse nec, bibendum condimentum.
+              </p>
+              {/* Options with Checkmarks */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div className="flex items-center space-x-2">
+                  <span className="text-[#7569B2]">&#10003;</span>
+                  <p className="text-gray-500">Material expose like metals</p>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <span className="text-[#7569B2]">&#10003;</span>
+                  <p className="text-gray-500">Clear lines and geometric figures</p>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <span className="text-[#7569B2]">&#10003;</span>
+                  <p className="text-gray-500">Simple neutral colours.</p>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <span className="text-[#7569B2]">&#10003;</span>
+                  <p className="text-gray-500">Material expose like metals</p>
+                </div>
+              </div>
+              {/* Button */}
+              <button className="px-6 py-2 bg-[#FB2E86] text-white rounded-[8px] hover:bg-pink-700">
+                Shop Now
+              </button>
+            </div>
 
+            {/* Image Container */}
+            <div className="relative flex justify-center items-center w-full max-w-md mt-8 lg:mt-0">
+              {/* Background Circle */}
+              <div className="absolute inset-0 bg-[#FCECF1] rounded-full w-[240px] h-[240px] sm:w-[300px] sm:h-[300px] lg:w-[384px] lg:h-[384px]"></div>
+              {/* Image */}
+              <div className="relative w-full h-full flex justify-center items-center">
+                <Image
+                  src="/brsofachair.png" // Replace this with the actual path to your image
+                  alt="Sofa"
+                  width={320}
+                  height={320}
+                  className="object-cover rounded-full w-3/4 h-3/4"
+                />
+              </div>
+            </div>
+          </div>
         </div>
       </section>
+
 
 
 
