@@ -478,7 +478,7 @@ export default function Home() {
 
               </div>
 
-              
+
               {/* What Shopex Offer Container */}
               <h2 className="text-3xl font-bold text-[#1A0B5B] font-josefin text-center text-gray-900 mb-8">
                 What Shopex Offer!
@@ -584,6 +584,319 @@ export default function Home() {
         </div>
       </section>
       {/* Trending Product Section  */}
+      <section className="w-full max-w-full mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-24 bg-[#F1F0FF] overflow-x-hidden">
+        <div className="w-full sm:w-[640px] md:w-[768px] lg:w-[1024px] xl:w-[1050px] 2xl:w-[1050px] h-[550px] flex flex-col sm:flex-row justify-between items-center p-6 border-2 border-red-400 mx-auto">
+          {/* Image and Circle */}
+          <div className="relative w-full sm:w-[40%] md:w-[40%] lg:w-[40%] xl:w-[50%] 2xl:w-[50%] h-[200px] flex-shrink-0 mx-auto mb-4 sm:mb-0 overflow-hidden">
+            <div className="absolute inset-0 flex items-center justify-center bg-[#F5E1FC] rounded-full">
+              <Image
+                src="/purplesofa.png"
+                alt="Product Image"
+                className="rounded-full"
+                layout="intrinsic"
+                width={300} // Adjust the size of the image here
+                height={300} // Adjust the size of the image here
+                objectFit="cover"
+              />
+            </div>
+          </div>
+
+          {/* Text Block on the Right */}
+          <div className="flex flex-col justify-between ml-6 w-full sm:w-[60%] md:w-[60%] lg:w-[60%] xl:w-[50%] 2xl:w-[50%]">
+            {/* Heading */}
+            <h2 className="text-[#151875] text-2xl font-semibold text-center sm:text-left">
+              Unique Features Of Latest & Trending Products
+            </h2>
+
+            {/* Bullet Points */}
+            <ul className="list-none mt-4 space-y-2 text-center sm:text-left">
+              <li className="flex items-start gap-2 text-[#ACABC3]">
+                <span className="text-xl text-[#F52B70]">•</span> All frames constructed with hardwood solids and laminates
+              </li>
+              <li className="flex items-start gap-2 text-[#ACABC3]">
+                <span className="text-xl text-[#2B2BF5]">•</span> Reinforced with double wood dowels, glue, screw - nails corner blocks, and machine nails
+              </li>
+              <li className="flex items-start gap-2 text-[#ACABC3]">
+                <span className="text-xl text-[#2BF5CC]">•</span> Arms, backs and seats are structurally reinforced
+              </li>
+            </ul>
+
+            {/* Buttons */}
+            <div className="mt-4 flex flex-col sm:flex-row sm:space-x-4 justify-center sm:justify-start">
+              <button className="bg-[#F52B70] text-white px-6 py-2 rounded-md">Add to Cart</button>
+              <div className="flex items-start flex-col space-x-2 text-[#151875] px-4 py-2 rounded-md mt-4 sm:mt-0 sm:ml-4">
+                <span className="font-bold">B&B Italian Sofa</span>
+                <span>$32.00</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* Trending Products Listing  */}
+      <section className="flex flex-col justify-center items-center py-8">
+        {/* Section Heading */}
+        <h2 className="text-3xl font-bold text-[#1A0B5B] mt-6 font-josefin text-center text-gray-900 mb-8">
+          Trending Products
+        </h2>
+
+        {/* Card Container */}
+        <div className="flex flex-wrap justify-center gap-6">
+          {/* First Card */}
+          <div className="w-full sm:w-[300px] lg:w-[320px] bg-white rounded-lg shadow-lg overflow-hidden">
+            <div className="relative w-full h-[250px] p-4">
+              {/* Image with gap from top and sides */}
+              <div className="relative w-full h-full p-4 bg-[#F5F6F8] border-2 border-white flex items-center justify-center">
+                <Image
+                  src="/tchair1.png" // Replace with your image
+                  alt="Cantilever Chair"
+                  layout="intrinsic" // Keeps the aspect ratio intact
+                  width={300} // Specify a width to control size
+                  height={250} // Specify height to control size
+                  className="rounded-lg"
+                />
+              </div>
+            </div>
+
+            {/* Card Content */}
+            <div className="flex flex-col items-center justify-center px-4 py-6">
+              {/* Product Heading */}
+              <h3 className="text-[#151875] text-xl font-semibold text-center">Cantilever Chair</h3>
+
+              {/* Price */}
+              <div className="mt-2 flex items-center justify-center gap-2">
+                <span className="text-[#151875] text-lg font-bold">$26.00</span>
+                <span className="text-gray-400 line-through text-lg">$42.00</span>
+              </div>
+            </div>
+          </div>
+
+          {/* Second Card */}
+          <div className="w-full sm:w-[300px] lg:w-[320px] bg-white rounded-lg shadow-lg overflow-hidden">
+            <div className="relative w-full h-[250px] p-4">
+              {/* Image with gap from top and sides */}
+              <div className="relative w-full h-full p-4 bg-[#F5F6F8] border-2 border-white flex items-center justify-center">
+                <Image
+                  src="/tchair2.png" // Replace with your image
+                  alt="Cantilever Chair"
+                  layout="intrinsic" // Keeps the aspect ratio intact
+                  width={300} // Specify a width to control size
+                  height={250} // Specify height to control size
+                  className="rounded-lg"
+                />
+              </div>
+            </div>
+
+            {/* Card Content */}
+            <div className="flex flex-col items-center justify-center px-4 py-6">
+              {/* Product Heading */}
+              <h3 className="text-[#151875] text-xl font-semibold text-center">Cantilever Chair</h3>
+
+              {/* Price */}
+              <div className="mt-2 flex items-center justify-center gap-2">
+                <span className="text-[#151875] text-lg font-bold">$26.00</span>
+                <span className="text-gray-400 line-through text-lg">$42.00</span>
+              </div>
+            </div>
+          </div>
+
+          {/* Third Card */}
+          <div className="w-full sm:w-[300px] lg:w-[320px] bg-white rounded-lg shadow-lg overflow-hidden">
+            <div className="relative w-full h-[250px] p-4">
+              {/* Image with gap from top and sides */}
+              <div className="relative w-full h-full p-4 bg-[#F5F6F8] border-2 border-white flex items-center justify-center">
+                <Image
+                  src="/tchair3.png" // Replace with your image
+                  alt="Cantilever Chair"
+                  layout="intrinsic" // Keeps the aspect ratio intact
+                  width={300} // Specify a width to control size
+                  height={250} // Specify height to control size
+                  className="rounded-lg"
+                />
+              </div>
+            </div>
+
+            {/* Card Content */}
+            <div className="flex flex-col items-center justify-center px-4 py-6">
+              {/* Product Heading */}
+              <h3 className="text-[#151875] text-xl font-semibold text-center">Cantilever Chair</h3>
+
+              {/* Price */}
+              <div className="mt-2 flex items-center justify-center gap-2">
+                <span className="text-[#151875] text-lg font-bold">$26.00</span>
+                <span className="text-gray-400 line-through text-lg">$42.00</span>
+              </div>
+            </div>
+          </div>
+
+          {/* Fourth Card */}
+          <div className="w-full sm:w-[300px] lg:w-[320px] bg-white rounded-lg shadow-lg overflow-hidden">
+            <div className="relative w-full h-[250px] p-4">
+              {/* Image with gap from top and sides */}
+              <div className="relative w-full h-full p-4 bg-[#F5F6F8] border-2 border-white flex items-center justify-center">
+                <Image
+                  src="/tchair4.png" // Replace with your image
+                  alt="Cantilever Chair"
+                  layout="intrinsic" // Keeps the aspect ratio intact
+                  width={300} // Specify a width to control size
+                  height={250} // Specify height to control size
+                  className="rounded-lg"
+                />
+              </div>
+            </div>
+
+            {/* Card Content */}
+            <div className="flex flex-col items-center justify-center px-4 py-6">
+              {/* Product Heading */}
+              <h3 className="text-[#151875] text-xl font-semibold text-center">Cantilever Chair</h3>
+
+              {/* Price */}
+              <div className="mt-2 flex items-center justify-center gap-2">
+                <span className="text-[#151875] text-lg font-bold">$26.00</span>
+                <span className="text-gray-400 line-through text-lg">$42.00</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* under Trending products secitons */}
+      <section className="flex flex-wrap justify-center items-center gap-4">
+        {/* first Box */}
+        <div className="w-full sm:w-[420px] h-[400px] gap-0 p-2 bg-[#FFF6FB] relative">
+          {/* Heading */}
+          <h2 className="text-[#151875] font-bold text-xl text-start">23% off in all products</h2>
+
+          {/* Shop Now (underlined and pink) */}
+          <p className="text-pink-500 text-start underline mt-2">Shop Now</p>
+
+          {/* Image in the bottom-right */}
+          <div className="absolute bottom-0 right-0">
+            <Image
+              src="/clock.png"
+              alt="Clock"
+              width={213}
+              height={207}
+              className="left-[576px]"
+            />
+          </div>
+        </div>
+
+        {/* second Box */}
+        <div className="w-full sm:w-[420px] h-[400px] gap-0 p-2 bg-[#EEEFFB] relative">
+          {/* Heading */}
+          <h2 className="text-[#151875] font-bold text-xl text-start">23% off in all products</h2>
+
+          {/* Shop Now (underlined and pink) */}
+          <p className="text-pink-500 text-start underline mt-2">Shop Now</p>
+
+          {/* Image in the bottom-right */}
+          <div className="absolute bottom-0 right-0">
+            <Image
+              src="/shelf.png"
+              alt="Shelf"
+              width={213}
+              height={207}
+              className="left-[576px]"
+            />
+          </div>
+        </div>
+
+        <section className="flex flex-col items-center space-y-4 mt-4">
+          {/* First Product Card */}
+          <div className="w-full sm:w-[300px] bg-white shadow-lg flex flex-col sm:flex-row">
+            {/* Image Container (Left side) */}
+            <div className="w-full sm:w-[120px] h-[120px] bg-gray-200 p-4 flex items-center justify-center">
+              <Image
+                src="/ch1.png"
+                alt="Product 1"
+                width={120}
+                height={120}
+                className="object-cover"
+              />
+            </div>
+
+            {/* Product Details (Right side) */}
+            <div className="p-4">
+              <h3 className="text-[#151875] font-bold text-lg">Executive Seat Chair</h3>
+              <p className="text-[#151875] text-xl mt-2">$32.00</p>
+            </div>
+          </div>
+
+          {/* Second Product Card */}
+          <div className="w-full sm:w-[300px] bg-white shadow-lg flex flex-col sm:flex-row">
+            {/* Image Container (Left side) */}
+            <div className="w-full sm:w-[120px] h-[120px] bg-gray-200 p-4 flex items-center justify-center">
+              <Image
+                src="/ch2.png"
+                alt="Product 2"
+                width={120}
+                height={120}
+                className="object-cover"
+              />
+            </div>
+
+            {/* Product Details (Right side) */}
+            <div className="p-4">
+              <h3 className="text-[#151875] font-bold text-lg">Executive Seat Chair</h3>
+              <p className="text-[#151875] text-xl mt-2">$32.00</p>
+            </div>
+          </div>
+
+          {/* Third Product Card */}
+          <div className="w-full sm:w-[300px] bg-white shadow-lg flex flex-col sm:flex-row">
+            {/* Image Container (Left side) */}
+            <div className="w-full sm:w-[120px] h-[120px] bg-gray-200 p-4 flex items-center justify-center">
+              <Image
+                src="/ch3.png"
+                alt="Product 3"
+                width={120}
+                height={120}
+                className="object-cover"
+              />
+            </div>
+
+            {/* Product Details (Right side) */}
+            <div className="p-4">
+              <h3 className="text-[#151875] font-bold text-lg">Executive Seat Chair</h3>
+              <p className="text-[#151875] text-xl mt-2">$32.00</p>
+            </div>
+          </div>
+        </section>
+      </section>
+      {/* Discount Item section  */}
+      <section className="flex flex-col h-[900px] border-2 border-red-400 w-full items-center space-y-4">
+        {/* Section Heading */}
+        <h2 className="text-3xl font-bold text-[#1A0B5B] font-josefin text-center text-gray-900 mb-8">
+          Discount Item
+        </h2>
+
+        <div className="border-2 border-red-400 h-[500px] w-[900px]">
+          <div className="flex justify-center space-x-6">
+            <span className="text-[#FB4997] underline">Wood Chair</span>
+            <span className="text-[#151875]">Plastic Chair</span>
+            <span className="text-[#151875]">Sofa Collection</span>
+          </div>
+
+
+        </div>
+      </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
