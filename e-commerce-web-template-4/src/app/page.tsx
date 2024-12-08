@@ -287,80 +287,198 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Latest Products container  */}
-            <div className="py-8 px-4 border-2 border-green-400  h-auto">
+            {/* Latest Products container */}
+            <div className="py-8 px-4 border-2 w-full border-green-400 h-auto">
               {/* <!-- Latest Products Heading --> */}
               <h2 className="text-3xl font-bold text-[#1A0B5B] font-josefin text-center text-gray-900 mb-8">
                 Latest Products
               </h2>
 
               {/* <!-- Product Container with Image and Info --> */}
-              <div className="flex border-2 border-red-400 flex-col justify-center gap-8 mb-8">
-                {/* <!-- Product Image Container --> */}
-                <div
-                  className="w-[365px] h-[306px] bg-[#F7F7F7] flex justify-center items-center relative"
-                  style={{ gap: "0px" }}
-                >
-                  {/* <!-- Image --> */}
-                  <img
-                    src="comforthandy.png"
-                    alt="Product Image"
-                    className="object-contain w-full h-full"
-                  />
+              <div className="flex justify-between gap-x-4 mb-8">
+                {/* <!-- Product Container 1 --> */}
+                <div className="flex border-2 border-red-400 flex-col justify-center mb-8 w-1/3">
+                  {/* <!-- Product Image Container --> */}
+                  <div className="bg-[#F7F7F7] flex justify-center items-center relative">
+                    {/* <!-- Image --> */}
+                    <img
+                      src="comforthandy.png"
+                      alt="Product Image"
+                      className="object-contain w-full h-full max-w-[300px] max-h-[306px]"
+                    />
+                  </div>
 
+                  {/* <!-- Product Information (Heading, Price) --> */}
+                  <div className="flex flex-row justify-between items-center w-full">
+                    {/* <!-- Product Heading --> */}
+                    <h3 className="text-sm font-semibold text-[#151875] font-josefin mb-2">
+                     Comfort Handy Craft
+                    </h3>
 
+                    {/* <!-- Price Section --> */}
+                    <div className="flex flex-col items-end">
+                      <div className="flex items-center mb-2">
+                        <p className="text-sm font-bold text-[#151875] mr-2">$42.00</p>
+                        <p className="text-sm font-semibold text-red-500 line-through">$65.00</p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
 
-                {/* <!-- Product Information (Heading, Price) --> */}
-                <div className="flex flex-row justify-between items-center w-[250px]">
-                  {/* <!-- Product Heading --> */}
-                  <h3 className="text-xl font-semibold text-[#151875] font-josefin mb-2">
-                    Product Title
-                  </h3>
+                {/* <!-- Product Container 2 --> */}
+                <div className="flex border-2 border-red-400 flex-col justify-center mb-8 w-1/3">
+                  {/* <!-- Product Image Container --> */}
+                  <div className="bg-[#F7F7F7] flex justify-center items-center relative">
+                    {/* <!-- Image --> */}
+                    <img
+                      src="yellowchair.png"
+                      alt="Product Image"
+                      className="object-contain w-full h-full max-w-[365px] max-h-[306px]"
+                    />
+                  </div>
 
-                  {/* <!-- Price Section --> */}
-                  <div className="flex flex-col items-end">
-                    <div className="flex items-center mb-2">
-                      <p className="text-lg font-bold text-[#151875] mr-2">$42.00</p>
-                      <p className="text-lg font-semibold text-red-500 line-through">$65.00</p>
+                  {/* <!-- Product Information (Heading, Price) --> */}
+                  <div className="flex flex-row justify-between items-center w-full">
+                    {/* <!-- Product Heading --> */}
+                    <h3 className="text-sm font-semibold text-[#151875] font-josefin mb-2">
+                      Comfort Handy Craft
+                    </h3>
+
+                    {/* <!-- Price Section --> */}
+                    <div className="flex flex-col items-end">
+                      <div className="flex items-center mb-2">
+                        <p className="text-sm font-bold text-[#151875] mr-2">$42.00</p>
+                        <p className="text-sm font-semibold text-red-500 line-through">$65.00</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* <!-- Product Container 3 --> */}
+                <div className="flex border-2 border-red-400 flex-col justify-center mb-8 w-1/3">
+                  {/* <!-- Product Image Container --> */}
+                  <div className="bg-[#F7F7F7] flex justify-center items-center relative">
+                    {/* <!-- Image --> */}
+                    <img
+                      src="whitechair.png"
+                      alt="Product Image"
+                      className="object-contain w-full h-full max-w-[300px] max-h-[306px]"
+                    />
+                  </div>
+
+                  {/* <!-- Product Information (Heading, Price) --> */}
+                  <div className="flex flex-row justify-between items-center w-full">
+                    {/* <!-- Product Heading --> */}
+                    <h3 className="text-sm font-semibold text-[#151875] font-josefin mb-2">
+                      Comfort Handy Craft
+                    </h3>
+
+                    {/* <!-- Price Section --> */}
+                    <div className="flex flex-col items-end">
+                      <div className="flex items-center mb-2">
+                        <p className="text-sm font-bold text-[#151875] mr-2">$42.00</p>
+                        <p className="text-sm font-semibold text-red-500 line-through">$65.00</p>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-              {/* <!-- Product Container with Image and Info --> */}
-              <div className="flex border-2 border-red-400 flex-col justify-center gap-8 mb-8">
-                {/* <!-- Product Image Container --> */}
-                <div
-                  className="w-[365px] h-[306px] bg-[#F7F7F7] flex justify-center items-center relative"
-                  style={{ gap: "0px" }}
-                >
-                  {/* <!-- Image --> */}
-                  <img
-                    src="comforthandy.png"
-                    alt="Product Image"
-                    className="object-contain w-full h-full"
-                  />
+              {/* <!-- Product Container with Image and Info  Row 2--> */}
+              <div className="flex justify-between gap-x-4 mb-8">
+                {/* <!-- Product Container 1 --> */}
+                <div className="flex border-2 border-red-400 flex-col justify-center mb-8 w-1/3">
+                  {/* <!-- Product Image Container --> */}
+                  <div className="bg-[#F7F7F7] flex justify-center items-center relative">
+                    {/* <!-- Image --> */}
+                    <img
+                      src="graysofa.png"
+                      alt="Product Image"
+                      className="object-contain w-full h-full max-w-[300px] max-h-[306px]"
+                    />
+                  </div>
 
+                  {/* <!-- Product Information (Heading, Price) --> */}
+                  <div className="flex flex-row justify-between items-center w-full">
+                    {/* <!-- Product Heading --> */}
+                    <h3 className="text-sm font-semibold text-[#151875] font-josefin mb-2">
+                     Comfort Handy Craft
+                    </h3>
 
+                    {/* <!-- Price Section --> */}
+                    <div className="flex flex-col items-end">
+                      <div className="flex items-center mb-2">
+                        <p className="text-sm font-bold text-[#151875] mr-2">$42.00</p>
+                        <p className="text-sm font-semibold text-red-500 line-through">$65.00</p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
 
-                {/* <!-- Product Information (Heading, Price) --> */}
-                <div className="flex flex-row justify-between items-center w-[250px]">
-                  {/* <!-- Product Heading --> */}
-                  <h3 className="text-xl font-semibold text-[#151875] font-josefin mb-2">
-                    Product Title
-                  </h3>
+                {/* <!-- Product Container 2 --> */}
+                <div className="flex border-2 border-red-400 flex-col justify-center mb-8 w-1/3">
+                  {/* <!-- Product Image Container --> */}
+                  <div className="bg-[#F7F7F7] flex justify-center items-center relative">
+                    {/* <!-- Image --> */}
+                    <img
+                      src="blackchair.png"
+                      alt="Product Image"
+                      className="object-contain w-full h-full max-w-[365px] max-h-[306px]"
+                    />
+                  </div>
 
-                  {/* <!-- Price Section --> */}
-                  <div className="flex flex-col items-end">
-                    <div className="flex items-center mb-2">
-                      <p className="text-lg font-bold text-[#151875] mr-2">$42.00</p>
-                      <p className="text-lg font-semibold text-red-500 line-through">$65.00</p>
+                  {/* <!-- Product Information (Heading, Price) --> */}
+                  <div className="flex flex-row justify-between items-center w-full">
+                    {/* <!-- Product Heading --> */}
+                    <h3 className="text-sm font-semibold text-[#151875] font-josefin mb-2">
+                      Comfort Handy Craft
+                    </h3>
+
+                    {/* <!-- Price Section --> */}
+                    <div className="flex flex-col items-end">
+                      <div className="flex items-center mb-2">
+                        <p className="text-sm font-bold text-[#151875] mr-2">$42.00</p>
+                        <p className="text-sm font-semibold text-red-500 line-through">$65.00</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* <!-- Product Container 3 --> */}
+                <div className="flex border-2 border-red-400 flex-col justify-center mb-8 w-1/3">
+                  {/* <!-- Product Image Container --> */}
+                  <div className="bg-[#F7F7F7] flex justify-center items-center relative">
+                    {/* <!-- Image --> */}
+                    <img
+                      src="goldenchair.png"
+                      alt="Product Image"
+                      className="object-contain w-full h-full max-w-[300px] max-h-[306px]"
+                    />
+                  </div>
+
+                  {/* <!-- Product Information (Heading, Price) --> */}
+                  <div className="flex flex-row justify-between items-center w-full">
+                    {/* <!-- Product Heading --> */}
+                    <h3 className="text-sm font-semibold text-[#151875] font-josefin mb-2">
+                      Comfort Handy Craft
+                    </h3>
+
+                    {/* <!-- Price Section --> */}
+                    <div className="flex flex-col items-end">
+                      <div className="flex items-center mb-2">
+                        <p className="text-sm font-bold text-[#151875] mr-2">$42.00</p>
+                        <p className="text-sm font-semibold text-red-500 line-through">$65.00</p>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
+              <h2 className="text-3xl font-bold text-[#1A0B5B] font-josefin text-center text-gray-900 mb-8">
+                What Shopex Offer!
+              </h2>
             </div>
+
+
+
 
 
           </div>
