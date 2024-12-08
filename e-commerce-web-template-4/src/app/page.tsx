@@ -257,54 +257,53 @@ export default function Home() {
             </h2>
 
             {/* <!-- Options Container --> */}
-            <div className="flex justify-center gap-8 mb-8">
+            <div className="flex justify-center gap-8 mb-8 flex-wrap">
               {/* <!-- New Arrival Option --> */}
               <div className="text-center">
-                <h3 className="text-xl font-semibold" style={{ color: "#FB4997" }}>
+                <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold" style={{ color: "#FB4997" }}>
                   New Arrival
                 </h3>
               </div>
 
               {/* <!-- Best Seller Option --> */}
               <div className="text-center">
-                <h3 className="text-xl font-semibold" style={{ color: "#151875" }}>
+                <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold" style={{ color: "#151875" }}>
                   Best Seller
                 </h3>
               </div>
 
               {/* <!-- Featured Option --> */}
               <div className="text-center">
-                <h3 className="text-xl font-semibold" style={{ color: "#151875" }}>
+                <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold" style={{ color: "#151875" }}>
                   Featured
                 </h3>
               </div>
 
               {/* <!-- Special Offer Option --> */}
               <div className="text-center">
-                <h3 className="text-xl font-semibold" style={{ color: "#151875" }}>
+                <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold" style={{ color: "#151875" }}>
                   Special Offer
                 </h3>
               </div>
             </div>
 
+
+
             {/* Latest Products container */}
             <div className="py-8 px-4 border-2 w-full border-green-400 h-auto">
-              {/* <!-- Latest Products Heading --> */}
-              <h2 className="text-3xl font-bold text-[#1A0B5B] font-josefin text-center text-gray-900 mb-8">
-                Latest Products
-              </h2>
+
 
               {/* <!-- Product Container with Image and Info --> */}
-              <div className="flex justify-between gap-x-4 mb-8">
-                {/* <!-- Product Container 1 --> */}
-                <div className="flex border-2 border-red-400 flex-col justify-center mb-8 w-1/3">
+              <div className="flex flex-wrap justify-center mb-8">
+                {/* Product Container 1 */}
+                <div className="flex border-2 border-red-400 flex-col justify-start gap-1 mb-8 max-w-[260px]">
                   {/* <!-- Product Image Container --> */}
                   <div className="bg-[#F7F7F7] flex justify-center items-center relative">
                     {/* <!-- Image --> */}
                     <img
                       src="comforthandy.png"
                       alt="Product Image"
-                      className="object-contain w-full h-full max-w-[300px] max-h-[306px]"
+                      className="object-contain w-full h-full max-w-[260px] max-h-[306px]"
                     />
                   </div>
 
@@ -325,15 +324,16 @@ export default function Home() {
                   </div>
                 </div>
 
+
                 {/* <!-- Product Container 2 --> */}
-                <div className="flex border-2 border-red-400 flex-col justify-center mb-8 w-1/3">
+                <div className="flex border-2 border-red-400 flex-col justify-center mb-8 max-w-[260px]">
                   {/* <!-- Product Image Container --> */}
                   <div className="bg-[#F7F7F7] flex justify-center items-center relative">
                     {/* <!-- Image --> */}
                     <img
                       src="yellowchair.png"
                       alt="Product Image"
-                      className="object-contain w-full h-full max-w-[365px] max-h-[306px]"
+                      className="object-contain w-full h-full max-w-[260px] max-h-[306px]"
                     />
                   </div>
 
@@ -354,15 +354,16 @@ export default function Home() {
                   </div>
                 </div>
 
+
                 {/* <!-- Product Container 3 --> */}
-                <div className="flex border-2 border-red-400 flex-col justify-center mb-8 w-1/3">
+                <div className="flex border-2 border-red-400 flex-col justify-center mb-8 max-w-[260px]">
                   {/* <!-- Product Image Container --> */}
                   <div className="bg-[#F7F7F7] flex justify-center items-center relative">
                     {/* <!-- Image --> */}
                     <img
                       src="whitechair.png"
                       alt="Product Image"
-                      className="object-contain w-full h-full max-w-[300px] max-h-[306px]"
+                      className="object-contain w-full h-full max-w-[260px] max-h-[306px]"
                     />
                   </div>
 
@@ -382,18 +383,19 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
+
               </div>
-              {/* <!-- Product Container with Image and Info  Row 2--> */}
-              <div className="flex justify-between gap-x-4 mb-8">
-                {/* <!-- Product Container 1 --> */}
-                <div className="flex border-2 border-red-400 flex-col justify-center mb-8 w-1/3">
+              {/* <!-- Product Container with Image and Info row 2--> */}
+              <div className="flex flex-wrap justify-center mb-8">
+                {/* Product Container 1 */}
+                <div className="flex border-2 border-red-400 flex-col justify-start gap-1 mb-8 max-w-[260px]">
                   {/* <!-- Product Image Container --> */}
                   <div className="bg-[#F7F7F7] flex justify-center items-center relative">
                     {/* <!-- Image --> */}
                     <img
                       src="graysofa.png"
                       alt="Product Image"
-                      className="object-contain w-full h-full max-w-[300px] max-h-[306px]"
+                      className="object-contain w-full h-full max-w-[240px] max-h-[306px]"
                     />
                   </div>
 
@@ -414,15 +416,16 @@ export default function Home() {
                   </div>
                 </div>
 
+
                 {/* <!-- Product Container 2 --> */}
-                <div className="flex border-2 border-red-400 flex-col justify-center mb-8 w-1/3">
+                <div className="flex border-2 border-red-400 flex-col justify-center mb-8 max-w-[260px]">
                   {/* <!-- Product Image Container --> */}
-                  <div className="bg-[#F7F7F7] flex justify-center items-center relative">
+                  <div className="bg-[#F7F7F7] h-full flex justify-center items-center relative">
                     {/* <!-- Image --> */}
                     <img
                       src="blackchair.png"
                       alt="Product Image"
-                      className="object-contain w-full h-full max-w-[365px] max-h-[306px]"
+                      className="object-contain w-full h-full max-w-[260px] max-h-[306px]"
                     />
                   </div>
 
@@ -443,15 +446,16 @@ export default function Home() {
                   </div>
                 </div>
 
+
                 {/* <!-- Product Container 3 --> */}
-                <div className="flex border-2 border-red-400 flex-col justify-center mb-8 w-1/3">
+                <div className="flex border-2 border-red-400 flex-col justify-center mb-8 max-w-[260px]">
                   {/* <!-- Product Image Container --> */}
-                  <div className="bg-[#F7F7F7] flex justify-center items-center relative">
+                  <div className="bg-[#F7F7F7] h-full flex justify-center items-center relative">
                     {/* <!-- Image --> */}
                     <img
                       src="goldenchair.png"
                       alt="Product Image"
-                      className="object-contain w-full h-full max-w-[300px] max-h-[306px]"
+                      className="object-contain w-full h-full max-w-[230px] max-h-[306px]"
                     />
                   </div>
 
@@ -471,14 +475,17 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
+
               </div>
+
+              
               {/* What Shopex Offer Container */}
               <h2 className="text-3xl font-bold text-[#1A0B5B] font-josefin text-center text-gray-900 mb-8">
                 What Shopex Offer!
               </h2>
 
-              {/* Card Container with Flex */}
-              <div className="flex justify-center space-x-4 mb-8">
+              {/* Card Container with Flex (responsive) */}
+              <div className="flex flex-wrap justify-center gap-4 mb-8">
                 {/* First Card */}
                 <div className="relative w-[270px] h-[320px] border-2  rounded-lg shadow-lg p-4">
                   {/* Image Container */}
@@ -495,7 +502,7 @@ export default function Home() {
                       24/7 Support
                     </h3>
                     <p className="text-gray-500">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa purus gravida.
                     </p>
                   </div>
                 </div>
@@ -516,7 +523,7 @@ export default function Home() {
                       24/7 Support
                     </h3>
                     <p className="text-gray-500">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa purus gravida.
                     </p>
                   </div>
                 </div>
@@ -537,7 +544,7 @@ export default function Home() {
                       24/7 Support
                     </h3>
                     <p className="text-gray-500">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa purus gravida.
                     </p>
                   </div>
                 </div>
@@ -558,11 +565,12 @@ export default function Home() {
                       24/7 Support
                     </h3>
                     <p className="text-gray-500">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa purus gravida.
                     </p>
                   </div>
                 </div>
               </div>
+
 
 
             </div>
@@ -575,6 +583,7 @@ export default function Home() {
 
         </div>
       </section>
+      {/* Trending Product Section  */}
 
 
 
