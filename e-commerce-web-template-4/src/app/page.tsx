@@ -936,6 +936,274 @@ export default function Home() {
           </div>
         </div>
       </section>
+      {/* Top Categories section */}
+      <section className="py-10">
+        {/* Heading */}
+        <h2 className="text-center font-josefin text-[#151875] text-3xl font-bold mb-8">
+          Top Categories
+        </h2>
+
+        {/* Products */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-4">
+          {/* Product 1 */}
+          <div className="flex flex-col items-center">
+            {/* Circle with bottom-left border */}
+            <div className="relative w-32 h-32 bg-[#F6F7FB] rounded-full flex items-center justify-center overflow-hidden">
+              <Image
+                src="/catc1.png" // Replace with your image URL
+                alt="Mini LCW Chair"
+                width={128}
+                height={128}
+                className="object-cover"
+              />
+              {/* Bottom-left border */}
+              <div className="absolute inset-0 rounded-full pointer-events-none"
+                style={{
+                  borderLeft: "4px solid #9877E7",
+                  borderBottom: "4px solid #9877E7",
+                }}
+              ></div>
+            </div>
+            <h3 className="text-center text-[#151875] text-lg font-medium mt-4">
+              Mini LCW Chair
+            </h3>
+            <p className="text-[#151875] text-sm font-semibold mt-1">$56.00</p>
+          </div>
+
+          {/* Product 2 */}
+          <div className="flex flex-col items-center">
+            <div className="w-32 h-32 bg-[#F6F7FB] rounded-full flex items-center justify-center overflow-hidden">
+              <Image
+                src="/catc2.png" // Replace with your image URL
+                alt="Modern Chair"
+                width={128}
+                height={128}
+                className="object-cover"
+              />
+            </div>
+            <h3 className="text-center text-[#151875] text-lg font-medium mt-4">
+              Modern Chair
+            </h3>
+            <p className="text-[#151875] text-sm font-semibold mt-1">$75.00</p>
+          </div>
+
+          {/* Product 3 */}
+          <div className="flex flex-col items-center">
+            <div className="w-32 h-32 bg-[#F6F7FB] rounded-full flex items-center justify-center overflow-hidden">
+              <Image
+                src="/catc3.png" // Replace with your image URL
+                alt="Classic Armchair"
+                width={128}
+                height={128}
+                className="object-cover"
+              />
+            </div>
+            <h3 className="text-center text-[#151875] text-lg font-medium mt-4">
+              Classic Armchair
+            </h3>
+            <p className="text-[#151875] text-sm font-semibold mt-1">$95.00</p>
+          </div>
+
+          {/* Product 4 */}
+          <div className="flex flex-col items-center">
+            <div className="w-32 h-32 bg-[#F6F7FB] rounded-full flex items-center justify-center overflow-hidden">
+              <Image
+                src="/catc4.png" // Replace with your image URL
+                alt="Elegant Sofa"
+                width={128}
+                height={128}
+                className="object-cover"
+              />
+            </div>
+            <h3 className="text-center text-[#151875] text-lg font-medium mt-4">
+              Elegant Sofa
+            </h3>
+            <p className="text-[#151875] text-sm font-semibold mt-1">$120.00</p>
+          </div>
+        </div>
+      </section>
+      {/* Image background section */}
+      <section className="py-10">
+        {/* Image Section */}
+        <div className="relative w-full md:w-full h-[500px] mb-6 md:mb-0">
+          <Image
+            src="/subscribe.png" // Replace with your image URL
+            alt="Subscribe"
+            layout="fill" // This ensures the image fills the container
+            objectFit="cover" // Makes sure the image covers the full container without stretching
+            className="rounded-lg"
+          />
+
+          {/* Content over the Image */}
+          <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-white px-6 py-4">
+            <div className="text-center">
+              <h2 className="text-3xl font-bold mb-4">
+                Get Latest Updates By Subscribe Our Newsletter
+              </h2>
+              <p className="text-lg mb-6">
+                Stay updated with our latest news and offers. Subscribe to our newsletter today!
+              </p>
+              <button className="bg-pink-500 text-white py-3 px-6 rounded-lg hover:bg-pink-600 transition duration-300">
+                Shop Now
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* Logos Section*/}
+      <section className="relative w-full h-[100px] border-2 border-red-400 flex items-center justify-center py-10">
+        {/* Container to hold the image */}
+        <div className="relative mt-3 w-full sm:w-2/3 md:w-1/2 lg:w-2/3 xl:w-1/2 2xl:w-1/3 
+                  h-[400px] sm:h-[500px] md:h-[600px] lg:h-[700px] xl:h-[800px] 2xl:h-[900px]">
+          {/* Background Image */}
+          <Image
+            src="/logos.png" // Replace with your image URL
+            alt="Subscribe"
+            layout="intrinsic" // Use intrinsic to maintain original size
+            width={904}  // Set the image width to the given width (904px)
+            height={93}  // Set the image height to the given height (93px)
+            objectFit="contain" // This ensures the image is fully contained within its parent
+            className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" // Center image within container
+          />
+        </div>
+      </section>
+      {/* Latest Blog Section*/}
+      <section className="py-16 px-6 bg-white">
+  {/* Section Heading */}
+  <h2 className="text-4xl font-bold text-[#151875] font-josefin text-center mb-12">Latest Blog</h2>
+
+  {/* Cards Container */}
+  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+    {/* Card 1 */}
+    <div className="rounded-lg overflow-hidden shadow-lg">
+      <Image
+        src="/blog1.png" // Replace with actual image path
+        alt="Blog Image"
+        width={600} // Increased width for better visibility
+        height={350} // Increased height
+        className="w-full h-auto object-cover" // Ensure the aspect ratio is preserved
+      />
+      <div className="p-6">
+        <div className="flex items-center mb-4">
+          <div className="flex items-center text-blue-600">
+            <Image
+              src="/pen.png" // Replace with actual pen icon image path
+              alt="Pen Icon"
+              width={16}
+              height={16}
+              className="mr-2"
+            />
+            <span className="text-[#151875]">Saber Ali</span>
+          </div>
+          <div className="ml-auto flex items-center text-[#151875]">
+            <Image
+              src="/calendar.png" // Replace with actual calendar image path
+              alt="Calendar Icon"
+              width={16}
+              height={16}
+              className="mr-2"
+            />
+            <span>21, August, 2020</span>
+          </div>
+        </div>
+        <h3 className="text-lg font-bold text-[#151875]">Top essential Trends in 2021</h3>
+        <p className="text-sm text-gray-600 mt-2" style={{ fontFamily: 'Lato', fontSize: '16px', lineHeight: '30px' }}>
+          More off this less hello samlande lied much over tightly circa horse taped mightly
+        </p>
+        <a href="#" className="text-[#151875] underline mt-4 inline-block">Read More</a>
+      </div>
+    </div>
+
+    {/* Card 2 */}
+    <div className="rounded-lg overflow-hidden shadow-lg">
+      <Image
+        src="/blog2.png" // Replace with actual image path
+        alt="Blog Image"
+        width={600} // Increased width for better visibility
+        height={350} // Increased height
+        className="w-full h-auto object-cover" // Ensure the aspect ratio is preserved
+      />
+      <div className="p-6">
+        <div className="flex items-center mb-4">
+          <div className="flex items-center text-[#151875]">
+            <Image
+              src="/pen.png" // Replace with actual pen icon image path
+              alt="Pen Icon"
+              width={16}
+              height={16}
+              className="mr-2"
+            />
+            <span className="text-[#151875]">Saber Ali</span>
+          </div>
+          <div className="ml-auto flex items-center text-[#151875]">
+            <Image
+              src="/calendar.png" // Replace with actual calendar image path
+              alt="Calendar Icon"
+              width={16}
+              height={16}
+              className="mr-2"
+            />
+            <span>21, August, 2020</span>
+          </div>
+        </div>
+        <h3 className="text-lg font-bold text-[#FB2E86]">Top essential trends in 2021</h3>
+        <p className="text-sm text-gray-600 mt-2" style={{ fontFamily: 'Lato', fontSize: '16px', lineHeight: '30px' }}>
+          More off this less hello samlande lied much over tightly circa horse taped mightly
+        </p>
+        <a href="#" className="text-[#FB2E86] underline mt-4 inline-block">Read More</a>
+      </div>
+    </div>
+
+    {/* Card 3 */}
+    <div className="rounded-lg overflow-hidden shadow-lg">
+      <Image
+        src="/blog3.png" // Replace with actual image path
+        alt="Blog Image"
+        width={600} // Increased width for better visibility
+        height={350} // Increased height
+        className="w-full h-auto object-cover" // Ensure the aspect ratio is preserved
+      />
+      <div className="p-6">
+        <div className="flex items-center mb-4">
+          <div className="flex items-center text-[#151875]">
+            <Image
+              src="/pen.png" // Replace with actual pen icon image path
+              alt="Pen Icon"
+              width={16}
+              height={16}
+              className="mr-2"
+            />
+            <span className="text-[#151875]">Saber Ali</span>
+          </div>
+          <div className="ml-auto flex items-center text-[#151875]">
+            <Image
+              src="/calendar.png" // Replace with actual calendar image path
+              alt="Calendar Icon"
+              width={16}
+              height={16}
+              className="mr-2"
+            />
+            <span>21, August, 2020</span>
+          </div>
+        </div>
+        <h3 className="text-lg font-bold text-[#151875]">Top essential Trends in 2021</h3>
+        <p className="text-sm text-gray-600 mt-2" style={{ fontFamily: 'Lato', fontSize: '16px', lineHeight: '30px' }}>
+          More off this less hello samlande lied much over tightly circa horse taped mightly
+        </p>
+        <a href="#" className="text-[#151875] underline mt-4 inline-block">Read More</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
 
 
 
