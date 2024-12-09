@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 
 function Headingbar() {
     return (
@@ -7,7 +8,7 @@ function Headingbar() {
             <div className="flex items-center space-x-6">
                 <a href="mailto:mhhasanul@gmail.com" className="flex items-center space-x-2">
                     <span className="material-icons">email</span>
-                    <span className="hidden sm:inline">mhhasanul@gmail.com</span>
+                    <span className="hidden sm:inline">abrarsolangi2002@gmail.com</span>
                 </a>
                 <a href="tel:(12345)67890" className="flex items-center space-x-2">
                     <span className="material-icons">phone</span>
@@ -29,11 +30,11 @@ function Headingbar() {
                         <option>EUR</option>
                     </select>
                 </div>
-                <a href="#" className="hidden lg:block">Login</a>
-                <a href="#" className="hidden lg:block">Wishlist</a>
-                <a href="#" className="block">
+                <Link href="/login" className="hidden lg:block">Login</Link>
+                <Link href="/productdetails" className="hidden lg:block">Wishlist</Link>
+                <Link href="/shop" className="block">
                     <span className="material-icons">shopping_cart</span>
-                </a>
+                </Link>
             </div>
         </div>
 

@@ -33,9 +33,9 @@ export default function Navbar() {
           </div>
           <Link href="/page" className="text-sm font-medium text-gray-700 hover:text-pink-500">Page</Link>
           <Link href="/product" className="text-sm font-medium text-gray-700 hover:text-pink-500">Products</Link>
-          <Link href="#" className="text-sm font-medium text-gray-700 hover:text-pink-500">Blog</Link>
-          <Link href="#" className="text-sm font-medium text-gray-700 hover:text-pink-500">Shop</Link>
-          <Link href="#" className="text-sm font-medium text-gray-700 hover:text-pink-500">Contact</Link>
+          <Link href="/blog" className="text-sm font-medium text-gray-700 hover:text-pink-500">Blog</Link>
+          <Link href="/shop" className="text-sm font-medium text-gray-700 hover:text-pink-500">Shop</Link>
+          <Link href="/contact" className="text-sm font-medium text-gray-700 hover:text-pink-500">Contact</Link>
         </nav>
 
         {/* Search Bar */}

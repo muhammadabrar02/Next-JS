@@ -1,8 +1,15 @@
+'use client';
 import React from 'react'
 import { Heart, ShoppingCart, Share2, Star } from 'lucide-react'
 import Image from 'next/image'
+import { useRouter } from 'next/navigation'
 
 function page() {
+    const Router =useRouter()
+    
+    const handleClick =()=>{
+        Router.push("./productdetails")
+    }
     const products = [
         {
             id: 1,
@@ -156,6 +163,7 @@ function page() {
                 <div className="grid gap-8 sm:gap-6">
                     {products.map((product) => (
                         <article
+                        onClick={handleClick}
                             key={product.id}
                             className="flex flex-col sm:flex-row gap-4 p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow"
                         >
