@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Navbar() {
   return (
@@ -14,7 +15,7 @@ export default function Navbar() {
         <nav className="hidden md:flex items-center space-x-8">
           {/* Home with Dropdown Icon */}
           <div className="flex items-center space-x-1 text-sm font-medium text-indigo-900 hover:text-pink-500">
-            <a href="#">Home</a>
+            <Link href="/">Home</Link>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-4 w-4"
@@ -30,11 +31,11 @@ export default function Navbar() {
               />
             </svg>
           </div>
-          <a href="#" className="text-sm font-medium text-gray-700 hover:text-pink-500">Pages</a>
-          <a href="#" className="text-sm font-medium text-gray-700 hover:text-pink-500">Products</a>
-          <a href="#" className="text-sm font-medium text-gray-700 hover:text-pink-500">Blog</a>
-          <a href="#" className="text-sm font-medium text-gray-700 hover:text-pink-500">Shop</a>
-          <a href="#" className="text-sm font-medium text-gray-700 hover:text-pink-500">Contact</a>
+          <Link href="/Pages" className="text-sm font-medium text-gray-700 hover:text-pink-500">Pages</Link>
+          <Link href="#" className="text-sm font-medium text-gray-700 hover:text-pink-500">Products</Link>
+          <Link href="#" className="text-sm font-medium text-gray-700 hover:text-pink-500">Blog</Link>
+          <Link href="#" className="text-sm font-medium text-gray-700 hover:text-pink-500">Shop</Link>
+          <Link href="#" className="text-sm font-medium text-gray-700 hover:text-pink-500">Contact</Link>
         </nav>
 
         {/* Search Bar */}
