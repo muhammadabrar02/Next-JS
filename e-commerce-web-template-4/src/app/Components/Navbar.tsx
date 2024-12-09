@@ -31,7 +31,7 @@ export default function Navbar() {
               />
             </svg>
           </div>
-          <Link href="/Pages" className="text-sm font-medium text-gray-700 hover:text-pink-500">Pages</Link>
+          <Link href="/page" className="text-sm font-medium text-gray-700 hover:text-pink-500">Page</Link>
           <Link href="#" className="text-sm font-medium text-gray-700 hover:text-pink-500">Products</Link>
           <Link href="#" className="text-sm font-medium text-gray-700 hover:text-pink-500">Blog</Link>
           <Link href="#" className="text-sm font-medium text-gray-700 hover:text-pink-500">Shop</Link>
