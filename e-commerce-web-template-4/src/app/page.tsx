@@ -66,10 +66,10 @@ export default function Home() {
 
       </section>
       {/* Features Section */}
-      <section className="border-2 border-red-400 w-full h-auto mt-2 flex justify-center items-center">
-        <div className="border-2 border-green-500 h-auto w-full max-w-[1020px]">
+      <section className="w-full h-auto mt-2 flex justify-center items-center">
+        <div className="h-auto w-full max-w-[1020px]">
           {/* Featured Products */}
-          <div className="py-8 px-4 border-2 border-red-400 h-auto">
+          <div className="py-8 px-4 h-auto">
             <h2 className="text-3xl font-bold text-[#1A0B5B] font-josefin text-center text-gray-900 mb-8">
               Featured Products
             </h2>
@@ -225,7 +225,7 @@ export default function Home() {
             </div>
           </div>
           {/* Progress Indicators  */}
-          <div className="flex border-2 ml-auto border-red-400 justify-center items-center gap-2 mt-8">
+          <div className="flex ml-auto  justify-center items-center gap-2 mt-8">
             {/* Progress 1 */}
             <div
               className="w-24 h-2 rounded-full"
@@ -251,7 +251,7 @@ export default function Home() {
             ></div>
           </div>
           {/* Latest Products */}
-          <div className="py-8 px-4 border-2 border-red-400 h-auto">
+          <div className="py-8 px-4  h-auto">
             <h2 className="text-3xl font-bold text-[#1A0B5B] font-josefin text-center text-gray-900 mb-8">
               Latest Products
             </h2>
@@ -290,13 +290,13 @@ export default function Home() {
 
 
             {/* Latest Products container */}
-            <div className="py-8 px-4 border-2 w-full border-green-400 h-auto">
+            <div className="py-8 px-4 w-full h-auto">
 
 
               {/* <!-- Product Container with Image and Info --> */}
               <div className="flex flex-wrap justify-center mb-8">
                 {/* Product Container 1 */}
-                <div className="flex border-2 border-red-400 flex-col justify-start gap-1 mb-8 max-w-[260px]">
+                <div className="flex  flex-col justify-start gap-1 mb-8 max-w-[260px]">
                   {/* <!-- Product Image Container --> */}
                   <div className="bg-[#F7F7F7] flex justify-center items-center relative">
                     {/* <!-- Image --> */}
@@ -326,7 +326,7 @@ export default function Home() {
 
 
                 {/* <!-- Product Container 2 --> */}
-                <div className="flex border-2 border-red-400 flex-col justify-center mb-8 max-w-[260px]">
+                <div className="flex flex-col justify-center mb-8 max-w-[260px]">
                   {/* <!-- Product Image Container --> */}
                   <div className="bg-[#F7F7F7] flex justify-center items-center relative">
                     {/* <!-- Image --> */}
@@ -356,7 +356,7 @@ export default function Home() {
 
 
                 {/* <!-- Product Container 3 --> */}
-                <div className="flex border-2 border-red-400 flex-col justify-center mb-8 max-w-[260px]">
+                <div className="flex flex-col justify-center mb-8 max-w-[260px]">
                   {/* <!-- Product Image Container --> */}
                   <div className="bg-[#F7F7F7] flex justify-center items-center relative">
                     {/* <!-- Image --> */}
@@ -388,7 +388,7 @@ export default function Home() {
               {/* <!-- Product Container with Image and Info row 2--> */}
               <div className="flex flex-wrap justify-center mb-8">
                 {/* Product Container 1 */}
-                <div className="flex border-2 border-red-400 flex-col justify-start gap-1 mb-8 max-w-[260px]">
+                <div className="flex flex-col justify-start gap-1 mb-8 max-w-[260px]">
                   {/* <!-- Product Image Container --> */}
                   <div className="bg-[#F7F7F7] flex justify-center items-center relative">
                     {/* <!-- Image --> */}
@@ -418,7 +418,7 @@ export default function Home() {
 
 
                 {/* <!-- Product Container 2 --> */}
-                <div className="flex border-2 border-red-400 flex-col justify-center mb-8 max-w-[260px]">
+                <div className="flex flex-col justify-center mb-8 max-w-[260px]">
                   {/* <!-- Product Image Container --> */}
                   <div className="bg-[#F7F7F7] h-full flex justify-center items-center relative">
                     {/* <!-- Image --> */}
@@ -448,7 +448,7 @@ export default function Home() {
 
 
                 {/* <!-- Product Container 3 --> */}
-                <div className="flex border-2 border-red-400 flex-col justify-center mb-8 max-w-[260px]">
+                <div className="flex flex-col justify-center mb-8 max-w-[260px]">
                   {/* <!-- Product Image Container --> */}
                   <div className="bg-[#F7F7F7] h-full flex justify-center items-center relative">
                     {/* <!-- Image --> */}
@@ -585,7 +585,7 @@ export default function Home() {
       </section>
       {/* Trending Product Section  */}
       <section className="w-full max-w-full mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-24 bg-[#F1F0FF] overflow-x-hidden">
-        <div className="w-full sm:w-[640px] md:w-[768px] lg:w-[1024px] xl:w-[1050px] 2xl:w-[1050px] h-[550px] flex flex-col sm:flex-row justify-between items-center p-6 border-2 border-red-400 mx-auto">
+        <div className="w-full sm:w-[640px] md:w-[768px] lg:w-[1024px] xl:w-[1050px] 2xl:w-[1050px] h-[550px] flex flex-col sm:flex-row justify-between items-center p-6 mx-auto">
           {/* Image and Circle */}
           <div className="relative w-full sm:w-[40%] md:w-[40%] lg:w-[40%] xl:w-[50%] 2xl:w-[50%] h-[200px] flex-shrink-0 mx-auto mb-4 sm:mb-0 overflow-hidden">
             <div className="absolute inset-0 flex items-center justify-center bg-[#F5E1FC] rounded-full">
@@ -863,13 +863,13 @@ export default function Home() {
         </section>
       </section>
       {/* Discount Item section  */}
-      <section className="flex flex-col h-[880px] mt-6 border-2 border-red-400 w-full items-center space-y-6 px-4 sm:px-6 lg:px-8">
+      <section className="flex flex-col h-[880px] mt-6 w-full items-center space-y-6 px-4 sm:px-6 lg:px-8">
         {/* Section Heading */}
         <h2 className="text-2xl sm:text-3xl font-bold text-[#1A0B5B] font-josefin text-center text-gray-900 mb-8">
           Discount Item
         </h2>
 
-        <div className="border-2  border-red-400 w-full max-w-[1280px] h-[750px] p-4 sm:p-6 lg:p-8">
+        <div className=" w-full max-w-[1280px] h-[750px] p-4 sm:p-6 lg:p-8">
           {/* Options Container */}
           <div className="flex flex-wrap justify-center space-x-4 sm:space-x-6 mb-6">
             <span className="text-[#FB4997] underline cursor-pointer">Wood Chair</span>
@@ -1051,7 +1051,7 @@ export default function Home() {
         </div>
       </section>
       {/* Logos Section*/}
-      <section className="relative w-full h-[100px] border-2 border-red-400 flex items-center justify-center py-10">
+      <section className="relative w-full h-[100px]  flex items-center justify-center py-10">
         {/* Container to hold the image */}
         <div className="relative mt-3 w-full sm:w-2/3 md:w-1/2 lg:w-2/3 xl:w-1/2 2xl:w-1/3 
                   h-[400px] sm:h-[500px] md:h-[600px] lg:h-[700px] xl:h-[800px] 2xl:h-[900px]">
@@ -1069,132 +1069,132 @@ export default function Home() {
       </section>
       {/* Latest Blog Section*/}
       <section className="py-16 px-6 bg-white">
-  {/* Section Heading */}
-  <h2 className="text-4xl font-bold text-[#151875] font-josefin text-center mb-12">Latest Blog</h2>
+        {/* Section Heading */}
+        <h2 className="text-4xl font-bold text-[#151875] font-josefin text-center mb-12">Latest Blog</h2>
 
-  {/* Cards Container */}
-  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-    {/* Card 1 */}
-    <div className="rounded-lg overflow-hidden shadow-lg">
-      <Image
-        src="/blog1.png" // Replace with actual image path
-        alt="Blog Image"
-        width={600} // Increased width for better visibility
-        height={350} // Increased height
-        className="w-full h-auto object-cover" // Ensure the aspect ratio is preserved
-      />
-      <div className="p-6">
-        <div className="flex items-center mb-4">
-          <div className="flex items-center text-blue-600">
+        {/* Cards Container */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {/* Card 1 */}
+          <div className="rounded-lg overflow-hidden shadow-lg">
             <Image
-              src="/pen.png" // Replace with actual pen icon image path
-              alt="Pen Icon"
-              width={16}
-              height={16}
-              className="mr-2"
+              src="/blog1.png" // Replace with actual image path
+              alt="Blog Image"
+              width={600} // Increased width for better visibility
+              height={350} // Increased height
+              className="w-full h-auto object-cover" // Ensure the aspect ratio is preserved
             />
-            <span className="text-[#151875]">Saber Ali</span>
+            <div className="p-6">
+              <div className="flex items-center mb-4">
+                <div className="flex items-center text-blue-600">
+                  <Image
+                    src="/pen.png" // Replace with actual pen icon image path
+                    alt="Pen Icon"
+                    width={16}
+                    height={16}
+                    className="mr-2"
+                  />
+                  <span className="text-[#151875]">Saber Ali</span>
+                </div>
+                <div className="ml-auto flex items-center text-[#151875]">
+                  <Image
+                    src="/calendar.png" // Replace with actual calendar image path
+                    alt="Calendar Icon"
+                    width={16}
+                    height={16}
+                    className="mr-2"
+                  />
+                  <span>21, August, 2020</span>
+                </div>
+              </div>
+              <h3 className="text-lg font-bold text-[#151875]">Top essential Trends in 2021</h3>
+              <p className="text-sm text-gray-600 mt-2" style={{ fontFamily: 'Lato', fontSize: '16px', lineHeight: '30px' }}>
+                More off this less hello samlande lied much over tightly circa horse taped mightly
+              </p>
+              <a href="#" className="text-[#151875] underline mt-4 inline-block">Read More</a>
+            </div>
           </div>
-          <div className="ml-auto flex items-center text-[#151875]">
+
+          {/* Card 2 */}
+          <div className="rounded-lg overflow-hidden shadow-lg">
             <Image
-              src="/calendar.png" // Replace with actual calendar image path
-              alt="Calendar Icon"
-              width={16}
-              height={16}
-              className="mr-2"
+              src="/blog2.png" // Replace with actual image path
+              alt="Blog Image"
+              width={600} // Increased width for better visibility
+              height={350} // Increased height
+              className="w-full h-auto object-cover" // Ensure the aspect ratio is preserved
             />
-            <span>21, August, 2020</span>
+            <div className="p-6">
+              <div className="flex items-center mb-4">
+                <div className="flex items-center text-[#151875]">
+                  <Image
+                    src="/pen.png" // Replace with actual pen icon image path
+                    alt="Pen Icon"
+                    width={16}
+                    height={16}
+                    className="mr-2"
+                  />
+                  <span className="text-[#151875]">Saber Ali</span>
+                </div>
+                <div className="ml-auto flex items-center text-[#151875]">
+                  <Image
+                    src="/calendar.png" // Replace with actual calendar image path
+                    alt="Calendar Icon"
+                    width={16}
+                    height={16}
+                    className="mr-2"
+                  />
+                  <span>21, August, 2020</span>
+                </div>
+              </div>
+              <h3 className="text-lg font-bold text-[#FB2E86]">Top essential trends in 2021</h3>
+              <p className="text-sm text-gray-600 mt-2" style={{ fontFamily: 'Lato', fontSize: '16px', lineHeight: '30px' }}>
+                More off this less hello samlande lied much over tightly circa horse taped mightly
+              </p>
+              <a href="#" className="text-[#FB2E86] underline mt-4 inline-block">Read More</a>
+            </div>
+          </div>
+
+          {/* Card 3 */}
+          <div className="rounded-lg overflow-hidden shadow-lg">
+            <Image
+              src="/blog3.png" // Replace with actual image path
+              alt="Blog Image"
+              width={600} // Increased width for better visibility
+              height={350} // Increased height
+              className="w-full h-auto object-cover" // Ensure the aspect ratio is preserved
+            />
+            <div className="p-6">
+              <div className="flex items-center mb-4">
+                <div className="flex items-center text-[#151875]">
+                  <Image
+                    src="/pen.png" // Replace with actual pen icon image path
+                    alt="Pen Icon"
+                    width={16}
+                    height={16}
+                    className="mr-2"
+                  />
+                  <span className="text-[#151875]">Saber Ali</span>
+                </div>
+                <div className="ml-auto flex items-center text-[#151875]">
+                  <Image
+                    src="/calendar.png" // Replace with actual calendar image path
+                    alt="Calendar Icon"
+                    width={16}
+                    height={16}
+                    className="mr-2"
+                  />
+                  <span>21, August, 2020</span>
+                </div>
+              </div>
+              <h3 className="text-lg font-bold text-[#151875]">Top essential Trends in 2021</h3>
+              <p className="text-sm text-gray-600 mt-2" style={{ fontFamily: 'Lato', fontSize: '16px', lineHeight: '30px' }}>
+                More off this less hello samlande lied much over tightly circa horse taped mightly
+              </p>
+              <a href="#" className="text-[#151875] underline mt-4 inline-block">Read More</a>
+            </div>
           </div>
         </div>
-        <h3 className="text-lg font-bold text-[#151875]">Top essential Trends in 2021</h3>
-        <p className="text-sm text-gray-600 mt-2" style={{ fontFamily: 'Lato', fontSize: '16px', lineHeight: '30px' }}>
-          More off this less hello samlande lied much over tightly circa horse taped mightly
-        </p>
-        <a href="#" className="text-[#151875] underline mt-4 inline-block">Read More</a>
-      </div>
-    </div>
-
-    {/* Card 2 */}
-    <div className="rounded-lg overflow-hidden shadow-lg">
-      <Image
-        src="/blog2.png" // Replace with actual image path
-        alt="Blog Image"
-        width={600} // Increased width for better visibility
-        height={350} // Increased height
-        className="w-full h-auto object-cover" // Ensure the aspect ratio is preserved
-      />
-      <div className="p-6">
-        <div className="flex items-center mb-4">
-          <div className="flex items-center text-[#151875]">
-            <Image
-              src="/pen.png" // Replace with actual pen icon image path
-              alt="Pen Icon"
-              width={16}
-              height={16}
-              className="mr-2"
-            />
-            <span className="text-[#151875]">Saber Ali</span>
-          </div>
-          <div className="ml-auto flex items-center text-[#151875]">
-            <Image
-              src="/calendar.png" // Replace with actual calendar image path
-              alt="Calendar Icon"
-              width={16}
-              height={16}
-              className="mr-2"
-            />
-            <span>21, August, 2020</span>
-          </div>
-        </div>
-        <h3 className="text-lg font-bold text-[#FB2E86]">Top essential trends in 2021</h3>
-        <p className="text-sm text-gray-600 mt-2" style={{ fontFamily: 'Lato', fontSize: '16px', lineHeight: '30px' }}>
-          More off this less hello samlande lied much over tightly circa horse taped mightly
-        </p>
-        <a href="#" className="text-[#FB2E86] underline mt-4 inline-block">Read More</a>
-      </div>
-    </div>
-
-    {/* Card 3 */}
-    <div className="rounded-lg overflow-hidden shadow-lg">
-      <Image
-        src="/blog3.png" // Replace with actual image path
-        alt="Blog Image"
-        width={600} // Increased width for better visibility
-        height={350} // Increased height
-        className="w-full h-auto object-cover" // Ensure the aspect ratio is preserved
-      />
-      <div className="p-6">
-        <div className="flex items-center mb-4">
-          <div className="flex items-center text-[#151875]">
-            <Image
-              src="/pen.png" // Replace with actual pen icon image path
-              alt="Pen Icon"
-              width={16}
-              height={16}
-              className="mr-2"
-            />
-            <span className="text-[#151875]">Saber Ali</span>
-          </div>
-          <div className="ml-auto flex items-center text-[#151875]">
-            <Image
-              src="/calendar.png" // Replace with actual calendar image path
-              alt="Calendar Icon"
-              width={16}
-              height={16}
-              className="mr-2"
-            />
-            <span>21, August, 2020</span>
-          </div>
-        </div>
-        <h3 className="text-lg font-bold text-[#151875]">Top essential Trends in 2021</h3>
-        <p className="text-sm text-gray-600 mt-2" style={{ fontFamily: 'Lato', fontSize: '16px', lineHeight: '30px' }}>
-          More off this less hello samlande lied much over tightly circa horse taped mightly
-        </p>
-        <a href="#" className="text-[#151875] underline mt-4 inline-block">Read More</a>
-      </div>
-    </div>
-  </div>
-</section>
+      </section>
 
 
 
