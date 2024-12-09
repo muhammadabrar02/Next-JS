@@ -32,7 +32,7 @@ export default function Navbar() {
             </svg>
           </div>
           <Link href="/page" className="text-sm font-medium text-gray-700 hover:text-pink-500">Page</Link>
-          <Link href="#" className="text-sm font-medium text-gray-700 hover:text-pink-500">Products</Link>
+          <Link href="/product" className="text-sm font-medium text-gray-700 hover:text-pink-500">Products</Link>
           <Link href="#" className="text-sm font-medium text-gray-700 hover:text-pink-500">Blog</Link>
           <Link href="#" className="text-sm font-medium text-gray-700 hover:text-pink-500">Shop</Link>
           <Link href="#" className="text-sm font-medium text-gray-700 hover:text-pink-500">Contact</Link>
