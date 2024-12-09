@@ -1,7 +1,74 @@
 import React from 'react'
+import { Heart, ShoppingCart, Share2, Star } from 'lucide-react'
 import Image from 'next/image'
 
 function page() {
+    const products = [
+        {
+            id: 1,
+            name: "Accumsan tincidunt",
+            image: "/pro1.png",
+            originalPrice: 250.00,
+            salePrice: 199.00,
+            rating: 5,
+            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
+        },
+        {
+            id: 2,
+            name: "In nulla",
+            image: "/pro2.png",
+            originalPrice: 80.00,
+            salePrice: 65.00,
+            rating: 5,
+            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
+        },
+        {
+            id: 3,
+            name: "Vel sem",
+            image: "/pro3.png",
+            originalPrice: 80.00,
+            salePrice: 65.00,
+            rating: 5,
+            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
+        },
+        {
+            id: 4,
+            name: "Portitor cum",
+            image: "/pro4.png",
+            originalPrice: 80.00,
+            salePrice: 65.00,
+            rating: 5,
+            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
+        },
+        {
+            id: 5,
+            name: "Vitae facilisis",
+            image: "/pro5.png",
+            originalPrice: 80.00,
+            salePrice: 65.00,
+            rating: 5,
+            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
+        },
+        {
+            id: 6,
+            name: "Curabetor lectus",
+            image: "/pro6.png",
+            originalPrice: 80.00,
+            salePrice: 65.00,
+            rating: 5,
+            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
+        },
+        {
+            id: 7,
+            name: "In nulla",
+            image: "/pro7.png",
+            originalPrice: 80.00,
+            salePrice: 65.00,
+            rating: 5,
+            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
+        },
+        // Add more products as needed
+    ]
     return (
         <>
             {/* first section  */}
@@ -81,6 +148,61 @@ function page() {
                             />
                         </div>
                     </div>
+                </div>
+            </section>
+
+            {/* products listing section  */}
+            <section className="w-full max-w-[1536px] mx-auto px-4 py-8">
+                <div className="grid gap-8 sm:gap-6">
+                    {products.map((product) => (
+                        <article
+                            key={product.id}
+                            className="flex flex-col sm:flex-row gap-4 p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow"
+                        >
+                            <div className="sm:w-1/3 lg:w-1/4">
+                                <img
+                                    src={product.image}
+                                    alt={product.name}
+                                    className="w-full h-[200px] sm:h-[250px] object-cover rounded-lg"
+                                />
+                            </div>
+                            <div className="flex-1 flex flex-col justify-between">
+                                <div className="space-y-2">
+                                    <div className="flex items-start justify-between gap-4">
+                                        <h2 className="text-xl font-semibold text-gray-900">{product.name}</h2>
+                                        <div className="flex gap-1">
+                                            <span className="w-2 h-2 rounded-full bg-pink-500" />
+                                            <span className="w-2 h-2 rounded-full bg-purple-500" />
+                                            <span className="w-2 h-2 rounded-full bg-blue-500" />
+                                        </div>
+                                    </div>
+                                    <div className="flex items-center gap-2">
+                                        <span className="text-lg font-bold text-gray-900">${product.salePrice.toFixed(2)}</span>
+                                        <span className="text-sm text-gray-500 line-through">${product.originalPrice.toFixed(2)}</span>
+                                    </div>
+                                    <div className="flex items-center gap-1">
+                                        {[...Array(product.rating)].map((_, i) => (
+                                            <Star key={i} className="w-4 h-4 fill-yellow-400 text-yellow-400" />
+                                        ))}
+                                    </div>
+                                    <p className="text-sm text-gray-600 line-clamp-2">
+                                        {product.description}
+                                    </p>
+                                </div>
+                                <div className="flex items-center gap-4 mt-4">
+                                    <button className="p-2 rounded-full hover:bg-gray-100">
+                                        <ShoppingCart className="w-5 h-5 text-gray-600" />
+                                    </button>
+                                    <button className="p-2 rounded-full hover:bg-gray-100">
+                                        <Heart className="w-5 h-5 text-gray-600" />
+                                    </button>
+                                    <button className="p-2 rounded-full hover:bg-gray-100">
+                                        <Share2 className="w-5 h-5 text-gray-600" />
+                                    </button>
+                                </div>
+                            </div>
+                        </article>
+                    ))}
                 </div>
             </section>
 
