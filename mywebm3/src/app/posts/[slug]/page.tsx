@@ -8,10 +8,8 @@ const posts = [
   { id: 3, title: 'Third Blog Post', slug: 'third-blog-post', content: 'This is the content of the third blog post.' },
 ]
 
-export default async function Post({ params }: { params: { slug: string } }) {
-  const { slug } = await params; // Await the params object
-
-  const post = posts.find((p) => p.slug === slug)
+export default function Post({ params }: { params: { slug: string } }) {
+  const post = posts.find((p) => p.slug === params.slug)
 
   if (!post) {
     notFound()
@@ -25,3 +23,4 @@ export default async function Post({ params }: { params: { slug: string } }) {
     </div>
   )
 }
+

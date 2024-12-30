@@ -14,7 +14,7 @@ export default function Home() {
       <ul className="space-y-4">
         {posts.map((post) => (
           <li key={post.id} className="bg-white shadow rounded-lg p-4">
-            <Link href={`/posts/${post.slug}`} className="text-blue-600 hover:underline text-xl">
+            <Link href={`/posts/${post.slug}`} className="text-blue-600 hover:underline">
               {post.title}
             </Link>
           </li>
