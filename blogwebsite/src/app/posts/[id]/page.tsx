@@ -3,10 +3,8 @@ import Comments from './comments'
 import { notFound } from 'next/navigation'
 
 export default async function Post({ params }: { params: { id: string } }) {
-  // Ensure `params` is awaited properly
-  const { id } = await params;
-
-  const post = await getPostById(id);
+  // Access params.id directly
+  const post = await getPostById(params.id);
 
   if (!post) {
     notFound();
