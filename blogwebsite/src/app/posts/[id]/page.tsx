@@ -1,9 +1,8 @@
 import { posts } from '../../data/posts';
 import Comments from './comments';
 
-export default async function Post({ params }: { params: { id: string } }) {
-  // Await the params explicitly to handle async resolution
-  const id = (await params).id;
+export default function Post({ params }: { params: { id: string } }) {
+  const { id } = params; // Destructure `id` directly
   const post = posts.find((p) => p.id === id);
 
   if (!post) {
