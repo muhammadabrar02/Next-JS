@@ -1,7 +1,11 @@
 import { posts } from '../../data/posts';
 import Comments from './comments';
 
-export default function Post({ params }: { params: { id: string } }) {
+interface PageProps {
+  params: { id: string };
+}
+
+export default function Post({ params }: PageProps) {
   const { id } = params; // Destructure `id` directly
   const post = posts.find((p) => p.id === id);
 
