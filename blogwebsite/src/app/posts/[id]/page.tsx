@@ -2,7 +2,7 @@ import { getPostById } from '../../lib/data'
 import Comments from './comments'
 import { notFound } from 'next/navigation'
 
-export default async function Post({ params }: { params: { id: string } }) {
+export default async function Post({ params }: { params:  any  }) {
   // Access params.id directly
   const post = await getPostById(params.id);
 
