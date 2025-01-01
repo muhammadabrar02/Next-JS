@@ -18,7 +18,7 @@ export default function RootLayout({
       <body className={`${inter.className} bg-gray-100`}>
         <nav className="bg-white shadow-sm">
           <div className="container mx-auto px-4 py-3">
-            <a href="/" className="text-xl font-bold text-blue-600">My Blog</a>
+            <a href="/" className="text-xl font-bold text-blue-600">My Blogg</a>
           </div>
         </nav>
         <main className="container mx-auto mt-8">
