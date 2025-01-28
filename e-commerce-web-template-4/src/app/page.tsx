@@ -1,6 +1,36 @@
+"use client"
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
+import { createClient } from "@sanity/client";
+import imageUrlBuilder from "@sanity/image-url";
 
+
+const client = createClient({
+  projectId: "pfk96eg4",
+  dataset: "production",
+  useCdn: false, 
+});
+
+const builder = imageUrlBuilder(client);
+
+
+function urlFor(source: any) {
+  return builder.image(source);
+}
 export default function Home() {
+  const [products, setProducts] = useState<any[]>([]);
+
+  useEffect(() => {
+    
+    const fetchProducts = async () => {
+      const data = await client.fetch('*[_type == "product"][0...4]');
+      setProducts(data);
+    };
+
+    fetchProducts();
+  }, []);
+
+
   return (
     <>
       {/* // Hero Section */}
@@ -632,6 +662,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+      {/* api fetching products */}
       {/* Trending Products Listing  */}
       <section className="flex flex-col justify-center items-center py-8">
         {/* Section Heading */}
@@ -641,121 +672,52 @@ export default function Home() {
 
         {/* Card Container */}
         <div className="flex flex-wrap justify-center gap-6">
-          {/* First Card */}
-          <div className="w-full sm:w-[300px] lg:w-[320px] bg-white rounded-lg shadow-lg overflow-hidden">
-            <div className="relative w-full h-[250px] p-4">
-              {/* Image with gap from top and sides */}
-              <div className="relative w-full h-full p-4 bg-[#F5F6F8] border-2 border-white flex items-center justify-center">
-                <Image
-                  src="/tchair1.png" // Replace with your image
-                  alt="Cantilever Chair"
-                  layout="intrinsic" // Keeps the aspect ratio intact
-                  width={300} // Specify a width to control size
-                  height={250} // Specify height to control size
-                  className="rounded-lg"
-                />
+          {products.map((product) => (
+            <div
+              key={product._id}
+              className="w-full sm:w-[300px] lg:w-[320px] bg-white rounded-lg shadow-lg overflow-hidden"
+            >
+              {/* Product Image */}
+              <div className="relative w-full h-[250px] p-4">
+                <div className="relative w-full h-full p-4 bg-[#F5F6F8] border-2 border-white flex items-center justify-center">
+                  {product.image && (
+                    <Image
+                      src={urlFor(product.image).url()} // Generate URL for the image
+                      alt={product.name}
+                      layout="intrinsic"
+                      width={300}
+                      height={250}
+                      className="rounded-lg"
+                    />
+                  )}
+                </div>
+              </div>
+
+              {/* Card Content */}
+              <div className="flex flex-col items-center justify-center px-4 py-6">
+                {/* Product Name */}
+                <h3 className="text-[#151875] text-xl font-semibold text-center">
+                  {product.name}
+                </h3>
+
+                {/* Price */}
+                <div className="mt-2 flex items-center justify-center gap-2">
+                  <span className="text-[#151875] text-lg font-bold">
+                    ${product.price}
+                  </span>
+                  {product.discountPercentage && (
+                    <span className="text-gray-400 line-through text-lg">
+                      $
+                      {(
+                        (Number(product.price) * 100) /
+                        (100 - product.discountPercentage)
+                      ).toFixed(2)}
+                    </span>
+                  )}
+                </div>
               </div>
             </div>
-
-            {/* Card Content */}
-            <div className="flex flex-col items-center justify-center px-4 py-6">
-              {/* Product Heading */}
-              <h3 className="text-[#151875] text-xl font-semibold text-center">Cantilever Chair</h3>
-
-              {/* Price */}
-              <div className="mt-2 flex items-center justify-center gap-2">
-                <span className="text-[#151875] text-lg font-bold">$26.00</span>
-                <span className="text-gray-400 line-through text-lg">$42.00</span>
-              </div>
-            </div>
-          </div>
-
-          {/* Second Card */}
-          <div className="w-full sm:w-[300px] lg:w-[320px] bg-white rounded-lg shadow-lg overflow-hidden">
-            <div className="relative w-full h-[250px] p-4">
-              {/* Image with gap from top and sides */}
-              <div className="relative w-full h-full p-4 bg-[#F5F6F8] border-2 border-white flex items-center justify-center">
-                <Image
-                  src="/tchair2.png" // Replace with your image
-                  alt="Cantilever Chair"
-                  layout="intrinsic" // Keeps the aspect ratio intact
-                  width={300} // Specify a width to control size
-                  height={250} // Specify height to control size
-                  className="rounded-lg"
-                />
-              </div>
-            </div>
-
-            {/* Card Content */}
-            <div className="flex flex-col items-center justify-center px-4 py-6">
-              {/* Product Heading */}
-              <h3 className="text-[#151875] text-xl font-semibold text-center">Cantilever Chair</h3>
-
-              {/* Price */}
-              <div className="mt-2 flex items-center justify-center gap-2">
-                <span className="text-[#151875] text-lg font-bold">$26.00</span>
-                <span className="text-gray-400 line-through text-lg">$42.00</span>
-              </div>
-            </div>
-          </div>
-
-          {/* Third Card */}
-          <div className="w-full sm:w-[300px] lg:w-[320px] bg-white rounded-lg shadow-lg overflow-hidden">
-            <div className="relative w-full h-[250px] p-4">
-              {/* Image with gap from top and sides */}
-              <div className="relative w-full h-full p-4 bg-[#F5F6F8] border-2 border-white flex items-center justify-center">
-                <Image
-                  src="/tchair3.png" // Replace with your image
-                  alt="Cantilever Chair"
-                  layout="intrinsic" // Keeps the aspect ratio intact
-                  width={300} // Specify a width to control size
-                  height={250} // Specify height to control size
-                  className="rounded-lg"
-                />
-              </div>
-            </div>
-
-            {/* Card Content */}
-            <div className="flex flex-col items-center justify-center px-4 py-6">
-              {/* Product Heading */}
-              <h3 className="text-[#151875] text-xl font-semibold text-center">Cantilever Chair</h3>
-
-              {/* Price */}
-              <div className="mt-2 flex items-center justify-center gap-2">
-                <span className="text-[#151875] text-lg font-bold">$26.00</span>
-                <span className="text-gray-400 line-through text-lg">$42.00</span>
-              </div>
-            </div>
-          </div>
-
-          {/* Fourth Card */}
-          <div className="w-full sm:w-[300px] lg:w-[320px] bg-white rounded-lg shadow-lg overflow-hidden">
-            <div className="relative w-full h-[250px] p-4">
-              {/* Image with gap from top and sides */}
-              <div className="relative w-full h-full p-4 bg-[#F5F6F8] border-2 border-white flex items-center justify-center">
-                <Image
-                  src="/tchair4.png" // Replace with your image
-                  alt="Cantilever Chair"
-                  layout="intrinsic" // Keeps the aspect ratio intact
-                  width={300} // Specify a width to control size
-                  height={250} // Specify height to control size
-                  className="rounded-lg"
-                />
-              </div>
-            </div>
-
-            {/* Card Content */}
-            <div className="flex flex-col items-center justify-center px-4 py-6">
-              {/* Product Heading */}
-              <h3 className="text-[#151875] text-xl font-semibold text-center">Cantilever Chair</h3>
-
-              {/* Price */}
-              <div className="mt-2 flex items-center justify-center gap-2">
-                <span className="text-[#151875] text-lg font-bold">$26.00</span>
-                <span className="text-gray-400 line-through text-lg">$42.00</span>
-              </div>
-            </div>
-          </div>
+          ))}
         </div>
       </section>
       {/* under Trending products secitons */}
@@ -1199,36 +1161,133 @@ export default function Home() {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     </>
 
   );
 }
+ {/* Trending Products Listing  */}
+//  <section className="flex flex-col justify-center items-center py-8">
+//  {/* Section Heading */}
+//  <h2 className="text-3xl font-bold text-[#1A0B5B] mt-6 font-josefin text-center text-gray-900 mb-8">
+//    Trending Products
+//  </h2>
+
+//  {/* Card Container */}
+//  <div className="flex flex-wrap justify-center gap-6">
+//    {/* First Card */}
+//    <div className="w-full sm:w-[300px] lg:w-[320px] bg-white rounded-lg shadow-lg overflow-hidden">
+//      <div className="relative w-full h-[250px] p-4">
+//        {/* Image with gap from top and sides */}
+//        <div className="relative w-full h-full p-4 bg-[#F5F6F8] border-2 border-white flex items-center justify-center">
+//          <Image
+//            src="/tchair1.png" // Replace with your image
+//            alt="Cantilever Chair"
+//            layout="intrinsic" // Keeps the aspect ratio intact
+//            width={300} // Specify a width to control size
+//            height={250} // Specify height to control size
+//            className="rounded-lg"
+//          />
+//        </div>
+//      </div>
+
+//      {/* Card Content */}
+//      <div className="flex flex-col items-center justify-center px-4 py-6">
+//        {/* Product Heading */}
+//        <h3 className="text-[#151875] text-xl font-semibold text-center">Cantilever Chair</h3>
+
+//        {/* Price */}
+//        <div className="mt-2 flex items-center justify-center gap-2">
+//          <span className="text-[#151875] text-lg font-bold">$26.00</span>
+//          <span className="text-gray-400 line-through text-lg">$42.00</span>
+//        </div>
+//      </div>
+//    </div>
+
+//    {/* Second Card */}
+//    <div className="w-full sm:w-[300px] lg:w-[320px] bg-white rounded-lg shadow-lg overflow-hidden">
+//      <div className="relative w-full h-[250px] p-4">
+//        {/* Image with gap from top and sides */}
+//        <div className="relative w-full h-full p-4 bg-[#F5F6F8] border-2 border-white flex items-center justify-center">
+//          <Image
+//            src="/tchair2.png" // Replace with your image
+//            alt="Cantilever Chair"
+//            layout="intrinsic" // Keeps the aspect ratio intact
+//            width={300} // Specify a width to control size
+//            height={250} // Specify height to control size
+//            className="rounded-lg"
+//          />
+//        </div>
+//      </div>
+
+//      {/* Card Content */}
+//      <div className="flex flex-col items-center justify-center px-4 py-6">
+//        {/* Product Heading */}
+//        <h3 className="text-[#151875] text-xl font-semibold text-center">Cantilever Chair</h3>
+
+//        {/* Price */}
+//        <div className="mt-2 flex items-center justify-center gap-2">
+//          <span className="text-[#151875] text-lg font-bold">$26.00</span>
+//          <span className="text-gray-400 line-through text-lg">$42.00</span>
+//        </div>
+//      </div>
+//    </div>
+
+//    {/* Third Card */}
+//    <div className="w-full sm:w-[300px] lg:w-[320px] bg-white rounded-lg shadow-lg overflow-hidden">
+//      <div className="relative w-full h-[250px] p-4">
+//        {/* Image with gap from top and sides */}
+//        <div className="relative w-full h-full p-4 bg-[#F5F6F8] border-2 border-white flex items-center justify-center">
+//          <Image
+//            src="/tchair3.png" // Replace with your image
+//            alt="Cantilever Chair"
+//            layout="intrinsic" // Keeps the aspect ratio intact
+//            width={300} // Specify a width to control size
+//            height={250} // Specify height to control size
+//            className="rounded-lg"
+//          />
+//        </div>
+//      </div>
+
+//      {/* Card Content */}
+//      <div className="flex flex-col items-center justify-center px-4 py-6">
+//        {/* Product Heading */}
+//        <h3 className="text-[#151875] text-xl font-semibold text-center">Cantilever Chair</h3>
+
+//        {/* Price */}
+//        <div className="mt-2 flex items-center justify-center gap-2">
+//          <span className="text-[#151875] text-lg font-bold">$26.00</span>
+//          <span className="text-gray-400 line-through text-lg">$42.00</span>
+//        </div>
+//      </div>
+//    </div>
+
+//    {/* Fourth Card */}
+//    <div className="w-full sm:w-[300px] lg:w-[320px] bg-white rounded-lg shadow-lg overflow-hidden">
+//      <div className="relative w-full h-[250px] p-4">
+//        {/* Image with gap from top and sides */}
+//        <div className="relative w-full h-full p-4 bg-[#F5F6F8] border-2 border-white flex items-center justify-center">
+//          <Image
+//            src="/tchair4.png" // Replace with your image
+//            alt="Cantilever Chair"
+//            layout="intrinsic" // Keeps the aspect ratio intact
+//            width={300} // Specify a width to control size
+//            height={250} // Specify height to control size
+//            className="rounded-lg"
+//          />
+//        </div>
+//      </div>
+
+//      {/* Card Content */}
+//      <div className="flex flex-col items-center justify-center px-4 py-6">
+//        {/* Product Heading */}
+//        <h3 className="text-[#151875] text-xl font-semibold text-center">Cantilever Chair</h3>
+
+//        {/* Price */}
+//        <div className="mt-2 flex items-center justify-center gap-2">
+//          <span className="text-[#151875] text-lg font-bold">$26.00</span>
+//          <span className="text-gray-400 line-through text-lg">$42.00</span>
+//        </div>
+//      </div>
+//    </div>
+//  </div>
+// </section>
