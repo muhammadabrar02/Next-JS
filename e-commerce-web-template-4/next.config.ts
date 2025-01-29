@@ -2,7 +2,7 @@
 import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
     images: {
-        domains: ['cdn.sanity.io'], // Add Sanity's CDN hostname here
+      domains: ["cdn.sanity.io", "encrypted-tbn0.gstatic.com"],
       },
 };
 
