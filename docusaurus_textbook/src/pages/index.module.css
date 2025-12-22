@@ -1,0 +1,142 @@
+/* HERO */
+.hero {
+  padding: 6rem 1.5rem;
+  background: radial-gradient(circle at top, #2a1741, #131418);
+  color: rgb(181, 181, 181);
+  text-align: center;
+}
+
+.heroInner {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.heroTitle {
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+}
+
+.heroSubtitle {
+  font-size: 1.4rem;
+  line-height: 1.7;
+  margin-bottom: 2.5rem;
+  opacity: 0.9;
+}
+
+/* SECTIONS */
+.section {
+  padding: 5rem 1.5rem;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.sectionTitle {
+  font-size: 2.4rem;
+  margin-bottom: 1.2rem;
+}
+
+.sectionText {
+  font-size: 1.15rem;
+  color: var(--ifm-color-emphasis-700);
+  line-height: 1.8;
+}
+
+/* MODULES */
+.modulesSection {
+  padding: 6rem 1.5rem;
+  background: var(--ifm-background-surface-color);
+}
+
+.modulesGrid {
+  display: grid;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 3rem auto 0;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.moduleCard {
+  background: white;
+  border-radius: 14px;
+  padding: 2rem;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.moduleCard:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 40px rgba(0,0,0,0.12);
+}
+
+.moduleCard h3 {
+  color: var(--ifm-color-primary);
+  margin-bottom: 0.8rem;
+}
+
+.moduleCard p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 1.2rem;
+}
+
+.moduleLink {
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--ifm-color-primary);
+}
+
+/* FEATURES */
+.featuresSection {
+  padding: 6rem 1.5rem;
+}
+
+.featuresGrid {
+  max-width: 1000px;
+  margin: 3rem auto 0;
+  display: grid;
+  gap: 2.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.featureCard {
+  padding: 2rem;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #f5f7fa, #ffffff);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.06);
+}
+
+.featureCard h3 {
+  color: var(--ifm-color-primary);
+  margin-bottom: 0.8rem;
+}
+
+/* CTA */
+.ctaSection {
+  padding: 6rem 1.5rem;
+  background: linear-gradient(135deg, #0057ff, #003ecb);
+  color: white;
+  text-align: center;
+}
+
+.ctaSection h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.ctaSection p {
+  font-size: 1.2rem;
+  margin-bottom: 2.5rem;
+  opacity: 0.9;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .heroTitle {
+    font-size: 2.5rem;
+  }
+  .heroSubtitle {
+    font-size: 1.1rem;
+  }
+}
