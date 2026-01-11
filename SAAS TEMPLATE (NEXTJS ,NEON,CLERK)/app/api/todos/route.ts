@@ -47,8 +47,8 @@ export async function GET(req: NextRequest) {
         return NextResponse.json({
             todos,
             currentPage: page,
-            totalPages
-        })
+            totalPages,
+        });
 
     } catch (err) {
         console.error('Error fetching todos', err)
